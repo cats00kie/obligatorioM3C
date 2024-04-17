@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LogicaNegocio.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,12 @@ namespace LogicaNegocio.Entidades
     {   
         public string Email { get; set; }
         public string Password { get; set; }
+
         public Administrador() { }
+        public Administrador(string nombre, string apellido, string email, string password) {
+            NombreCompleto = new NombreCompleto(nombre, apellido);
+            this.Email = email; 
+            this.Password = password;
+        }
     }
 }

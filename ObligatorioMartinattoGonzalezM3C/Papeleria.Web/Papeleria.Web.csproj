@@ -6,4 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\Papeleria.AccesoDatos.csproj" />
+    <ProjectReference Include="..\LogicaAplicacion\Papeleria.LogicaAplicacion.csproj" />
+    <ProjectReference Include="..\LogicaNegocio\Papeleria.LogicaNegocio.csproj" />
+  </ItemGroup>
+
 </Project>

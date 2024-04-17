@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogicaNegocio.InterfacesRepositorio
 {
-    internal interface IRepositorio
+    public interface IRepositorio<T> where T : class
     {
     }
 }

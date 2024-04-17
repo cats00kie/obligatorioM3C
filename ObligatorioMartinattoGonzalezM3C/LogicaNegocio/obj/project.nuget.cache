@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nqrgkzBV6HJpjLsTf4LENLFDxoK+FnS2D3CXeAQlKIrgt+oeloWGZp3OgzU625HRaNyCvsXfwG5A2eIY0KdQSg==",
+  "dgSpecHash": "j+8emG0PuDdGGLvwHHToVum+OD0f7cBKP9okGcmhEA+AmejMfoNkmdzx7G+WsL7nQ/9euQUuoyyQU1PDomTu0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sprin\\Desktop\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Papeleria.LogicaNegocio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Papeleria.LogicaNegocio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512"
+  ],
   "logs": []
 }
