@@ -1,6 +1,6 @@
 using Papeleria.AccesoDatos.EntityFramework.Repositorios;
 using Papeleria.LogicaAplicacion.CasosDeUso;
-using Papeleria.LogicaAplicacion.CasosDeUso.Administrador;
+using Papeleria.LogicaAplicacion.CasosDeUso.Administradores;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 using LogicaNegocio.InterfacesRepositorio;
@@ -19,7 +19,7 @@ namespace Papeleria.Web
             builder.Services.AddControllersWithViews();
             builder.Services.AddDistributedMemoryCache();
 
-            builder.Services.AddScoped<IRepositorioUsuario, RepositorioUsuarioEF>();
+            builder.Services.AddScoped<IRepositorioAdministrador, RepositorioAdministradorEF>();
             builder.Services.AddScoped<IRepositorioCliente, RepositorioClienteEF>();
 
             builder.Services.AddScoped<ILogin, LoginCU>();

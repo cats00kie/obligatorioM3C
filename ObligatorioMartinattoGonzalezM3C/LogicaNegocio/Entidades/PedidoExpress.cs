@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogicaNegocio.Entidades
 {
-    internal class PedidoExpress
+    public class PedidoExpress
     {
     }
 }

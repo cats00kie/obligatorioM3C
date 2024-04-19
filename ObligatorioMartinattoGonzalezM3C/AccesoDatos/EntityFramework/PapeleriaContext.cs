@@ -7,6 +7,8 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using Azure.Core.GeoJson;
+using System.Security.Cryptography;
 
 namespace AccesoDatos.EntityFramework
 {
@@ -14,7 +16,12 @@ namespace AccesoDatos.EntityFramework
     {
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-
+        public DbSet<Administrador> Admins { get; set; }
+        //public DbSet<Pedido> Pedidos { get; set; }
+        //public DbSet<PedidoComun> Comunes { get; set; }
+        //public DbSet<PedidoExpress> PedidosExpress { get; set; }
+        //public DbSet<Articulo> Articulos { get; set; }
+        //public DbSet<Linea> Lineas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,5 +32,6 @@ namespace AccesoDatos.EntityFramework
         {
             modelBuilder.Entity<Administrador>();
         }
+         
     }
 }
