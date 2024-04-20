@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AccesoDatos.EntityFramework.Repositorios
 {
-    internal class RepositorioPedidoEF
+    public class RepositorioPedidoEF
     {
     }
 }

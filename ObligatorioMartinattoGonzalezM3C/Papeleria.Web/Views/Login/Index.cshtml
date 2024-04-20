@@ -3,7 +3,13 @@
 @{
     ViewData["Title"] = "Login";
 }
-
+@if (ViewBag.Mensaje == "" || ViewBag.Mensaje == null) { }
+else
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
+}
 <h1>Login</h1>
 
 <h4>AdministradorDTO</h4>
@@ -21,21 +27,6 @@
                 <label asp-for="Password" class="control-label"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Apellido" class="control-label"></label>
-                <input asp-for="Apellido" class="form-control" />
-                <span asp-validation-for="Apellido" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

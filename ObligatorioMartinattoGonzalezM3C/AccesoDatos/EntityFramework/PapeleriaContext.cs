@@ -14,7 +14,7 @@ namespace AccesoDatos.EntityFramework
 {
     public class PapeleriaContext : DbContext
     {
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuario> Usuarios;
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Administrador> Admins { get; set; }
         //public DbSet<Pedido> Pedidos { get; set; }
@@ -28,10 +28,10 @@ namespace AccesoDatos.EntityFramework
             optionsBuilder.UseSqlServer(@"SERVER=(localdb)\MsSqlLocalDb;DATABASE=PapeleriaObligatorio;Integrated Security=true;");
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Administrador>();
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Administrador>();
+        //}
          
     }
 }

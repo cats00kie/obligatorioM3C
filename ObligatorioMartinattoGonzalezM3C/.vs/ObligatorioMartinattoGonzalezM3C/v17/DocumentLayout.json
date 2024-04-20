@@ -1,82 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\papeleria.web\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\papeleria.web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositorioadministradoref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositorioadministradoref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositorioadministradoref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\administradores\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\administradores\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\interfacesrepositorio\\irepositorioadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfacesrepositorio\\irepositorioadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\interfacescasosdeuso\\administrador\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\interfacescasosdeuso\\administrador\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\interfacescasosdeuso\\igetarticulosasc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\interfacescasosdeuso\\igetarticulosasc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\interfacesrepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicanegocio\\interfacesrepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfacesrepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\entidades\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\entidades\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\administradores\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\administradores\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\papeleriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\papeleriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\administradores\\crearadmincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\administradores\\crearadmincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\entidades\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\entidades\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\papeleria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\entidades\\linea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\entidades\\linea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\papeleria.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\entidades\\pedidocomun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\entidades\\pedidocomun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\entidades\\pedidoexpress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\entidades\\pedidoexpress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\getpedidosdesccu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\getpedidosdesccu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\getarticulosasccu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\getarticulosasccu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\interfacescasosdeuso\\igetpedidosdesc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\interfacescasosdeuso\\igetpedidosdesc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\administradordtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\administradordtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\interfacescasosdeuso\\administrador\\icrearadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\interfacescasosdeuso\\administrador\\icrearadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,250 +46,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "Papeleria.Web\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "Papeleria.Web\\Views\\Login\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Papeleria.Web\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T13:53:31.363Z",
+              "WhenOpened": "2024-04-20T00:04:39.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginCU.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCgAAABNAAAA",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Program.cs",
+              "RelativeToolTip": "Papeleria.Web\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:07:46.196Z",
+              "WhenOpened": "2024-04-20T00:03:40.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IRepositorioAdministrador.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorioAdministrador.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\InterfacesRepositorio\\IRepositorioAdministrador.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorioAdministrador.cs",
-              "RelativeToolTip": "LogicaNegocio\\InterfacesRepositorio\\IRepositorioAdministrador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAWAAAA",
+              "Title": "CrearAdminCU.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\CrearAdminCU.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\Administradores\\CrearAdminCU.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\CrearAdminCU.cs",
+              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\Administradores\\CrearAdminCU.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:36:34.04Z",
+              "WhenOpened": "2024-04-20T00:02:52.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICrearAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ICrearAdmin.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ICrearAdmin.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ICrearAdmin.cs",
+              "RelativeToolTip": "LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ICrearAdmin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T00:02:44.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Papeleria.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T00:01:48.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "RelativeToolTip": "LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T00:01:41.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "RepositorioAdministradorEF.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioAdministradorEF.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioAdministradorEF.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioAdministradorEF.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioAdministradorEF.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioAdministradorEF.cs",
               "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioAdministradorEF.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAqwEUAAAAOAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:31:48.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ILogin.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ILogin.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ILogin.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ILogin.cs",
-              "RelativeToolTip": "LogicaAplicacion\\InterfacesCasosDeUso\\Administrador\\ILogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:08:16.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IGetArticulosAsc.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\IGetArticulosAsc.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\InterfacesCasosDeUso\\IGetArticulosAsc.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\IGetArticulosAsc.cs",
-              "RelativeToolTip": "LogicaAplicacion\\InterfacesCasosDeUso\\IGetArticulosAsc.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:11:48.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Program.cs",
-              "RelativeDocumentMoniker": "Papeleria.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Program.cs",
-              "RelativeToolTip": "Papeleria.Web\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:04:55.369Z",
+              "WhenOpened": "2024-04-20T00:01:37.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Papeleria.Web\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Papeleria.Web\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADgvx0AAAAWAAAA",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Papeleria.Web\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:02:01.992Z",
+              "WhenOpened": "2024-04-20T00:01:24.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
-              "RelativeToolTip": "LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "DocumentIndex": 4,
+              "Title": "LoginCU.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
+              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAawCAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:36:23.711Z",
+              "WhenOpened": "2024-04-20T00:07:31.07Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Administrador.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Administrador.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\Entidades\\Administrador.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Administrador.cs",
-              "RelativeToolTip": "LogicaNegocio\\Entidades\\Administrador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:33:26.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PapeleriaContext.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "RelativeToolTip": "AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBUAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:11:09.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Articulo.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\Entidades\\Articulo.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Articulo.cs",
-              "RelativeToolTip": "LogicaNegocio\\Entidades\\Articulo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:16:30.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Linea.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Linea.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\Entidades\\Linea.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Linea.cs",
-              "RelativeToolTip": "LogicaNegocio\\Entidades\\Linea.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:16:25.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PedidoComun.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\PedidoComun.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\Entidades\\PedidoComun.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\PedidoComun.cs",
-              "RelativeToolTip": "LogicaNegocio\\Entidades\\PedidoComun.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:03.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PedidoExpress.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\PedidoExpress.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\Entidades\\PedidoExpress.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\PedidoExpress.cs",
-              "RelativeToolTip": "LogicaNegocio\\Entidades\\PedidoExpress.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:15:37.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetPedidosDescCU.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\GetPedidosDescCU.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\GetPedidosDescCU.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\GetPedidosDescCU.cs",
-              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\GetPedidosDescCU.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:12:12.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GetArticulosAscCU.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\GetArticulosAscCU.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\GetArticulosAscCU.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\GetArticulosAscCU.cs",
-              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\GetArticulosAscCU.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:12:08.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IGetPedidosDesc.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\IGetPedidosDesc.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\InterfacesCasosDeUso\\IGetPedidosDesc.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\IGetPedidosDesc.cs",
-              "RelativeToolTip": "LogicaAplicacion\\InterfacesCasosDeUso\\IGetPedidosDesc.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:11:52.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AdministradorDTOMapper.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "RelativeToolTip": "LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T00:53:24.021Z"
             }
           ]
         },
@@ -339,7 +181,7 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

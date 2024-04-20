@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Reflection.Metadata;
+using Papeleria.LogicaNegocio.Excepciones;
 using LogicaNegocio.Entidades;
 
 namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
@@ -20,25 +21,18 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
         {
             _repositorioAdmin = repositorioAdmin;
         }
-        //public static string GetHashSha256(string text)
-        //{
-        //    byte[] bytes = Encoding.UTF8.GetBytes(text); // Convert the string to bytes
-        //    using (SHA256 hashAlgorithm = SHA256.Create()) // Use SHA256.Create() instead
-        //    {
-        //        byte[] hash = hashAlgorithm.ComputeHash(bytes); // Compute the hash
-        //        string hashString = string.Empty;
-        //        foreach (byte x in hash)
-        //        {
-        //            hashString += String.Format("{0:x2}", x); // Convert each byte to hexadecimal
-        //        }
-        //        return hashString;
-        //    }
-        //}
-
         public bool Login(string email, string password)
         {
+           
             Administrador admin = this._repositorioAdmin.FindByEmail(email);
-            return this._repositorioAdmin.Decrypt(admin.Password) == password; 
+            
+            if (admin != null)
+            {
+                Hash hash = new Hash();
+                if(hash.GetHashSha256(password) == admin.Password) return true;
+                else return false;
+            }
+            else return false;
         }
     }
 }

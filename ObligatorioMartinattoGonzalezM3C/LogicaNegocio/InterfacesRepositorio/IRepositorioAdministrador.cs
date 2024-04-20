@@ -11,8 +11,6 @@ namespace LogicaNegocio.InterfacesRepositorio
     public interface IRepositorioAdministrador : IRepositorio<Administrador>
     {
         Administrador FindByEmail(string email);
-        string Decrypt(string cipherText);
-        string Encrypt(string plainText);
 
     }
 }

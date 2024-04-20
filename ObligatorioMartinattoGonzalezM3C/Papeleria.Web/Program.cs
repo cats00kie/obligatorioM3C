@@ -25,6 +25,7 @@ namespace Papeleria.Web
             builder.Services.AddScoped<ILogin, LoginCU>();
             builder.Services.AddScoped<IGetArticulosAsc, GetArticulosAscCU>();
             builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
+            builder.Services.AddScoped<ICrearAdmin, CrearAdminCU>();
 
             builder.Services.AddSession(option =>
             {
@@ -50,6 +51,7 @@ namespace Papeleria.Web
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",

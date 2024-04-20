@@ -17,11 +17,11 @@ namespace AccesoDatos.EntityFramework
         {
             this._context = new PapeleriaContext();
         }
-        public bool Add(Usuario aAgregar)
+        public bool Add(Administrador aAgregar)
         {
             try
             {
-                this._context.Usuarios.Add(aAgregar);
+                this._context.Admins.Add(aAgregar);
                 this._context.SaveChanges();
                 return true;
             }
@@ -31,9 +31,18 @@ namespace AccesoDatos.EntityFramework
             }
         }
 
+        public IEnumerable<Administrador> FindAll()
+        {
+            return this._context.Admins;
+        }
+
         public Administrador FindByEmail(string email)
         {
-            return this._context.Admins.Where(admin => admin.Email == email).FirstOrDefault(); 
+            try
+            {
+                return this._context.Admins.Where(admin => admin.Email == email).FirstOrDefault();
+            }
+            catch (Exception ex) { throw ex; }
         }
 
         public bool Remove(int id)
@@ -65,53 +74,5 @@ namespace AccesoDatos.EntityFramework
             }
         }
 
-        private static readonly byte[] Salt = { 1, 2, 3, 4, 5, 6, 7, 8 }; // Random salt
-
-        public string Encrypt(string password)
-        {
-            using var aesAlg = new RijndaelManaged
-            {
-                KeySize = 256,
-                BlockSize = 128,
-                Mode = CipherMode.CFB,
-                Padding = PaddingMode.PKCS7
-            };
-
-            var key = new Rfc2898DeriveBytes(password, Salt, 1000).GetBytes(32);
-            aesAlg.Key = key;
-
-            using var encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
-            using var msEncrypt = new MemoryStream();
-            using var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write);
-            using var swEncrypt = new StreamWriter(csEncrypt);
-
-            swEncrypt.Write("encryption");
-            swEncrypt.Flush();
-            csEncrypt.FlushFinalBlock();
-
-            return Convert.ToBase64String(msEncrypt.ToArray());
-        }
-
-        public string Decrypt(string password)
-        {
-            using var aesAlg = new RijndaelManaged
-            {
-                KeySize = 256,
-                BlockSize = 128,
-                Mode = CipherMode.CFB,
-                Padding = PaddingMode.PKCS7
-            };
-
-            var key = new Rfc2898DeriveBytes(password, Salt, 1000).GetBytes(32);
-            aesAlg.Key = key;
-
-            var cipherTextBytes = Convert.FromBase64String("encryption");
-            using var msDecrypt = new MemoryStream(cipherTextBytes);
-            using var decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-            using var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read);
-            using var srDecrypt = new StreamReader(csDecrypt);
-
-            return srDecrypt.ReadToEnd();
-        }
     }
 }
