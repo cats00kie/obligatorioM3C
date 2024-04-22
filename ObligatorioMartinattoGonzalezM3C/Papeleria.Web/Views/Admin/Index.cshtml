@@ -1,5 +1,5 @@
 ﻿@using LogicaNegocio.Entidades;
-@model IEnumerable<LogicaNegocio.Entidades.Administrador>
+@model IEnumerable<Papeleria.LogicaAplicacion.DTOs.AdministradorDTO>
 
 @{
     ViewData["Title"] = "Index";
@@ -20,10 +20,10 @@
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NombreCompleto.Nombre)
+                @Html.DisplayNameFor(model => model.Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NombreCompleto.Apellido)
+                @Html.DisplayNameFor(model => model.Apellido)
             </th>
             <th></th>
         </tr>
@@ -41,14 +41,13 @@
                         @Html.DisplayFor(modelItem => item.Email)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.NombreCompleto.Nombre)
+                        @Html.DisplayFor(modelItem => item.Nombre)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.NombreCompleto.Apellido)
+                        @Html.DisplayFor(modelItem => item.Apellido)
                     </td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     </td>
                 </tr>

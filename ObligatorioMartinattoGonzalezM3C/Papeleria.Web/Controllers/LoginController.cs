@@ -36,5 +36,10 @@ namespace Papeleria.Web.Controllers
             //manda esto para el CULogin, que primero encripta la contraseña, la desencripta en la capa de datos,
             //la verifica con los usuarios de la BD, y devuelve true o false.
         }
+        public IActionResult Logout()
+        {
+            HttpContext.Session.SetString("usuario", "");
+            return RedirectToAction("Login");
+        }
     }
 }

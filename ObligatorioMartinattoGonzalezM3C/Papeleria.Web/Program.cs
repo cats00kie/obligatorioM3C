@@ -27,6 +27,9 @@ namespace Papeleria.Web
             builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
             builder.Services.AddScoped<ICrearAdmin, CrearAdminCU>();
             builder.Services.AddScoped<IEditarAdmin, EditarAdminCU>();
+            builder.Services.AddScoped<IFindAdminById, FindAdminByIdCU>();
+            builder.Services.AddScoped<IEncontrarAdmins, EncontrarAdminsCU>();
+            builder.Services.AddScoped<IBorrarAdmin, BorrarAdminCU>();
 
             builder.Services.AddSession(option =>
             {

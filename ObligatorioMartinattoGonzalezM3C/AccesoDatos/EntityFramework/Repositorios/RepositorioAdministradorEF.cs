@@ -54,7 +54,7 @@ namespace AccesoDatos.EntityFramework
         {
             try
             {
-                Administrador aBorrar = new Administrador { Id = id };
+                Administrador aBorrar = FindByID(id);
                 this._context.Admins.Remove(aBorrar);
                 this._context.SaveChanges();
                 return true;

@@ -13,6 +13,13 @@ namespace LogicaNegocio.Entidades
         public string Password { get; set; }
 
         public Administrador() { }
+        public Administrador(int id, string nombre, string apellido, string email, string password)
+        {
+            Id = id;
+            NombreCompleto = new NombreCompleto(nombre, apellido);
+            this.Email = email;
+            this.Password = password;
+        }
         public Administrador(string nombre, string apellido, string email, string password) {
             NombreCompleto = new NombreCompleto(nombre, apellido);
             this.Email = email; 

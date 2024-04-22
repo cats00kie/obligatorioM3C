@@ -21,7 +21,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
             {
                 throw new NotImplementedException();
             }
-            return new Administrador(admindto.Nombre, admindto.Apellido, admindto.Email, admindto.Password);
+            return new Administrador(admindto.Id, admindto.Nombre, admindto.Apellido, admindto.Email, admindto.Password);
         }
     }
 }

@@ -9,19 +9,24 @@ namespace Papeleria.Web.Controllers
 {
     public class AdminController : Controller
     {
-        private IRepositorioAdministrador _repositorioAdmins;
         private ICrearAdmin _crearAdmin;
         private IEditarAdmin _editarAdmin;
-        public AdminController(IRepositorioAdministrador repositorioAdmins, ICrearAdmin crearAdmin, IEditarAdmin editarAdmin)
+        private IEncontrarAdmins _encontrarAdmins;
+        private IFindAdminById _findAdminById;
+        private IBorrarAdmin _borrarAdmin;
+        public AdminController(ICrearAdmin crearAdmin, IEditarAdmin editarAdmin, 
+            IEncontrarAdmins encontrarAdmins, IFindAdminById findAdminById, IBorrarAdmin borrarAdmin)
         {
-            this._repositorioAdmins = repositorioAdmins;
+            this._encontrarAdmins = encontrarAdmins;
             this._crearAdmin = crearAdmin;
             this._editarAdmin = editarAdmin;
+            this._findAdminById = findAdminById;
+            this._borrarAdmin = borrarAdmin;
         }
         // GET: AdminController
         public ActionResult Index()
         {
-            return View(_repositorioAdmins.FindAll());
+            return View(_encontrarAdmins.FindAllAdmins());
         }
 
         // GET: AdminController/Details/5
@@ -55,7 +60,7 @@ namespace Papeleria.Web.Controllers
         // GET: AdminController/Edit/5
         public ActionResult Edit(int id)
         {
-            Administrador admin = this._repositorioAdmins.FindByID(id);
+            AdministradorDTO admin = this._findAdminById.FindAdminById(id);
             return View(admin);
         }
 
@@ -77,16 +82,10 @@ namespace Papeleria.Web.Controllers
         // POST: AdminController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            this._borrarAdmin.BorrarAdmin(id);
+            return RedirectToAction("Index");
         }
     }
 }
