@@ -1,4 +1,5 @@
-﻿using LogicaNegocio.InterfacesRepositorio;
+﻿using LogicaNegocio.Entidades;
+using LogicaNegocio.InterfacesRepositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
@@ -10,10 +11,12 @@ namespace Papeleria.Web.Controllers
     {
         private IRepositorioAdministrador _repositorioAdmins;
         private ICrearAdmin _crearAdmin;
-        public AdminController(IRepositorioAdministrador repositorioAdmins, ICrearAdmin crearAdmin)
+        private IEditarAdmin _editarAdmin;
+        public AdminController(IRepositorioAdministrador repositorioAdmins, ICrearAdmin crearAdmin, IEditarAdmin editarAdmin)
         {
             this._repositorioAdmins = repositorioAdmins;
             this._crearAdmin = crearAdmin;
+            this._editarAdmin = editarAdmin;
         }
         // GET: AdminController
         public ActionResult Index()
@@ -52,22 +55,17 @@ namespace Papeleria.Web.Controllers
         // GET: AdminController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Administrador admin = this._repositorioAdmins.FindByID(id);
+            return View(admin);
         }
 
         // POST: AdminController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(AdministradorDTO adminDto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            this._editarAdmin.EditarAdmin(adminDto);
+            return View(adminDto);
         }
 
         // GET: AdminController/Delete/5

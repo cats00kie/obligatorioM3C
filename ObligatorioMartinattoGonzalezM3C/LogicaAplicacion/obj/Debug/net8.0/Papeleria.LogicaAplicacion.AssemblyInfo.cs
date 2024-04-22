@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Papeleria.LogicaAplicacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ab4e59523c9f03209722c9f321210fd78da5d51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35faa99a17f8dbecfde79fd95d4093e281c984cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Papeleria.LogicaAplicacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Papeleria.LogicaAplicacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

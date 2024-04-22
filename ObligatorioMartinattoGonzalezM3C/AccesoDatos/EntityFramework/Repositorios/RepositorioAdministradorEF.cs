@@ -45,6 +45,11 @@ namespace AccesoDatos.EntityFramework
             catch (Exception ex) { throw ex; }
         }
 
+        public Administrador FindByID(int id)
+        {
+            return this._context.Admins.Where(admin => admin.Id == id).FirstOrDefault();
+        }
+
         public bool Remove(int id)
         {
             try
