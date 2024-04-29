@@ -1,6 +1,7 @@
 ﻿using AccesoDatos.EntityFramework;
 using LogicaNegocio.Entidades;
 using Papeleria.LogicaNegocio.InterfacesRepositorio;
+using Papeleria.LogicaNegocio.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,16 +31,31 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
             }
         }
 
-        //public Cliente FindByNombreCompleto(string email)
-        //{
-        //    return this._context.Clientes.Where(cliente => cliente.== email).FirstOrDefault();
-        //}
+        public IEnumerable<Cliente> ClientesXmonto(double monto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Cliente> ClientesXnombreYapellido(string especifica)
+        {
+            return this._context.Clientes.Where(cliente => cliente.NombreCliente.Nombre.Contains(especifica) || cliente.NombreCliente.Apellido.Contains(especifica)).ToList();
+        }
+
+        public IEnumerable<Cliente> FindAll()
+        {
+            return this._context.Clientes;
+        }
+
+        public Cliente FindByID(int id)
+        {
+            return this._context.Clientes.Where(cliente => cliente.Id == id).FirstOrDefault();
+        }
 
         public bool Remove(int id)
         {
             try
             {
-                Cliente aBorrar = new Cliente { Id = id };
+                Cliente aBorrar = FindByID(id);
                 this._context.Clientes.Remove(aBorrar);
                 this._context.SaveChanges();
                 return true;

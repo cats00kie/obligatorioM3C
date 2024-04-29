@@ -42,6 +42,34 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.ToTable("Admins");
                 });
 
+            modelBuilder.Entity("LogicaNegocio.Entidades.Articulo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Precio")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Articulos");
+                });
+
             modelBuilder.Entity("LogicaNegocio.Entidades.Cliente", b =>
                 {
                     b.Property<int>("Id")

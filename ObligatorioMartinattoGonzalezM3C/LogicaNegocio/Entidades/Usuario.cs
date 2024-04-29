@@ -10,6 +10,8 @@ namespace LogicaNegocio.Entidades
     public abstract class Usuario
     {
         public int Id { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
         public static int UltimoId { get; set; }
         public NombreCompleto NombreCompleto { get; set; }
     }

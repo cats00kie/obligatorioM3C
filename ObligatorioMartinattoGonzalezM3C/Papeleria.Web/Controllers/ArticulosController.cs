@@ -1,20 +1,25 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Papeleria.LogicaAplicacion.DTOs;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
 
 namespace Papeleria.Web.Controllers
 {
     public class ArticulosController : Controller
     {
+
+        private IEncontrarArticulos _encontrarArticulos;
+        private ICrearArticulo _crearArticulo;
+        public ArticulosController(IEncontrarArticulos encontrarArticulos, ICrearArticulo crearArticulo)
+        {
+            _encontrarArticulos = encontrarArticulos;
+            _crearArticulo = crearArticulo;
+        }
+
         // GET: ArticulosController
         public ActionResult Index()
         {
-            return View();
-        }
-
-        // GET: ArticulosController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
+            return View(this._encontrarArticulos.EncontrarArticulos());
         }
 
         // GET: ArticulosController/Create
@@ -26,11 +31,12 @@ namespace Papeleria.Web.Controllers
         // POST: ArticulosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ArticuloDTO articulo)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                this._crearArticulo.CrearArticulo(articulo);
+                return RedirectToAction("Index");
             }
             catch
             {

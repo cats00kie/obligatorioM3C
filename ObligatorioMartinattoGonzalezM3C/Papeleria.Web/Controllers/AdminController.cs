@@ -2,6 +2,7 @@
 using LogicaNegocio.InterfacesRepositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 
@@ -27,12 +28,6 @@ namespace Papeleria.Web.Controllers
         public ActionResult Index()
         {
             return View(_encontrarAdmins.FindAllAdmins());
-        }
-
-        // GET: AdminController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
         }
 
         // GET: AdminController/Create
@@ -76,13 +71,14 @@ namespace Papeleria.Web.Controllers
         // GET: AdminController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            AdministradorDTO admin = this._findAdminById.FindAdminById(id);
+            return View(admin);
         }
 
         // POST: AdminController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(AdministradorDTO admin, int id)
         {
             this._borrarAdmin.BorrarAdmin(id);
             return RedirectToAction("Index");

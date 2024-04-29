@@ -1,83 +1,76 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Papeleria.LogicaAplicacion.DTOs;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;
 
 namespace Papeleria.Web.Controllers
 {
     public class ClientesController : Controller
     {
+
+        private IEncontrarClientes _encontrarClientes;
+        private IGetClientesXnombreYapellido _xnombreYapellido;
+        private IGetClientesXmonto _xMonto;
+
+        public ClientesController(IEncontrarClientes encontrarClientes, IGetClientesXnombreYapellido xnombreYapellido, IGetClientesXmonto xMonto)
+        {
+            _encontrarClientes = encontrarClientes;
+            _xnombreYapellido = xnombreYapellido;
+            _xMonto = xMonto;
+        }
+
+
+
         // GET: ClientesController
-        public ActionResult Index()
+        public ActionResult Index(string mensaje, string filtro)
         {
-            return View();
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
+            IEnumerable<ClienteDTO> toShow = new List<ClienteDTO>();
+            ViewBag.Mensaje = mensaje;
+            ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
+
+            if (string.IsNullOrEmpty(filtro))
+            {
+                toShow = _encontrarClientes.FindAllClientes();
+            }
+            if (filtro == "PorRazonSocial")
+            {
+                string razon = (string)TempData["Razon"];
+                toShow = this._xnombreYapellido.GetClientesXnombreYapellido(razon);
+            }
+            if(filtro == "PorMonto")
+            {
+                double monto = (double)TempData["Monto"];
+                toShow = this._xMonto.GetClientesXmonto(monto);
+            }
+            return View(toShow);
         }
 
-        // GET: ClientesController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: ClientesController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ClientesController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult FiltrarPorRazonSocial(string razon)
         {
-            try
+            if (razon == null)
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            TempData["Razon"] = razon;
+            return RedirectToAction("Index", new { filtro = "PorRazonSocial" });
         }
 
-        // GET: ClientesController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: ClientesController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult FiltrarPorMonto (double monto)
         {
-            try
+            if (monto <= 0)
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", new { mensaje = "Monto invalido." });
             }
-            catch
-            {
-                return View();
-            }
+            TempData["Monto"] = monto;
+            return RedirectToAction("Index", new { filtro = "PorMonto" });
         }
 
-        // GET: ClientesController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ClientesController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

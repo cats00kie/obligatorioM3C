@@ -39,7 +39,7 @@ namespace Papeleria.Web.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.SetString("usuario", "");
-            return RedirectToAction("Login");
+            return RedirectToAction("Index");
         }
     }
 }

@@ -20,7 +20,7 @@ namespace AccesoDatos.EntityFramework
         //public DbSet<Pedido> Pedidos { get; set; }
         //public DbSet<PedidoComun> Comunes { get; set; }
         //public DbSet<PedidoExpress> PedidosExpress { get; set; }
-        //public DbSet<Articulo> Articulos { get; set; }
+        public DbSet<Articulo> Articulos { get; set; }
         //public DbSet<Linea> Lineas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

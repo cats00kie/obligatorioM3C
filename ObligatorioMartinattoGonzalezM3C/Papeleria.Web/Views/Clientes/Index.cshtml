@@ -1,0 +1,53 @@
+﻿@using Papeleria.LogicaAplicacion.DTOs
+@model IEnumerable<Papeleria.LogicaAplicacion.DTOs.ClienteDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h2>Filtros</h2>
+<form method="post" action="Clientes/FiltrarPorRazonSocial">
+    <label for="razonSocial">Razon Social:</label>
+    <input type="text" name="razon" value="" placeholder="Razon social..." id="razonSocial"/>
+    <input type="submit" />
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RazonSocial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rut)
+            </th>
+            <th>
+                Nombre del Representante
+            </th>
+            <th>
+                Apellido del Representante
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RazonSocial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

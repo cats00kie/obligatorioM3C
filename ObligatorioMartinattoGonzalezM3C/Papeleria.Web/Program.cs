@@ -6,6 +6,11 @@ using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 using LogicaNegocio.InterfacesRepositorio;
 using AccesoDatos.EntityFramework;
 using Papeleria.LogicaNegocio.InterfacesRepositorio;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;
+using Papeleria.LogicaAplicacion.CasosDeUso.Clientes;
+using Papeleria.LogicaAplicacion.CasosDeUso.Articulos;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
+using AccesoDatos.EntityFramework.Repositorios;
 
 namespace Papeleria.Web
 {
@@ -21,6 +26,7 @@ namespace Papeleria.Web
 
             builder.Services.AddScoped<IRepositorioAdministrador, RepositorioAdministradorEF>();
             builder.Services.AddScoped<IRepositorioCliente, RepositorioClienteEF>();
+            builder.Services.AddScoped<IRepositorioArticulo, RepositorioArticuloEF>();
 
             builder.Services.AddScoped<ILogin, LoginCU>();
             builder.Services.AddScoped<IGetArticulosAsc, GetArticulosAscCU>();
@@ -30,6 +36,11 @@ namespace Papeleria.Web
             builder.Services.AddScoped<IFindAdminById, FindAdminByIdCU>();
             builder.Services.AddScoped<IEncontrarAdmins, EncontrarAdminsCU>();
             builder.Services.AddScoped<IBorrarAdmin, BorrarAdminCU>();
+            builder.Services.AddScoped<IEncontrarClientes, EncontrarClientesCU>();
+            builder.Services.AddScoped<IGetClientesXnombreYapellido, GetClientesXnombreYapellidoCU>();
+            builder.Services.AddScoped<ICrearArticulo, CrearArticuloCU>();
+            builder.Services.AddScoped<IEncontrarArticulos, EncontrarArticulosCU>();
+
 
             builder.Services.AddSession(option =>
             {

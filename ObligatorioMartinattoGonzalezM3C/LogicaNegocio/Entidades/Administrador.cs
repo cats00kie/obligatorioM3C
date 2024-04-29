@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 namespace LogicaNegocio.Entidades
 {
     public class Administrador : Usuario
-    {   
-        public string Email { get; set; }
-        public string Password { get; set; }
+    { 
 
         public Administrador() { }
         public Administrador(int id, string nombre, string apellido, string email, string password)
