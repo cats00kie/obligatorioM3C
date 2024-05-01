@@ -3,7 +3,13 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+@if (ViewBag.mensaje == "" || ViewBag.mensaje == null) { }
+else
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
+}
 <h1>Create</h1>
 
 <h4>Administrador</h4>

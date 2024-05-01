@@ -17,21 +17,19 @@ namespace AccesoDatos.EntityFramework
         public DbSet<Usuario> Usuarios;
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Administrador> Admins { get; set; }
-        //public DbSet<Pedido> Pedidos { get; set; }
-        //public DbSet<PedidoComun> Comunes { get; set; }
-        //public DbSet<PedidoExpress> PedidosExpress { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Articulo> Articulos { get; set; }
-        //public DbSet<Linea> Lineas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"SERVER=(localdb)\MsSqlLocalDb;DATABASE=PapeleriaObligatorio;Integrated Security=true;");
         }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Administrador>();
-        //}
-         
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<PedidoComun>();
+            modelBuilder.Entity<PedidoExpress>();
+        }
+
     }
 }

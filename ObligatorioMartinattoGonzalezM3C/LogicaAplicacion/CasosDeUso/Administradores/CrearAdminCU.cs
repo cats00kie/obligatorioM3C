@@ -20,9 +20,18 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
         }
         public void CrearAdmin(AdministradorDTO adminDto)
         {
+            Administrador admin = AdministradorDTOMapper.FromDto(adminDto);
             Hash hash = new Hash();
             adminDto.Password = hash.GetHashSha256(adminDto.Password);
-            this._repositorioAdmin.Add(AdministradorDTOMapper.FromDto(adminDto));
+            try
+            {
+                admin.IsValid();
+                this._repositorioAdmin.Add(admin);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

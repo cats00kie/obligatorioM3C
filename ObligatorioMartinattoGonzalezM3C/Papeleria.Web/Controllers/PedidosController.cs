@@ -1,13 +1,41 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LogicaNegocio.Entidades;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Papeleria.LogicaAplicacion.DTOs;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Pedido;
 
 namespace Papeleria.Web.Controllers
 {
     public class PedidosController : Controller
     {
-        // GET: PedidosController
-        public ActionResult Index()
+
+        private static Configuracion configuracion = new Configuracion(22);
+        private ICrearPedido _crearPedido;
+        private IEncontrarPedidos _encontrarPedidos;
+        private IEncontrarArticulos _encontrarArticulos;
+        private static PedidoDTO tempPedido;
+
+        public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos)
         {
+            _crearPedido = crearPedido;
+            _encontrarArticulos = encontrarArticulos;
+            _encontrarPedidos = encontrarPedidos;
+        }
+
+
+
+
+        // GET: PedidosController
+        public ActionResult Index(string mensaje)
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Login", "Index", new { mensaje = "Necesita hacer login" });
+            }
+            ViewBag.Message = mensaje;
+            IEnumerable<PedidoDTO> aMostrar = new List<PedidoDTO>();
+            aMostrar = this._encontrarPedidos.EncontrarPedidos();
             return View();
         }
 
@@ -18,18 +46,28 @@ namespace Papeleria.Web.Controllers
         }
 
         // GET: PedidosController/Create
-        public ActionResult Create()
+        public ActionResult Create(string mensaje)
         {
+            if (tempPedido != null)
+            {
+                ViewBag.Lineas = tempPedido.Lineas;
+            }
             return View();
         }
 
         // POST: PedidosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(PedidoDTO pedido, Boolean esExpress)
         {
             try
             {
+                if(tempPedido != null && tempPedido.Lineas.Count > 0)
+                {
+                    pedido.Lineas = tempPedido.Lineas;
+                }
+                this._crearPedido.CrearPedido(pedido, esExpress);
+                tempPedido = null;
                 return RedirectToAction(nameof(Index));
             }
             catch

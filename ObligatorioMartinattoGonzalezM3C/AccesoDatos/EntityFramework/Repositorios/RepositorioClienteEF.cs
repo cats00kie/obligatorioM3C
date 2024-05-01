@@ -33,7 +33,13 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
 
         public IEnumerable<Cliente> ClientesXmonto(double monto)
         {
-            throw new NotImplementedException();
+            List<Cliente> clientes = new List<Cliente>();
+            List<Pedido> pedidos = this._context.Pedidos.Where(pedido => pedido.CalcularPrecio() >= monto).ToList();
+            foreach(Pedido pedido in pedidos)
+            {
+                clientes.Add(pedido.ClienteObj);
+            }
+            return clientes;
         }
 
         public IEnumerable<Cliente> ClientesXnombreYapellido(string especifica)

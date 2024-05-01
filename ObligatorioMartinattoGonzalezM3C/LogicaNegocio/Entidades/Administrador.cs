@@ -9,7 +9,6 @@ namespace LogicaNegocio.Entidades
 {
     public class Administrador : Usuario
     { 
-
         public Administrador() { }
         public Administrador(int id, string nombre, string apellido, string email, string password)
         {

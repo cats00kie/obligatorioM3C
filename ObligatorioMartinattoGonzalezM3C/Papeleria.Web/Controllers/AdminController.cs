@@ -31,8 +31,9 @@ namespace Papeleria.Web.Controllers
         }
 
         // GET: AdminController/Create
-        public ActionResult Create()
+        public ActionResult Create(string mensaje)
         {
+            ViewBag.mensaje = mensaje;
             return View();
         }
 
@@ -41,14 +42,18 @@ namespace Papeleria.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(AdministradorDTO adminDto)
         {
+                if (!ModelState.IsValid)
+                {
+                    return View(adminDto);
+                }
             try
             {
                 this._crearAdmin.CrearAdmin(adminDto);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
-                return View();
+                return RedirectToAction("Create", new {mensaje = ex.Message});
             }
         }
 
