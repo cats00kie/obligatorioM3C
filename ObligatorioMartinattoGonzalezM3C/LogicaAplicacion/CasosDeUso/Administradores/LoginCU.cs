@@ -29,7 +29,7 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
             if (admin != null)
             {
                 Hash hash = new Hash();
-                if(/*hash.GetHashSha256*/(password) == admin.Password) return true;
+                if(hash.GetHashSha256(password) == admin.Password) return true;
                 else return false;
             }
             else return false;

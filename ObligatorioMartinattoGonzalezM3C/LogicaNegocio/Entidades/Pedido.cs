@@ -16,23 +16,6 @@ namespace LogicaNegocio.Entidades
         public Boolean Anulado { get; set; }
         public Configuracion ConfiguracionObj { get; set; }
         public Pedido() { }
-        public Pedido(int id, Cliente obj, DateTime fechaPrometida, Configuracion configuracion) 
-        {
-            Id = id;
-            ClienteObj = obj;
-            FechaPrometida = fechaPrometida;
-            Lineas = new List<Linea>();
-            Anulado = false;
-            ConfiguracionObj = configuracion;
-        }
-        public Pedido(Cliente obj, DateTime fechaPrometida, Configuracion configuracion)
-        {
-            ClienteObj = obj;
-            FechaPrometida = fechaPrometida;
-            Lineas = new List<Linea>();
-            Anulado = false;
-            ConfiguracionObj = configuracion;
-        }
 
         public double CalcularPrecio()
         {

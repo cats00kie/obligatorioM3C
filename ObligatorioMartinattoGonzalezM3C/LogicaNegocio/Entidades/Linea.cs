@@ -10,21 +10,21 @@ namespace LogicaNegocio.Entidades
     {
         public int Id { get; set; }
         public double Precio { get; set; }
-        public int Stock { get; set; }
+        public int CantUnidades { get; set; }
         public Articulo ArticuloObj { get; set; }
 
         public Linea() { }
-        public Linea(int id, double precio, int stock, Articulo articuloObj)
+        public Linea(int id, double precio, int stock, Articulo articuloObj, int cantUnidades)
         {
             Id = id;
             Precio = precio;
-            Stock = stock;
+            CantUnidades = cantUnidades;
             ArticuloObj = articuloObj;
         }
-        public Linea(double precio, int stock, Articulo articuloObj)
+        public Linea(double precio, int stock, Articulo articuloObj, int cantUnidades)
         {
             Precio = precio;
-            Stock = stock;
+            CantUnidades = cantUnidades;
             ArticuloObj = articuloObj;
         }
     }

@@ -36,8 +36,8 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.HasKey("Id");
 
@@ -69,6 +69,9 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     b.Property<double>("Precio")
                         .HasColumnType("float");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -126,14 +129,14 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.Property<int>("ArticuloObjId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CantUnidades")
+                        .HasColumnType("int");
+
                     b.Property<int?>("PedidoId")
                         .HasColumnType("int");
 
                     b.Property<double>("Precio")
                         .HasColumnType("float");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

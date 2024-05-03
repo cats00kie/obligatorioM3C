@@ -23,9 +23,6 @@ namespace Papeleria.Web.Controllers
             _encontrarPedidos = encontrarPedidos;
         }
 
-
-
-
         // GET: PedidosController
         public ActionResult Index(string mensaje)
         {

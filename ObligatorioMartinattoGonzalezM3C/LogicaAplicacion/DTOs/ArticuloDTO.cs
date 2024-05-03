@@ -15,6 +15,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
         public double Precio { get; set; }
+        public int Stock {  get; set; }
         public ArticuloDTO() { }
         public ArticuloDTO(Articulo articulo)
         {
@@ -25,6 +26,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
                 Precio = articulo.Precio;
                 Codigo = articulo.Codigo;
                 Nombre = articulo.Nombre;
+                Stock = articulo.Stock;
             }
         }
     }

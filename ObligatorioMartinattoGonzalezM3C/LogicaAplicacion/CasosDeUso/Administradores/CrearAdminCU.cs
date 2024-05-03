@@ -22,10 +22,10 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
         {
             Administrador admin = AdministradorDTOMapper.FromDto(adminDto);
             Hash hash = new Hash();
-            adminDto.Password = hash.GetHashSha256(adminDto.Password);
             try
             {
                 admin.IsValid();
+                admin.Password = hash.GetHashSha256(adminDto.Password);
                 this._repositorioAdmin.Add(admin);
             }
             catch(Exception ex)

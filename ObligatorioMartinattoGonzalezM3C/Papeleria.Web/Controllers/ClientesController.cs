@@ -37,10 +37,10 @@ namespace Papeleria.Web.Controllers
             {
                 toShow = _encontrarClientes.FindAllClientes();
             }
-            if (filtro == "PorRazonSocial")
+            if (filtro == "PorNombre")
             {
-                string razon = (string)TempData["Razon"];
-                toShow = this._xnombreYapellido.GetClientesXnombreYapellido(razon);
+                string nombreCliente = (string)TempData["NombreCliente"];
+                toShow = this._xnombreYapellido.GetClientesXnombreYapellido(nombreCliente);
             }
             if(filtro == "PorMonto")
             {
@@ -51,14 +51,14 @@ namespace Papeleria.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult FiltrarPorRazonSocial(string razon)
+        public ActionResult FiltrarPorRazonSocial(string nombreCliente)
         {
-            if (razon == null)
+            if (nombreCliente == null)
             {
                 return RedirectToAction("Index");
             }
-            TempData["Razon"] = razon;
-            return RedirectToAction("Index", new { filtro = "PorRazonSocial" });
+            TempData["NombreCliente"] = nombreCliente;
+            return RedirectToAction("Index", new { filtro = "PorNombre" });
         }
 
         [HttpPost]
