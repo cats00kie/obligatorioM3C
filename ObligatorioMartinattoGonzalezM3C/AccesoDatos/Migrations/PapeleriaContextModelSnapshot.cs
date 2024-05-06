@@ -107,15 +107,16 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Iva")
-                        .HasColumnType("int");
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PlazoExpress")
+                    b.Property<int>("Valor")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Configuracion");
+                    b.ToTable("Configuraciones");
                 });
 
             modelBuilder.Entity("LogicaNegocio.Entidades.Linea", b =>

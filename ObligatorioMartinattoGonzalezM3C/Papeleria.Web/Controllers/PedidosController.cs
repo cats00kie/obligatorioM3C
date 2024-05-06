@@ -9,8 +9,6 @@ namespace Papeleria.Web.Controllers
 {
     public class PedidosController : Controller
     {
-
-        private static Configuracion configuracion = new Configuracion(22);
         private ICrearPedido _crearPedido;
         private IEncontrarPedidos _encontrarPedidos;
         private IEncontrarArticulos _encontrarArticulos;

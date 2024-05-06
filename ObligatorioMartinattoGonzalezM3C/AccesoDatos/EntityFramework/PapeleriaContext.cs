@@ -19,6 +19,7 @@ namespace AccesoDatos.EntityFramework
         public DbSet<Administrador> Admins { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Articulo> Articulos { get; set; }
+        public DbSet<Configuracion> Configuraciones { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

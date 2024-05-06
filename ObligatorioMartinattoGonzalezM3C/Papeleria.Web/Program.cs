@@ -27,9 +27,11 @@ namespace Papeleria.Web
             builder.Services.AddDistributedMemoryCache();
 
             builder.Services.AddScoped<IRepositorioAdministrador, RepositorioAdministradorEF>();
+            builder.Services.AddScoped<IRepositorioConfig, RepositorioConfiguracionEF>();
             builder.Services.AddScoped<IRepositorioCliente, RepositorioClienteEF>();
             builder.Services.AddScoped<IRepositorioArticulo, RepositorioArticuloEF>();
             builder.Services.AddScoped<IRepositorioPedido, RepositorioPedidoEF>();
+
 
             builder.Services.AddScoped<ILogin, LoginCU>();
             builder.Services.AddScoped<IGetArticulosAsc, GetArticulosAscCU>();

@@ -2,6 +2,7 @@
 using LogicaNegocio.ValueObjects;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,11 @@ namespace Papeleria.LogicaAplicacion.DTOs
     {
         public int Id { get; set; }
         public static int UltimoId { get; set; }
+        [Required(ErrorMessage = "Requerido.")]
+        [RegularExpression(@"^[a-zA-Z][-a-zA-Z ']*(?<![ '-])$", ErrorMessage = "El nombre o apellido es inválido.")]
         public string Nombre { get; set; }
+        [Required(ErrorMessage = "Requerido.")]
+        [RegularExpression(@"^[a-zA-Z][-a-zA-Z ']*(?<![ '-])$", ErrorMessage = "El nombre o apellido es inválido.")]
 
         public string Apellido { get; set; }
         public UsuarioDTO(){}

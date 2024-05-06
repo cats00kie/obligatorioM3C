@@ -34,7 +34,10 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
         public IEnumerable<Cliente> ClientesXmonto(double monto)
         {
             List<Cliente> clientes = new List<Cliente>();
-            List<Pedido> pedidos = this._context.Pedidos.Where(pedido => pedido.CalcularPrecio() >= monto).ToList();
+            List<Pedido> pedidos = this._context.Pedidos
+                .Where(pedido => pedido.CalcularPrecio
+                ((this._context.Configuraciones.
+                Where(config => config.Nombre == "IVA").FirstOrDefault()).Valor) >= monto).ToList();
             foreach(Pedido pedido in pedidos)
             {
                 clientes.Add(pedido.ClienteObj);
@@ -44,7 +47,8 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
 
         public IEnumerable<Cliente> ClientesXnombreYapellido(string especifica)
         {
-            return this._context.Clientes.Where(cliente => cliente.NombreCliente.Nombre.Contains(especifica) || cliente.NombreCliente.Apellido.Contains(especifica)).ToList();
+            return this._context.Clientes.Where(cliente => cliente.NombreCliente.Nombre.Contains(especifica) 
+            || cliente.NombreCliente.Apellido.Contains(especifica)).ToList();
         }
 
         public IEnumerable<Cliente> FindAll()

@@ -10,29 +10,63 @@ namespace AccesoDatos.EntityFramework.Repositorios
 {
     public class RepositorioPedidoEF : IRepositorioPedido
     {
+
+        PapeleriaContext _context;
+        public RepositorioPedidoEF()
+        {
+            this._context = new PapeleriaContext();
+        }
         public bool Add(Pedido aAgregar)
         {
-            throw new NotImplementedException();
+            try
+            {
+                this._context.Pedidos.Add(aAgregar);
+                this._context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public IEnumerable<Pedido> FindAll()
         {
-            throw new NotImplementedException();
+            return this._context.Pedidos;
         }
 
         public Pedido FindByID(int id)
         {
-            throw new NotImplementedException();
+            return this._context.Pedidos.Where(pedido => pedido.Id == id).FirstOrDefault();
         }
 
         public bool Remove(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Pedido aBorrar = FindByID(id);
+                this._context.Pedidos.Remove(aBorrar);
+                this._context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public bool Update(Pedido aModificar)
         {
-            throw new NotImplementedException();
+            try
+            {
+                this._context.Pedidos.Update(aModificar);
+                this._context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

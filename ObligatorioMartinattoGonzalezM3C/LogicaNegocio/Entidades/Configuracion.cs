@@ -9,17 +9,19 @@ namespace LogicaNegocio.Entidades
     public class Configuracion
     {
         public int Id { get; set; }
-        public int Iva { get; set; }
-        public int PlazoExpress { get; set; }
+        public string Nombre { get; set; }
+        public int Valor { get; set; }
         public Configuracion() { }
-        public Configuracion(int id,  int iva)
+        public Configuracion(int id,  string nombre, int valor)
         {
             Id = id;
-            Iva = iva;
+            Nombre = nombre;
+            Valor = valor;
         }
-        public Configuracion(int iva)
+        public Configuracion(string nombre, int valor)
         {
-            Iva = iva;
+            Nombre = nombre;
+            Valor = valor;
         }
     }
 }

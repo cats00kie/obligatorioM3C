@@ -15,7 +15,6 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
 {
     public class LoginCU : ILogin
     {
-        //TODO: Pedirle al EF que traiga el usuario por Email, se des-hashea la password y se verifica, devuelve el usuario de ser true o un UsuarioNoValidoException
         private IRepositorioAdministrador _repositorioAdmin;
         public LoginCU(IRepositorioAdministrador repositorioAdmin)
         {
@@ -28,8 +27,11 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
             
             if (admin != null)
             {
-                Hash hash = new Hash();
-                if(hash.GetHashSha256(password) == admin.Password) return true;
+                Hash hash = new Hash(); 
+                if(hash.GetHashSha256(password) == admin.Password) return true; 
+                //Hashea la contraseña.
+                //Verifica si es la misma que ya está en la BD
+                //Si es así, devuelve true.
                 else return false;
             }
             else return false;
