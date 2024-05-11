@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Pedido;
 
 namespace Papeleria.Web.Controllers
@@ -11,14 +12,16 @@ namespace Papeleria.Web.Controllers
     {
         private ICrearPedido _crearPedido;
         private IEncontrarPedidos _encontrarPedidos;
+        private IEncontrarClientes _encontrarClientes;
         private IEncontrarArticulos _encontrarArticulos;
         private static PedidoDTO tempPedido;
 
-        public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos)
+        public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos, IEncontrarClientes encontrarClientes)
         {
             _crearPedido = crearPedido;
             _encontrarArticulos = encontrarArticulos;
             _encontrarPedidos = encontrarPedidos;
+            _encontrarClientes = encontrarClientes;
         }
 
         // GET: PedidosController
@@ -47,6 +50,8 @@ namespace Papeleria.Web.Controllers
             {
                 ViewBag.Lineas = tempPedido.Lineas;
             }
+            ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
+            ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
             return View();
         }
 
@@ -70,6 +75,26 @@ namespace Papeleria.Web.Controllers
                 return View();
             }
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddLinea(LineaDTO linea)
+        {
+            try
+            {
+                if(tempPedido == null)
+                {
+                    tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };
+                }
+                tempPedido.Lineas.Add(linea);
+                return this.RedirectToAction(nameof(Create));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
 
         // GET: PedidosController/Edit/5
         public ActionResult Edit(int id)

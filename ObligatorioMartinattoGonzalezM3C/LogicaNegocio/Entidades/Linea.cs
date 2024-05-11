@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace LogicaNegocio.Entidades
         public int Id { get; set; }
         public double Precio { get; set; }
         public int CantUnidades { get; set; }
+        [ForeignKey(nameof(Articulo))] public int ArticuloId { get; set; }
         public Articulo ArticuloObj { get; set; }
 
         public Linea() { }

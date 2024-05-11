@@ -3,64 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\Migrations\\20240506134940_AgregadoImpuestosDeFokinNuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AccesoDatos\\Migrations\\20240506134940_AgregadoImpuestosDeFokinNuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositorioclienteef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositorioclienteef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Clientes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositorioconfiguracionef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositorioconfiguracionef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\pedidodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\pedidodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\papeleriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\papeleriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositoriopedidoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositoriopedidoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\interfacesrepositorio\\irepositorioconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfacesrepositorio\\irepositorioconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\configuraciondtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\configuraciondtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\administradordtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\administradordtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\dtos\\lineadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\dtos\\lineadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicanegocio\\entidades\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDFCB63C-70B6-47B4-B8E0-0D873960CF8E}|LogicaNegocio\\Papeleria.LogicaNegocio.csproj|solutionrelative:logicanegocio\\entidades\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\papeleria.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D0EE0FA-88D4-403D-8825-F941D4120D50}|Papeleria.Web\\Papeleria.Web.csproj|solutionrelative:papeleria.web\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\administradores\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\administradores\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\lineadtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\lineadtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,154 +41,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 310,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240506134940_AgregadoImpuestosDeFokinNuevo.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\Migrations\\20240506134940_AgregadoImpuestosDeFokinNuevo.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\Migrations\\20240506134940_AgregadoImpuestosDeFokinNuevo.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\Migrations\\20240506134940_AgregadoImpuestosDeFokinNuevo.cs",
-              "RelativeToolTip": "AccesoDatos\\Migrations\\20240506134940_AgregadoImpuestosDeFokinNuevo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:49:40.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Program.cs",
-              "RelativeDocumentMoniker": "Papeleria.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Program.cs",
-              "RelativeToolTip": "Papeleria.Web\\Program.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAwDwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:41:39.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositorioConfiguracionEF.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioConfiguracionEF.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioConfiguracionEF.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioConfiguracionEF.cs",
-              "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioConfiguracionEF.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCUAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:27:04.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RepositorioClienteEF.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioClienteEF.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioClienteEF.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioClienteEF.cs",
-              "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioClienteEF.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAD4vycAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:28:54.623Z",
+              "Title": "dbo.Clientes [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Clientes.sql",
+              "ToolTip": "dbo.Clientes [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-08T13:34:38.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PapeleriaContext.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "RelativeToolTip": "AccesoDatos\\EntityFramework\\PapeleriaContext.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAvwBUAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:26:35.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PedidosController.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\PedidosController.cs",
-              "RelativeDocumentMoniker": "Papeleria.Web\\Controllers\\PedidosController.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\PedidosController.cs",
-              "RelativeToolTip": "Papeleria.Web\\Controllers\\PedidosController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:33:11.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepositorioPedidoEF.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioPedidoEF.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioPedidoEF.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioPedidoEF.cs",
-              "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioPedidoEF.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:37:29.228Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "Papeleria.Web\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T13:28:49.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IRepositorioConfig.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorioConfig.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\InterfacesRepositorio\\IRepositorioConfig.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\InterfacesRepositorio\\IRepositorioConfig.cs",
-              "RelativeToolTip": "LogicaNegocio\\InterfacesRepositorio\\IRepositorioConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:31:01.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdministradorDTOMapper.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "RelativeToolTip": "LogicaAplicacion\\Mappers\\AdministradorDTOMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:25:18.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ConfiguracionDTOMapper.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\ConfiguracionDTOMapper.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\ConfiguracionDTOMapper.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\ConfiguracionDTOMapper.cs",
-              "RelativeToolTip": "LogicaAplicacion\\Mappers\\ConfiguracionDTOMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:24:55.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "RelativeToolTip": "LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:24:32.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "PedidoDTO.cs",
               "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\PedidoDTO.cs",
               "RelativeDocumentMoniker": "LogicaAplicacion\\DTOs\\PedidoDTO.cs",
@@ -225,46 +76,72 @@
               "RelativeToolTip": "LogicaAplicacion\\DTOs\\PedidoDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:24:22.856Z",
+              "WhenOpened": "2024-05-08T12:18:01.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Configuracion.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Configuracion.cs",
-              "RelativeDocumentMoniker": "LogicaNegocio\\Entidades\\Configuracion.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaNegocio\\Entidades\\Configuracion.cs",
-              "RelativeToolTip": "LogicaNegocio\\Entidades\\Configuracion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T13:21:15.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginCU.cs",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\Administradores\\LoginCU.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T11:53:29.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Papeleria.Web\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Papeleria.Web\\Views\\Login\\Index.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAADwvyUAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Pedidos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Views\\Pedidos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Views\\Pedidos\\Create.cshtml",
+              "RelativeToolTip": "Papeleria.Web\\Views\\Pedidos\\Create.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAADwvzgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-06T12:11:29.296Z",
+              "WhenOpened": "2024-05-08T12:04:29.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LineaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\LineaDTO.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\DTOs\\LineaDTO.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\LineaDTO.cs",
+              "RelativeToolTip": "LogicaAplicacion\\DTOs\\LineaDTO.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIA2wBMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:56:03.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LineaDTOMapper.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\LineaDTOMapper.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\LineaDTOMapper.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\LineaDTOMapper.cs",
+              "RelativeToolTip": "LogicaAplicacion\\Mappers\\LineaDTOMapper.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAjwBgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:55:57.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PedidoDTOMapper.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\PedidoDTOMapper.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\PedidoDTOMapper.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\PedidoDTOMapper.cs",
+              "RelativeToolTip": "LogicaAplicacion\\Mappers\\PedidoDTOMapper.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAjwC8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:55:42.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "Papeleria.Web\\Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\Papeleria.Web\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "Papeleria.Web\\Controllers\\PedidosController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAlwEYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:55:20.352Z",
               "EditorCaption": ""
             }
           ]

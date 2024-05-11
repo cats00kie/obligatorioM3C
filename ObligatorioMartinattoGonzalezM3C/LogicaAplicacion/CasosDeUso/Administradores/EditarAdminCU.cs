@@ -1,4 +1,5 @@
-﻿using LogicaNegocio.InterfacesRepositorio;
+﻿using LogicaNegocio.Entidades;
+using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 using Papeleria.LogicaAplicacion.Mappers;
@@ -19,7 +20,19 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
         }
         public bool EditarAdmin(AdministradorDTO aModificar)
         {
-            return this._repositorioAdmin.Update(AdministradorDTOMapper.FromDto(aModificar));
+            Administrador admin = AdministradorDTOMapper.FromDto(aModificar);
+            Hash hash = new Hash();
+            try
+            {
+                admin.IsValid();
+                admin.Password = hash.GetHashSha256(aModificar.Password);
+                return this._repositorioAdmin.Update(admin);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

@@ -127,7 +127,7 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ArticuloObjId")
+                    b.Property<int>("ArticuloId")
                         .HasColumnType("int");
 
                     b.Property<int>("CantUnidades")
@@ -141,7 +141,7 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ArticuloObjId");
+                    b.HasIndex("ArticuloId");
 
                     b.HasIndex("PedidoId");
 
@@ -159,7 +159,7 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.Property<bool>("Anulado")
                         .HasColumnType("bit");
 
-                    b.Property<int>("ClienteObjId")
+                    b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
                     b.Property<int>("ConfiguracionObjId")
@@ -175,7 +175,7 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClienteObjId");
+                    b.HasIndex("ClienteId");
 
                     b.HasIndex("ConfiguracionObjId");
 
@@ -276,7 +276,7 @@ namespace Papeleria.AccesoDatos.Migrations
                 {
                     b.HasOne("LogicaNegocio.Entidades.Articulo", "ArticuloObj")
                         .WithMany()
-                        .HasForeignKey("ArticuloObjId")
+                        .HasForeignKey("ArticuloId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -291,7 +291,7 @@ namespace Papeleria.AccesoDatos.Migrations
                 {
                     b.HasOne("LogicaNegocio.Entidades.Cliente", "ClienteObj")
                         .WithMany()
-                        .HasForeignKey("ClienteObjId")
+                        .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

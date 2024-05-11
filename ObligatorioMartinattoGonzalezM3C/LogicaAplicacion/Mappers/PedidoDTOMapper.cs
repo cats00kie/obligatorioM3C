@@ -16,9 +16,9 @@ namespace Papeleria.LogicaAplicacion.Mappers
             return new PedidoDTO
             {
                 Id = pedido.Id,
-                ClienteObj = pedido.ClienteObj,
+                ClienteId = pedido.ClienteId,
                 FechaPrometida = pedido.FechaPrometida,
-                Lineas = pedido.Lineas,
+                Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.toDTO(linea)).ToList(),
                 Anulado = pedido.Anulado,
                 ModificadorRecargo = pedido.ModificadorRecargo,
                 DistanciaKm = pedido.DistanciaKm
@@ -30,20 +30,29 @@ namespace Papeleria.LogicaAplicacion.Mappers
             return new PedidoDTO
             {
                 Id = pedido.Id,
-                ClienteObj = pedido.ClienteObj,
+                ClienteId = pedido.ClienteId,
                 FechaPrometida = pedido.FechaPrometida,
-                Lineas = pedido.Lineas,
+                Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.toDTO(linea)).ToList(),
                 Anulado = pedido.Anulado,
                 ModificadorRecargo = pedido.ModificadorRecargo,
-                DistanciaKm = pedido.ModificadorMismoDia
+                ModificadorMismoDia = pedido.ModificadorMismoDia
             };
         }
         public static PedidoComun FromDtoComun(PedidoDTO pedido)
         {
             if (pedido != null)
             {
-                return new PedidoComun(pedido.Id, pedido.ClienteObj, pedido.FechaPrometida,
-                    pedido.ModificadorRecargo, pedido.DistanciaKm, pedido.ConfiguracionObj);
+                return new PedidoComun
+                {
+                    Id = pedido.Id,
+                    ClienteId = pedido.ClienteId,
+                    FechaPrometida = pedido.FechaPrometida,
+                    Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.FromDTO(linea)).ToList(),
+                    Anulado = pedido.Anulado,
+                    ModificadorRecargo = pedido.ModificadorRecargo,
+                    DistanciaKm = pedido.DistanciaKm
+
+                };
             }
             else throw new NotImplementedException();
         }
@@ -51,8 +60,16 @@ namespace Papeleria.LogicaAplicacion.Mappers
         {
             if (pedido != null)
             {
-                return new PedidoExpress(pedido.Id, pedido.ClienteObj, pedido.FechaPrometida,
-                    pedido.ModificadorRecargo, pedido.ModificadorMismoDia);
+                return new PedidoExpress
+                {
+                    Id = pedido.Id,
+                    ClienteId = pedido.ClienteId,
+                    FechaPrometida = pedido.FechaPrometida,
+                    Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.FromDTO(linea)).ToList(),
+                    Anulado = pedido.Anulado,
+                    ModificadorRecargo = pedido.ModificadorRecargo,
+                    ModificadorMismoDia = pedido.ModificadorMismoDia
+                };
             }
             else throw new NotImplementedException();
         }
