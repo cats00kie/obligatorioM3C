@@ -12,7 +12,13 @@ namespace Papeleria.LogicaAplicacion.Mappers
     {
         public static LineaDTO toDTO(Linea linea)
         {
-            return new LineaDTO(linea);
+            return new LineaDTO
+            {
+                Id = linea.Id,
+                Precio = linea.Precio,
+                CantUnidades = linea.CantUnidades,
+                ArticuloId = linea.ArticuloId
+            };
         }
 
         public static Linea FromDTO(LineaDTO linea)

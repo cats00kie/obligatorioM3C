@@ -25,6 +25,7 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
             try
             {
                 admin.IsValid();
+                admin.PasswordSinEncript = admin.Password;
                 admin.Password = hash.GetHashSha256(adminDto.Password);
                 this._repositorioAdmin.Add(admin);
             }

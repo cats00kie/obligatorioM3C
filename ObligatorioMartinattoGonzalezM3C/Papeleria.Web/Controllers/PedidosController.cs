@@ -14,14 +14,19 @@ namespace Papeleria.Web.Controllers
         private IEncontrarPedidos _encontrarPedidos;
         private IEncontrarClientes _encontrarClientes;
         private IEncontrarArticulos _encontrarArticulos;
+        private IEncontrarPrecioPedido _encontrarPrecioPedido;
+        private IEncontrarXIdArticulo _encontrarXIdArticulo;
         private static PedidoDTO tempPedido;
 
-        public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos, IEncontrarClientes encontrarClientes)
+        public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos, 
+            IEncontrarClientes encontrarClientes, IEncontrarPrecioPedido encontrarPrecioPedido, IEncontrarXIdArticulo encontrarXIdArticulo)
         {
             _crearPedido = crearPedido;
             _encontrarArticulos = encontrarArticulos;
             _encontrarPedidos = encontrarPedidos;
             _encontrarClientes = encontrarClientes;
+            _encontrarPrecioPedido = encontrarPrecioPedido;
+            _encontrarXIdArticulo = encontrarXIdArticulo;
         }
 
         // GET: PedidosController
@@ -44,7 +49,7 @@ namespace Papeleria.Web.Controllers
         }
 
         // GET: PedidosController/Create
-        public ActionResult Create(string mensaje)
+        public ActionResult Create(string mensaje, Boolean esExpress)
         {
             if (tempPedido != null)
             {
@@ -52,6 +57,7 @@ namespace Papeleria.Web.Controllers
             }
             ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
             ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
+            ViewBag.PrecioPedido = this._encontrarPrecioPedido.EncontrarPrecioPedido(tempPedido, esExpress);
             return View();
         }
 
@@ -78,10 +84,12 @@ namespace Papeleria.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AddLinea(LineaDTO linea)
+        public ActionResult AddLinea(PedidoDTO pedido, int articuloId, int cantUnidades)
         {
             try
             {
+                ArticuloDTO articulo = _encontrarXIdArticulo.FindById(articuloId);
+                LineaDTO linea = new LineaDTO { ArticuloId = articuloId, CantUnidades = cantUnidades, Precio = articulo.Precio * cantUnidades };
                 if(tempPedido == null)
                 {
                     tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };

@@ -25,7 +25,6 @@
                 </select>
             </div>
             <br />
-            <br />
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="esExpress">
                 <label class="form-check-label" for="flexCheckDefault">
@@ -33,35 +32,79 @@
                 </label>
             </div>
             <br />
-            <br />
             <div class="form-group">
                 <label asp-for="FechaPrometida" class="control-label"></label>
                 <input asp-for="FechaPrometida" class="form-control" />
                 <span asp-validation-for="FechaPrometida" class="text-danger"></span>
             </div>
             <br />
-            <br />
             <div class="form-group">
 
-                    Lineas:
-                    @if (ViewBag.Lineas != null && ViewBag.Lineas.Count > 0)
-                    {
-                        @foreach (LineaDTO linea in ViewBag.Lineas)
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <div class="card-header">
+                            Lineas
+                        </div>
+                        @if (ViewBag.Lineas != null && ViewBag.Lineas.Count > 0)
                         {
-                            <p>@linea.Id + " " + linea.CantUnidades</p>
+                            @foreach (LineaDTO linea in ViewBag.Lineas)
+                            {
+                            ArticuloDTO elArticulo = new ArticuloDTO();
+                            @if (ViewBag.Articulos != null && ViewBag.Articulos.Count > 0)
+                                {
+                                    @foreach (ArticuloDTO articulo in ViewBag.Articulos)
+                                    {
+                                        @if (linea.ArticuloId == articulo.Id) {
+                                            elArticulo = articulo;
+                                        }
+                                    }
+                                }
+                            <li class="list-group-item">
+                                @elArticulo.Nombre | @(elArticulo.Precio * linea.CantUnidades) | @linea.CantUnidades
+                            </li>
+                            }
                         }
-                    }
-
+                    </ul>
+                </div>
             </div>
             <br />
-            <br />
+            <div class="card w-75 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total</h5>
+                    <p class="card-text">@ViewBag.PrecioPedido $</p>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br />
+        <form asp-action="AddLinea">
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="ArticuloId" class="control-label">Articulo</label>
+                    <select id="ArticuloId" class="form-control" name="articuloId">
+                        @if (ViewBag.Articulos != null && ViewBag.Articulos.Count > 0)
+                        {
+                            @foreach (ArticuloDTO articulo in ViewBag.Articulos)
+                            {
+                                <option value="@articulo.Id">@articulo.Nombre : @articulo.Precio$</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="cantidadUni" class="form-label">Cantidad Unidades</label>
+                    <input class="form-control" type="number" name="cantUnidades" id="cantidadUni">
+                </div>
+                <br />
+                <input type="submit" value="AgregarLinea" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

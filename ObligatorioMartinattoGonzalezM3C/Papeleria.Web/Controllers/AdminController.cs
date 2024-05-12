@@ -42,10 +42,6 @@ namespace Papeleria.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(AdministradorDTO adminDto)
         {
-                if (!ModelState.IsValid)
-                {
-                    return View(adminDto);
-                }
             try
             {
                 this._crearAdmin.CrearAdmin(adminDto);

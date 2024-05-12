@@ -24,8 +24,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
+                <input asp-for="PasswordSinEncript" type="password" class="form-control" value="@Model.PasswordSinEncript" />
+                <span asp-validation-for="PasswordSinEncript" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="Email" />
             <input type="hidden" asp-for="Id" />

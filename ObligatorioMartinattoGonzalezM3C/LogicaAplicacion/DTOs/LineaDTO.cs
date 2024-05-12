@@ -13,15 +13,5 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public double Precio { get; set; }
         public int CantUnidades { get; set; }
         public int ArticuloId { get; set; }
-
-        public LineaDTO(Linea linea)
-        {
-            if(linea != null) { 
-                Id = linea.Id;
-                Precio = linea.Precio;
-                CantUnidades = linea.CantUnidades;
-                ArticuloId = linea.ArticuloId;
-            }
-        }
     }
 }

@@ -68,5 +68,12 @@ namespace AccesoDatos.EntityFramework.Repositorios
                 throw ex;
             }
         }
+
+        public double CalcularPrecio(Pedido pedido)
+        {
+            return pedido.CalcularPrecio((this._context.Configuraciones.
+                Where(config => config.Nombre == "IVA").FirstOrDefault()).Valor);
+        }
+
     }
 }

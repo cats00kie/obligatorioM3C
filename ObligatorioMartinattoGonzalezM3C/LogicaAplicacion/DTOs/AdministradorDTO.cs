@@ -21,6 +21,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
          ErrorMessage = "La contraseña debe tener al menos una letra en minuscula, mayuscula, un numero, y uno de estos simbolos: . ; , ! ")]
          [StringLength(200, MinimumLength = 6, ErrorMessage = "La Contraseña debe ser de al menos 6 caracteres")]
         public string Password { get; set; }
+        public string PasswordSinEncript {  get; set; }
         public AdministradorDTO() { }
         public AdministradorDTO(Administrador admin)
         {
@@ -29,6 +30,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
                 this.Id = admin.Id;
                 this.Email = admin.Email;
                 this.Password = admin.Password;
+                this.PasswordSinEncript = admin.PasswordSinEncript;
                 this.Nombre = admin.NombreCompleto.Nombre;
                 this.Apellido = admin.NombreCompleto.Apellido;
             }

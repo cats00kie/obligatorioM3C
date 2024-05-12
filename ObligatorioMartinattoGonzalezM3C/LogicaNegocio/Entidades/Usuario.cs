@@ -25,6 +25,12 @@ namespace LogicaNegocio.Entidades
         ErrorMessage = "La contraseña debe tener al menos una letra en minuscula, mayuscula, un numero, y uno de estos simbolos: . ; , ! ")]
         [StringLength(200, MinimumLength = 6, ErrorMessage = "La Contraseña debe ser de al menos 6 caracteres")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Requerido.")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.;,!])[a-zA-Z\d.;,!]{6,}$",
+        ErrorMessage = "La contraseña debe tener al menos una letra en minuscula, mayuscula, un numero, y uno de estos simbolos: . ; , ! ")]
+        [StringLength(200, MinimumLength = 6, ErrorMessage = "La Contraseña debe ser de al menos 6 caracteres")]
+        public string PasswordSinEncript {  get; set; }
         public static int UltimoId { get; set; }
         [Required(ErrorMessage = "Requerido.")]
         [RegularExpression(@"^[a-zA-Z][-a-zA-Z ']*(?<![ '-])$", ErrorMessage = "El nombre o apellido es inválido.")]

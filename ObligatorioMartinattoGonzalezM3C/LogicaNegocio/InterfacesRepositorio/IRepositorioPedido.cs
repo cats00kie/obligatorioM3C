@@ -9,5 +9,6 @@ namespace LogicaNegocio.InterfacesRepositorio
 {
     public interface IRepositorioPedido : IRepositorio<Pedido>
     {
+        public double CalcularPrecio(Pedido pedido);
     }
 }

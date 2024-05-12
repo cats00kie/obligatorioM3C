@@ -51,7 +51,7 @@ namespace Papeleria.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult FiltrarPorRazonSocial(string nombreCliente)
+        public ActionResult FiltrarPorNombre (string nombreCliente)
         {
             if (nombreCliente == null)
             {

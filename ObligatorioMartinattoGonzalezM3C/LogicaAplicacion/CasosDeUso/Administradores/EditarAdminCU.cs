@@ -24,8 +24,10 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
             Hash hash = new Hash();
             try
             {
+                admin.Password = aModificar.PasswordSinEncript;
+                admin.PasswordSinEncript = aModificar.PasswordSinEncript;
                 admin.IsValid();
-                admin.Password = hash.GetHashSha256(aModificar.Password);
+                admin.Password = hash.GetHashSha256(aModificar.PasswordSinEncript);
                 return this._repositorioAdmin.Update(admin);
             }
             catch (Exception ex)

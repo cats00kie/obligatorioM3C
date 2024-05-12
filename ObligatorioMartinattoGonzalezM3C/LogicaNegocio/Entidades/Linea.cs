@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Papeleria.LogicaNegocio.Excepciones;
+using Papeleria.LogicaNegocio.InterfacesEntidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LogicaNegocio.Entidades
 {
-    public class Linea
+    public class Linea : IValid
     {
         public int Id { get; set; }
         public double Precio { get; set; }
@@ -16,18 +18,24 @@ namespace LogicaNegocio.Entidades
         public Articulo ArticuloObj { get; set; }
 
         public Linea() { }
-        public Linea(int id, double precio, int stock, Articulo articuloObj, int cantUnidades)
+        public Linea(int id, int stock, Articulo articuloObj, int cantUnidades)
         {
             Id = id;
-            Precio = precio;
             CantUnidades = cantUnidades;
             ArticuloObj = articuloObj;
+            Precio = articuloObj.Precio * cantUnidades;
         }
         public Linea(double precio, int stock, Articulo articuloObj, int cantUnidades)
         {
             Precio = precio;
             CantUnidades = cantUnidades;
             ArticuloObj = articuloObj;
+        }
+
+        public void IsValid()
+        {
+            if (CantUnidades > ArticuloObj.Stock) throw new LineaNoValidaException("Cantidad de unidades supera el stock.");
+            if (ArticuloObj == null) throw new LineaNoValidaException("Articulo no es valido.");
         }
     }
 }
