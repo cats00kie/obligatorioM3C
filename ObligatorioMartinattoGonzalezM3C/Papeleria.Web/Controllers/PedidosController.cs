@@ -17,6 +17,7 @@ namespace Papeleria.Web.Controllers
         private IEncontrarPrecioPedido _encontrarPrecioPedido;
         private IEncontrarXIdArticulo _encontrarXIdArticulo;
         private static PedidoDTO tempPedido;
+        private static List<ArticuloDTO> tempArticulos;
 
         public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos, 
             IEncontrarClientes encontrarClientes, IEncontrarPrecioPedido encontrarPrecioPedido, IEncontrarXIdArticulo encontrarXIdArticulo)
@@ -74,11 +75,12 @@ namespace Papeleria.Web.Controllers
                 }
                 this._crearPedido.CrearPedido(pedido, esExpress);
                 tempPedido = null;
+                tempArticulos = null;
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return this.RedirectToAction(nameof(Create));
             }
         }
 
@@ -86,20 +88,55 @@ namespace Papeleria.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult AddLinea(PedidoDTO pedido, int articuloId, int cantUnidades)
         {
-            try
+            ArticuloDTO articulo = _encontrarXIdArticulo.FindById(articuloId);
+            if (tempArticulos == null)
             {
-                ArticuloDTO articulo = _encontrarXIdArticulo.FindById(articuloId);
-                LineaDTO linea = new LineaDTO { ArticuloId = articuloId, CantUnidades = cantUnidades, Precio = articulo.Precio * cantUnidades };
-                if(tempPedido == null)
+                tempArticulos = new List<ArticuloDTO>();
+                if (articulo.Stock >= cantUnidades && cantUnidades > 0)
                 {
-                    tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };
+                    articulo.Stock -= cantUnidades;
+                    tempArticulos.Add(articulo);
+                    LineaDTO linea = new LineaDTO { ArticuloId = articuloId, CantUnidades = cantUnidades, Precio = articulo.Precio * cantUnidades };
+                    if (tempPedido == null)
+                    {
+                        tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };
+                    }
+                    tempPedido.Lineas.Add(linea);
+                    return this.RedirectToAction(nameof(Create));
                 }
-                tempPedido.Lineas.Add(linea);
-                return this.RedirectToAction(nameof(Create));
+                else return this.RedirectToAction(nameof(Create));
             }
-            catch
-            {
-                return View();
+            else {
+                foreach (ArticuloDTO unArticulo in tempArticulos)
+                {
+                    if (unArticulo.Id == articuloId)
+                    {
+                        if (unArticulo.Stock >= cantUnidades && cantUnidades > 0)
+                        {
+                            unArticulo.Stock = unArticulo.Stock - cantUnidades;
+                            LineaDTO linea = new LineaDTO { ArticuloId = articuloId, CantUnidades = cantUnidades, Precio = articulo.Precio * cantUnidades };
+                            if (tempPedido == null)
+                            {
+                                tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };
+                            }
+                            tempPedido.Lineas.Add(linea);
+                            return this.RedirectToAction(nameof(Create));
+                        }
+                        else return this.RedirectToAction(nameof(Create));
+                    }
+                }
+                if (articulo.Stock >= cantUnidades && cantUnidades > 0)
+                {
+                    tempArticulos.Add(articulo);
+                    LineaDTO linea = new LineaDTO { ArticuloId = articuloId, CantUnidades = cantUnidades, Precio = articulo.Precio * cantUnidades };
+                    if (tempPedido == null)
+                    {
+                        tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };
+                    }
+                    tempPedido.Lineas.Add(linea);
+                    return this.RedirectToAction(nameof(Create));
+                }
+                else return this.RedirectToAction(nameof(Create));
             }
         }
 

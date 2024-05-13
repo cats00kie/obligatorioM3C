@@ -20,8 +20,15 @@ namespace AccesoDatos.EntityFramework.Repositorios
         {
             try
             {
+                aAgregar.ConfiguracionObj = this._context.Configuraciones.Where(config => config.Nombre == "IVA").FirstOrDefault();
                 this._context.Pedidos.Add(aAgregar);
                 this._context.SaveChanges();
+                Articulo elArticulo;
+                foreach(Linea linea in aAgregar.Lineas)
+                {
+                    elArticulo = this._context.Articulos.Where(articulo => articulo.Id == linea.ArticuloId).FirstOrDefault();
+                    elArticulo.Stock = elArticulo.Stock - linea.CantUnidades;
+                }
                 return true;
             }
             catch (Exception ex)

@@ -19,7 +19,7 @@
                 @if (ViewBag.Clientes != null && ViewBag.Clientes.Count > 0)
                 {
                     @foreach(ClienteDTO cliente in ViewBag.Clientes){
-                        <option value="cliente.Id">@cliente.RazonSocial</option>
+                        <option value="@cliente.Id">@cliente.RazonSocial</option>
                     }
                 }
                 </select>
@@ -34,38 +34,8 @@
             <br />
             <div class="form-group">
                 <label asp-for="FechaPrometida" class="control-label"></label>
-                <input asp-for="FechaPrometida" class="form-control" />
+                <input asp-for="FechaPrometida" class="form-control"/>
                 <span asp-validation-for="FechaPrometida" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="form-group">
-
-                <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <div class="card-header">
-                            Lineas
-                        </div>
-                        @if (ViewBag.Lineas != null && ViewBag.Lineas.Count > 0)
-                        {
-                            @foreach (LineaDTO linea in ViewBag.Lineas)
-                            {
-                            ArticuloDTO elArticulo = new ArticuloDTO();
-                            @if (ViewBag.Articulos != null && ViewBag.Articulos.Count > 0)
-                                {
-                                    @foreach (ArticuloDTO articulo in ViewBag.Articulos)
-                                    {
-                                        @if (linea.ArticuloId == articulo.Id) {
-                                            elArticulo = articulo;
-                                        }
-                                    }
-                                }
-                            <li class="list-group-item">
-                                @elArticulo.Nombre | @(elArticulo.Precio * linea.CantUnidades) | @linea.CantUnidades
-                            </li>
-                            }
-                        }
-                    </ul>
-                </div>
             </div>
             <br />
             <div class="card w-75 mb-3">
@@ -79,6 +49,35 @@
             </div>
         </form>
         <br />
+        <div class="form-group">
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <div class="card-header">
+                        Lineas
+                    </div>
+                    @if (ViewBag.Lineas != null && ViewBag.Lineas.Count > 0)
+                    {
+                        @foreach (LineaDTO linea in ViewBag.Lineas)
+                        {
+                            ArticuloDTO elArticulo = new ArticuloDTO();
+                            @if (ViewBag.Articulos != null && ViewBag.Articulos.Count > 0)
+                            {
+                                @foreach (ArticuloDTO articulo in ViewBag.Articulos)
+                                {
+                                    @if (linea.ArticuloId == articulo.Id)
+                                    {
+                                        elArticulo = articulo;
+                                    }
+                                }
+                            }
+                            <li class="list-group-item">
+                                @elArticulo.Nombre | @(elArticulo.Precio * linea.CantUnidades) | @linea.CantUnidades
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
         <form asp-action="AddLinea">
             <div class="form-group">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
