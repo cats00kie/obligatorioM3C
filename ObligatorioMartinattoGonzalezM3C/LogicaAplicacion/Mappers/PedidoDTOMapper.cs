@@ -20,8 +20,6 @@ namespace Papeleria.LogicaAplicacion.Mappers
                 FechaPrometida = pedido.FechaPrometida,
                 Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.toDTO(linea)).ToList(),
                 Anulado = pedido.Anulado,
-                ModificadorRecargo = pedido.ModificadorRecargo,
-                DistanciaKm = pedido.DistanciaKm
             };
         }
         public static PedidoDTO FromExpress(PedidoExpress pedido)
@@ -34,8 +32,6 @@ namespace Papeleria.LogicaAplicacion.Mappers
                 FechaPrometida = pedido.FechaPrometida,
                 Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.toDTO(linea)).ToList(),
                 Anulado = pedido.Anulado,
-                ModificadorRecargo = pedido.ModificadorRecargo,
-                ModificadorMismoDia = pedido.ModificadorMismoDia
             };
         }
         public static PedidoComun FromDtoComun(PedidoDTO pedido)
@@ -49,9 +45,6 @@ namespace Papeleria.LogicaAplicacion.Mappers
                     FechaPrometida = pedido.FechaPrometida,
                     Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.FromDTO(linea)).ToList(),
                     Anulado = pedido.Anulado,
-                    ModificadorRecargo = pedido.ModificadorRecargo,
-                    DistanciaKm = pedido.DistanciaKm
-
                 };
             }
             else throw new NotImplementedException();
@@ -67,8 +60,6 @@ namespace Papeleria.LogicaAplicacion.Mappers
                     FechaPrometida = pedido.FechaPrometida,
                     Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.FromDTO(linea)).ToList(),
                     Anulado = pedido.Anulado,
-                    ModificadorRecargo = pedido.ModificadorRecargo,
-                    ModificadorMismoDia = pedido.ModificadorMismoDia
                 };
             }
             else throw new NotImplementedException();

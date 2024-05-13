@@ -21,7 +21,8 @@ namespace Papeleria.LogicaAplicacion.Mappers
             {
                 throw new NotImplementedException();
             }
-            return new Cliente(clienteDTO.Id, clienteDTO.RazonSocial, clienteDTO.Rut, clienteDTO.Nombre, clienteDTO.Apellido);
+            return new Cliente(clienteDTO.Id, clienteDTO.RazonSocial, clienteDTO.Rut, clienteDTO.Nombre, clienteDTO.Apellido, 
+                clienteDTO.nombreCalle, clienteDTO.numeroPuerta, clienteDTO.ciudad, clienteDTO.distanciaKm);
         }
     }
 }

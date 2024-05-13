@@ -16,9 +16,6 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public DateTime FechaPrometida { get; set; }
         public List<LineaDTO> Lineas { get; set; }
         public Boolean Anulado { get; set; }
-        public int ModificadorRecargo { get; set; }
-        public double DistanciaKm { get; set; }
-        public int ModificadorMismoDia { get; set; }
-        public Configuracion ConfiguracionObj { get; set; } 
+
     }
 }

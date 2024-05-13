@@ -167,9 +167,6 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ConfiguracionObjId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasMaxLength(13)
@@ -182,8 +179,6 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.HasIndex("ConfiguracionObjId");
-
                     b.ToTable("Pedidos");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Pedido");
@@ -195,30 +190,12 @@ namespace Papeleria.AccesoDatos.Migrations
                 {
                     b.HasBaseType("LogicaNegocio.Entidades.Pedido");
 
-                    b.Property<double>("DistanciaKm")
-                        .HasColumnType("float");
-
-                    b.Property<int>("ModificadorRecargo")
-                        .HasColumnType("int");
-
                     b.HasDiscriminator().HasValue("PedidoComun");
                 });
 
             modelBuilder.Entity("LogicaNegocio.Entidades.PedidoExpress", b =>
                 {
                     b.HasBaseType("LogicaNegocio.Entidades.Pedido");
-
-                    b.Property<int>("ModificadorMismoDia")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ModificadorRecargo")
-                        .HasColumnType("int");
-
-                    b.ToTable("Pedidos", t =>
-                        {
-                            t.Property("ModificadorRecargo")
-                                .HasColumnName("PedidoExpress_ModificadorRecargo");
-                        });
 
                     b.HasDiscriminator().HasValue("PedidoExpress");
                 });
@@ -252,6 +229,34 @@ namespace Papeleria.AccesoDatos.Migrations
 
             modelBuilder.Entity("LogicaNegocio.Entidades.Cliente", b =>
                 {
+                    b.OwnsOne("LogicaNegocio.ValueObjects.Direccion", "Direccion", b1 =>
+                        {
+                            b1.Property<int>("ClienteId")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("Ciudad")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<double>("DistanciaKm")
+                                .HasColumnType("float");
+
+                            b1.Property<string>("NombreCalle")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("NumeroPuerta")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.HasKey("ClienteId");
+
+                            b1.ToTable("Clientes");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ClienteId");
+                        });
+
                     b.OwnsOne("Papeleria.LogicaNegocio.ValueObjects.NombreCliente", "NombreCliente", b1 =>
                         {
                             b1.Property<int>("ClienteId")
@@ -272,6 +277,9 @@ namespace Papeleria.AccesoDatos.Migrations
                             b1.WithOwner()
                                 .HasForeignKey("ClienteId");
                         });
+
+                    b.Navigation("Direccion")
+                        .IsRequired();
 
                     b.Navigation("NombreCliente")
                         .IsRequired();
@@ -300,15 +308,7 @@ namespace Papeleria.AccesoDatos.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("LogicaNegocio.Entidades.Configuracion", "ConfiguracionObj")
-                        .WithMany()
-                        .HasForeignKey("ConfiguracionObjId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("ClienteObj");
-
-                    b.Navigation("ConfiguracionObj");
                 });
 
             modelBuilder.Entity("LogicaNegocio.Entidades.Pedido", b =>

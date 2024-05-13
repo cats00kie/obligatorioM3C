@@ -86,7 +86,7 @@ namespace Papeleria.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AddLinea(PedidoDTO pedido, int articuloId, int cantUnidades)
+        public ActionResult AddLinea(int articuloId, int cantUnidades, int idCliente)
         {
             ArticuloDTO articulo = _encontrarXIdArticulo.FindById(articuloId);
             if (tempArticulos == null)
@@ -101,6 +101,7 @@ namespace Papeleria.Web.Controllers
                     {
                         tempPedido = new PedidoDTO { Lineas = new List<LineaDTO>() };
                     }
+                    tempPedido.ClienteId = idCliente;
                     tempPedido.Lineas.Add(linea);
                     return this.RedirectToAction(nameof(Create));
                 }

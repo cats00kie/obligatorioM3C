@@ -8,30 +8,38 @@ namespace LogicaNegocio.Entidades
 {
     public class PedidoComun : Pedido 
     {
-        public int ModificadorRecargo { get; set; }
-        public double DistanciaKm { get; set; }
+        public static int ModificadorRecargo { get; set; }
         public PedidoComun(){}
-
-        public PedidoComun(int id, Cliente obj, DateTime fechaPrometida, int modificadorRecargo, double distanciaKm, Configuracion configuracion)
+        public PedidoComun(int id, Cliente obj, DateTime fechaPrometida)
         {
             Id = id;
             ClienteObj = obj;
             FechaPrometida = fechaPrometida;
             Lineas = new List<Linea>();
             Anulado = false;
-            ConfiguracionObj = configuracion;
-            ModificadorRecargo = modificadorRecargo;
-            DistanciaKm = distanciaKm;
+
         }
-        public PedidoComun(Cliente obj, DateTime fechaPrometida, int modificadorRecargo, double distanciaKm,Configuracion configuracion)
+        public PedidoComun(Cliente obj, DateTime fechaPrometida)
         {
             ClienteObj = obj;
             FechaPrometida = fechaPrometida;
             Lineas = new List<Linea>();
             Anulado = false;
-            ConfiguracionObj = configuracion;
-            ModificadorRecargo = modificadorRecargo;
-            DistanciaKm = distanciaKm;
+
+        }
+        public override double CalcularPrecio(double impuesto)
+        {
+            {
+                ModificadorRecargo = 5;
+                double suma = 0;
+                foreach (Linea linea in Lineas)
+                {
+                    suma += linea.Precio;
+                }
+                if (ClienteObj.Direccion.DistanciaKm > 100) suma += suma * ModificadorRecargo / 100;
+                suma += suma * impuesto / 100;
+                return suma;
+            }
         }
 
     }

@@ -15,6 +15,10 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public string RazonSocial;
         public string Nombre;
         public string Apellido;
+        public string nombreCalle;
+        public string numeroPuerta;
+        public string ciudad;
+        public double distanciaKm;
         public ClienteDTO() { }
         public ClienteDTO(Cliente cliente)
         {
@@ -25,6 +29,10 @@ namespace Papeleria.LogicaAplicacion.DTOs
                 this.Rut = cliente.Rut;
                 this.Nombre = cliente.NombreCliente.Nombre;
                 this.Apellido = cliente.NombreCliente.Apellido;
+                this.nombreCalle = cliente.Direccion.NombreCalle;
+                this.numeroPuerta = cliente.Direccion.NumeroPuerta;
+                this.ciudad = cliente.Direccion.Ciudad;
+                this.distanciaKm = cliente.Direccion.DistanciaKm;
             }
         }
     }
