@@ -1,4 +1,5 @@
 ﻿using AccesoDatos.EntityFramework;
+using Microsoft.EntityFrameworkCore;
 using LogicaNegocio.Entidades;
 using Papeleria.LogicaNegocio.InterfacesRepositorio;
 using Papeleria.LogicaNegocio.ValueObjects;
@@ -34,13 +35,19 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
         public IEnumerable<Cliente> ClientesXmonto(double monto)
         {
             List<Cliente> clientes = new List<Cliente>();
-            List<Pedido> pedidos = this._context.Pedidos
-                .Where(pedido => pedido.CalcularPrecio
-                ((this._context.Configuraciones.
-                Where(config => config.Nombre == "IVA").FirstOrDefault()).Valor) >= monto).ToList();
-            foreach(Pedido pedido in pedidos)
+            int iva = this._context.Configuraciones
+                                .Where(config => config.Nombre == "IVA")
+                                .FirstOrDefault().Valor;
+
+            IEnumerable<Pedido> pedidos = _context.Pedidos
+                                 .Include(pedido => pedido.Lineas)
+                                 .AsEnumerable()
+                                 .Where(pedido => pedido.CalcularPrecio(iva) >= monto)
+                                 .ToList();
+
+            foreach (Pedido pedido in pedidos)
             {
-                clientes.Add(pedido.ClienteObj);
+                if (!clientes.Contains(pedido.ClienteObj)) clientes.Add(pedido.ClienteObj);
             }
             return clientes;
         }

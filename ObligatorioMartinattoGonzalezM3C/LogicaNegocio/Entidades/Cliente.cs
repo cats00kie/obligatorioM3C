@@ -25,7 +25,6 @@ namespace LogicaNegocio.Entidades
             Rut = rut;
             NombreCliente = new NombreCliente(nombre, apellido);
             Direccion = new Direccion(nombreCalle, numeroPuerta, ciudad, distanciaKm);
-
         }
         public Cliente(string razonSocial, string rut, string nombre, string apellido, string nombreCalle, string numeroPuerta, string ciudad, double distanciaKm)
         {

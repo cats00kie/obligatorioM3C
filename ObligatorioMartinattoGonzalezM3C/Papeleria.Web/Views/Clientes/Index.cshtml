@@ -1,19 +1,33 @@
 ﻿@using Papeleria.LogicaAplicacion.DTOs
 @model IEnumerable<Papeleria.LogicaAplicacion.DTOs.ClienteDTO>
 
+    
+
+
 @{
     ViewData["Title"] = "Index";
+}
+@if (ViewBag.Mensaje == "" || ViewBag.Mensaje == null) { }
+else
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
 }
 
 <h1>Index</h1>
 
 <h2>Filtros</h2>
 <form method="post" action="Clientes/FiltrarPorNombre">
-    <label for="nombreApe">Nombre o Apellido de Representante:</label>
+    <label for="nombreApe">Filtrar por nombre o apellido:</label>
     <input type="text" name="nombreCliente" value="" placeholder="Nombre o Apellido..." id="nombreApe"/>
     <input type="submit" />
 </form>
-
+<form method="post" action="Clientes/FiltrarPorMonto">
+    <label for="nMonto">Filtrar por monto:</label>
+    <input type="number" name="monto" value="" placeholder="Ingrese monto." id="nMonto" />
+    <input type="submit" />
+</form>
 <table class="table">
     <thead>
         <tr>

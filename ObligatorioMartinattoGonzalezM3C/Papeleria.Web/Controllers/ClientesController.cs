@@ -44,8 +44,8 @@ namespace Papeleria.Web.Controllers
             }
             if(filtro == "PorMonto")
             {
-                double monto = (double)TempData["Monto"];
-                toShow = this._xMonto.GetClientesXmonto(monto);
+                double monto;
+                if(double.TryParse(TempData["Monto"].ToString(), out monto)) toShow = this._xMonto.GetClientesXmonto(monto);
             }
             return View(toShow);
         }
@@ -68,7 +68,7 @@ namespace Papeleria.Web.Controllers
             {
                 return RedirectToAction("Index", new { mensaje = "Monto invalido." });
             }
-            TempData["Monto"] = monto;
+            TempData["Monto"] = monto.ToString();
             return RedirectToAction("Index", new { filtro = "PorMonto" });
         }
 
