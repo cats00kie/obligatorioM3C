@@ -27,7 +27,7 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Pedidos
         {
             if (esExpress)
             {
-                if ( DateTime.Today.Day - pedido.FechaPrometida.Day < this._repositorioConfig.FindByNombre("PlazoEstipulado").Valor)
+                if (pedido.FechaPrometida.Day - DateTime.Today.Day < this._repositorioConfig.FindByNombre("PlazoEstipulado").Valor)
                 {
                     this._repositorioPedido.Add(PedidoDTOMapper.FromDtoExpress(pedido));
                 }

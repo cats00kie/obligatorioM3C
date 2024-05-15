@@ -38,7 +38,7 @@ namespace LogicaNegocio.Entidades
                 {
                     suma += linea.Precio;
                 }
-                if (FechaPrometida == DateTime.Today) suma += suma * ModificadorMismoDia / 100;
+                if (FechaPrometida.Day == DateTime.Today.Day) suma += suma * ModificadorMismoDia / 100;
                 else suma += suma * ModificadorRecargo / 100;
                 suma += suma * impuesto / 100;
                 return suma;

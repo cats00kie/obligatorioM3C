@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
-using Papeleria.LogicaAplicacion.InterfacesCasosDeUso;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;
 
 namespace Papeleria.Web.Controllers

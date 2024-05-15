@@ -1,5 +1,6 @@
 ﻿using LogicaNegocio.Entidades;
 using LogicaNegocio.InterfacesRepositorio;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +39,7 @@ namespace AccesoDatos.EntityFramework.Repositorios
 
         public IEnumerable<Pedido> FindAll()
         {
-            return this._context.Pedidos;
+            return this._context.Pedidos.Include(pedido => pedido.Lineas);
         }
 
         public Pedido FindByID(int id)

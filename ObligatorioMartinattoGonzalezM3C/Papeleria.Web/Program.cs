@@ -1,7 +1,5 @@
 using Papeleria.AccesoDatos.EntityFramework.Repositorios;
-using Papeleria.LogicaAplicacion.CasosDeUso;
 using Papeleria.LogicaAplicacion.CasosDeUso.Administradores;
-using Papeleria.LogicaAplicacion.InterfacesCasosDeUso;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 using LogicaNegocio.InterfacesRepositorio;
 using AccesoDatos.EntityFramework;
@@ -34,7 +32,7 @@ namespace Papeleria.Web
 
 
             builder.Services.AddScoped<ILogin, LoginCU>();
-            builder.Services.AddScoped<IGetArticulosAsc, GetArticulosAscCU>();
+            builder.Services.AddScoped<IEncontrarArticulosOrd, EncontrarArticulosOrdCU>();
             builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
             builder.Services.AddScoped<ICrearAdmin, CrearAdminCU>();
             builder.Services.AddScoped<IEditarAdmin, EditarAdminCU>();
@@ -50,6 +48,7 @@ namespace Papeleria.Web
             builder.Services.AddScoped<ICrearPedido, CrearPedidoCU>();
             builder.Services.AddScoped<IEncontrarPrecioPedido, EncontrarPrecioPedidoCU>();
             builder.Services.AddScoped<IEncontrarXIdArticulo, FindArticuloByIdCU>();
+            builder.Services.AddScoped<IAnularPedido, AnularPedidoCU>();
 
 
             builder.Services.AddSession(option =>

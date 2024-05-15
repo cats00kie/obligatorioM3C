@@ -1,4 +1,6 @@
-﻿@model IEnumerable<LogicaNegocio.Entidades.Pedido>
+﻿
+@using Papeleria.LogicaAplicacion.DTOs
+@model IEnumerable<Papeleria.LogicaAplicacion.DTOs.PedidoDTO>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,35 +15,58 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ClienteObj)
+                Id del Cliente
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FechaPrometida)
+                Fecha Prometida
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Anulado)
+                Lineas
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ClienteObj.RazonSocial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaPrometida)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Anulado)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+    @foreach(var item in Model) {
+        if(!item.Anulado){
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClienteId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaPrometida)
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        @foreach (LineaDTO linea in item.Lineas)
+                        {
+                                    ArticuloDTO elArticulo = new ArticuloDTO();
+                                    @if (ViewBag.Articulos != null && ViewBag.Articulos.Count > 0)
+                            {
+                                @foreach (ArticuloDTO articulo in ViewBag.Articulos)
+                                {
+                                    @if (linea.ArticuloId == articulo.Id)
+                                    {
+                                        elArticulo = articulo;
+                                    }
+                                }
+                            }
+                            <li class="list-group-item">
+                                @elArticulo.Nombre | @(elArticulo.Precio * linea.CantUnidades) | @linea.CantUnidades
+                            </li>
+                        }
+                    </ul>
+                </div>
+                </td>
+                <td>
+                    <form asp-action="AnularPedido">
+                        <input type="hidden" value="@item.Id" name="idPedido" />
+                        <input type="submit" value="Anular" class="btn btn-sm btn-danger" />
+                    </form>
+                </td>
+            </tr>
+        }
 }
     </tbody>
 </table>

@@ -16,11 +16,14 @@ namespace Papeleria.Web.Controllers
         private IEncontrarArticulos _encontrarArticulos;
         private IEncontrarPrecioPedido _encontrarPrecioPedido;
         private IEncontrarXIdArticulo _encontrarXIdArticulo;
+        private IAnularPedido _anularPedido;
         private static PedidoDTO tempPedido;
         private static List<ArticuloDTO> tempArticulos;
 
-        public PedidosController(ICrearPedido crearPedido, IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos, 
-            IEncontrarClientes encontrarClientes, IEncontrarPrecioPedido encontrarPrecioPedido, IEncontrarXIdArticulo encontrarXIdArticulo)
+        public PedidosController(ICrearPedido crearPedido, 
+            IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos,
+            IEncontrarClientes encontrarClientes, IEncontrarPrecioPedido encontrarPrecioPedido,
+            IEncontrarXIdArticulo encontrarXIdArticulo, IAnularPedido anularPedido)
         {
             _crearPedido = crearPedido;
             _encontrarArticulos = encontrarArticulos;
@@ -28,6 +31,7 @@ namespace Papeleria.Web.Controllers
             _encontrarClientes = encontrarClientes;
             _encontrarPrecioPedido = encontrarPrecioPedido;
             _encontrarXIdArticulo = encontrarXIdArticulo;
+            _anularPedido = anularPedido;
         }
 
         // GET: PedidosController
@@ -38,27 +42,25 @@ namespace Papeleria.Web.Controllers
                 return RedirectToAction("Login", "Index", new { mensaje = "Necesita hacer login" });
             }
             ViewBag.Message = mensaje;
+            ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
+            ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
             IEnumerable<PedidoDTO> aMostrar = new List<PedidoDTO>();
             aMostrar = this._encontrarPedidos.EncontrarPedidos();
-            return View();
-        }
-
-        // GET: PedidosController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
+            return View(aMostrar);
         }
 
         // GET: PedidosController/Create
-        public ActionResult Create(string mensaje, Boolean esExpress)
+        public ActionResult Create(Boolean esExpress)
         {
+            
+            ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
+            ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
+            ViewBag.PrecioPedido = 0;
             if (tempPedido != null)
             {
                 ViewBag.Lineas = tempPedido.Lineas;
+                ViewBag.PrecioPedido = this._encontrarPrecioPedido.EncontrarPrecioPedido(tempPedido, esExpress);
             }
-            ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
-            ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
-            ViewBag.PrecioPedido = this._encontrarPrecioPedido.EncontrarPrecioPedido(tempPedido, esExpress);
             return View();
         }
 
@@ -141,46 +143,18 @@ namespace Papeleria.Web.Controllers
             }
         }
 
-
-        // GET: PedidosController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: PedidosController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult AnularPedido(int idPedido)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                this._anularPedido.AnularPedido(idPedido);
+                return this.RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
-            }
-        }
-
-        // GET: PedidosController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: PedidosController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
+                return this.RedirectToAction("Pedidos", "Index", new {mensaje = "Error al anular" });
             }
         }
     }
