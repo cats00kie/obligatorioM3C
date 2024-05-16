@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo
 {
     public interface IEncontrarXIdArticulo
     {
-        public ArticuloDTO FindById(int id);
+        ArticuloDTO FindById(int id);
     }
 }

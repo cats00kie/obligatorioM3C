@@ -19,12 +19,20 @@ namespace Papeleria.Web.Controllers
         // GET: ArticulosController
         public ActionResult Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             return View(this._encontrarArticulos.EncontrarArticulos());
         }
 
         // GET: ArticulosController/Create
         public ActionResult Create()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             return View();
         }
 
@@ -37,48 +45,6 @@ namespace Papeleria.Web.Controllers
             {
                 this._crearArticulo.CrearArticulo(articulo);
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ArticulosController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: ArticulosController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ArticulosController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ArticulosController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
             }
             catch
             {

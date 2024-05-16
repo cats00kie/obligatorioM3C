@@ -1,6 +1,5 @@
-﻿using LogicaNegocio.Entidades;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;
@@ -17,13 +16,14 @@ namespace Papeleria.Web.Controllers
         private IEncontrarPrecioPedido _encontrarPrecioPedido;
         private IEncontrarXIdArticulo _encontrarXIdArticulo;
         private IAnularPedido _anularPedido;
+        private IGetPedidosPorFecha _getPedidosPorFecha;
         private static PedidoDTO tempPedido;
         private static List<ArticuloDTO> tempArticulos;
 
         public PedidosController(ICrearPedido crearPedido, 
             IEncontrarArticulos encontrarArticulos, IEncontrarPedidos encontrarPedidos,
             IEncontrarClientes encontrarClientes, IEncontrarPrecioPedido encontrarPrecioPedido,
-            IEncontrarXIdArticulo encontrarXIdArticulo, IAnularPedido anularPedido)
+            IEncontrarXIdArticulo encontrarXIdArticulo, IAnularPedido anularPedido, IGetPedidosPorFecha getPedidosPorFecha)
         {
             _crearPedido = crearPedido;
             _encontrarArticulos = encontrarArticulos;
@@ -32,27 +32,45 @@ namespace Papeleria.Web.Controllers
             _encontrarPrecioPedido = encontrarPrecioPedido;
             _encontrarXIdArticulo = encontrarXIdArticulo;
             _anularPedido = anularPedido;
+            _getPedidosPorFecha = getPedidosPorFecha;
         }
 
         // GET: PedidosController
-        public ActionResult Index(string mensaje)
+        public ActionResult Index(string filtro, string mensaje)
         {
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
             {
-                return RedirectToAction("Login", "Index", new { mensaje = "Necesita hacer login" });
+                return RedirectToAction("Index", "Login", new { mensaje = "Necesita hacer login" });
             }
-            ViewBag.Message = mensaje;
+            IEnumerable<PedidoDTO> aMostrar = new List<PedidoDTO>();
+            if (string.IsNullOrEmpty(filtro))
+            {
+                aMostrar = this._encontrarPedidos.EncontrarPedidos();
+                ViewBag.Filtro = "Ninguno";
+            }
+            if (filtro == "PorFecha")
+            {
+                DateTime FechaPrometida = DateTime.Parse(TempData["FechaPrometida"].ToString());
+                aMostrar = this._getPedidosPorFecha.GetPedidosPorFecha(FechaPrometida);
+                if(aMostrar.Count() == 0)
+                {
+                    return RedirectToAction("Index", new { filtro = "",  mensaje = "No hay pedidos sin entregar con esa fecha." });
+                }
+                ViewBag.Filtro = "Fecha";
+            }
+            ViewBag.Mensaje = mensaje;
             ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
             ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
-            IEnumerable<PedidoDTO> aMostrar = new List<PedidoDTO>();
-            aMostrar = this._encontrarPedidos.EncontrarPedidos();
             return View(aMostrar);
         }
 
         // GET: PedidosController/Create
         public ActionResult Create(Boolean esExpress)
         {
-            
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             ViewBag.Clientes = this._encontrarClientes.FindAllClientes();
             ViewBag.Articulos = this._encontrarArticulos.EncontrarArticulos();
             ViewBag.PrecioPedido = 0;
@@ -80,9 +98,9 @@ namespace Papeleria.Web.Controllers
                 tempArticulos = null;
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return this.RedirectToAction(nameof(Create));
+                return RedirectToAction("Index", "Pedidos", new {mensaje = ex.Message});
             }
         }
 
@@ -147,6 +165,10 @@ namespace Papeleria.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult AnularPedido(int idPedido)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             try
             {
                 this._anularPedido.AnularPedido(idPedido);
@@ -154,8 +176,22 @@ namespace Papeleria.Web.Controllers
             }
             catch (Exception ex)
             {
-                return this.RedirectToAction("Pedidos", "Index", new {mensaje = "Error al anular" });
+                return this.RedirectToAction("Index", "Pedidos", new {mensaje = "Error al anular" });
             }
+        }
+        [HttpPost]
+        public ActionResult FiltrarPorFecha(DateTime FechaPrometida)
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
+            if (FechaPrometida < DateTime.Today)
+            {
+                return RedirectToAction("Index", new { mensaje = "Fecha invalida." });
+            }
+            TempData["FechaPrometida"] = FechaPrometida.ToString();
+            return RedirectToAction("Index", new { filtro = "PorFecha" });
         }
     }
 }

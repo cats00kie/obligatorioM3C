@@ -1,10 +1,6 @@
 ﻿using LogicaNegocio.InterfacesRepositorio;
-using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
-using LogicaNegocio.Entidades;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq.Expressions;
 
 namespace Papeleria.Web.Controllers
 {

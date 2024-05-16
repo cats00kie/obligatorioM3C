@@ -79,7 +79,13 @@ namespace AccesoDatos.EntityFramework.Repositorios
         public double CalcularPrecio(Pedido pedido)
         {
             return pedido.CalcularPrecio((this._context.Configuraciones.
-                Where(config => config.Nombre == "IVA").FirstOrDefault()).Valor);
+            Where(config => config.Nombre == "IVA").FirstOrDefault()).Valor,
+            (this._context.Configuraciones.
+            Where(config => config.Nombre == "ModRecComun").FirstOrDefault()).Valor,
+            (this._context.Configuraciones.
+            Where(config => config.Nombre == "ModRecExpress").FirstOrDefault()).Valor,
+            (this._context.Configuraciones.
+            Where(config => config.Nombre == "ModMismoDia").FirstOrDefault()).Valor);
         }
 
     }

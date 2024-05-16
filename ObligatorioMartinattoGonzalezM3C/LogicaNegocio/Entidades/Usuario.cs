@@ -48,8 +48,7 @@ namespace LogicaNegocio.Entidades
                 {
                     throw new AdministradorNoValidoException("La contraseña debe tener al menos una letra en minuscula, mayuscula, un numero, y uno de estos simbolos: . ; , ! ");
                 }
-                if (!Regex.IsMatch(NombreCompleto.Nombre, @"^[a-zA-Z][-a-zA-Z ']*(?<![ '-])$")) throw new AdministradorNoValidoException("Nombre no es valido");
-                if (!Regex.IsMatch(NombreCompleto.Apellido, @"^[a-zA-Z][-a-zA-Z ']*(?<![ '-])$")) throw new AdministradorNoValidoException("Apellido no es valido");
+                NombreCompleto.IsValid();
             }
             else throw new AdministradorNoValidoException("Admin no valido");
         }

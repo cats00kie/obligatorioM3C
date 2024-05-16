@@ -70,7 +70,7 @@ namespace Papeleria.AccesoDatos.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("Precio")
                         .HasColumnType("float");
@@ -79,6 +79,9 @@ namespace Papeleria.AccesoDatos.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Nombre")
+                        .IsUnique();
 
                     b.ToTable("Articulos");
                 });
@@ -171,6 +174,9 @@ namespace Papeleria.AccesoDatos.Migrations
                         .IsRequired()
                         .HasMaxLength(13)
                         .HasColumnType("nvarchar(13)");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("FechaPrometida")
                         .HasColumnType("datetime2");

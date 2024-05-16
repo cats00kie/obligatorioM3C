@@ -5,9 +5,24 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
-
+@if (ViewBag.Mensaje == "" || ViewBag.Mensaje == null) { }
+else
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+<h1>Pedidos</h1>
+<h3>Filtros</h3>
+<form method="post" action="Pedidos/FiltrarPorFecha">
+    <label for="fechaPedido">Filtrar por fecha:</label>
+    <div class="form-group">
+        <label for="fechaPrometida" class="control-label"></label>
+        <input type="date" name="FechaPrometida" id="fechaPrometida" />
+        <span validation-for="fechaPrometida" class="text-danger"></span>
+    </div>
+    <input type="submit" />
+</form>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -16,6 +31,9 @@
         <tr>
             <th>
                 Id del Cliente
+            </th>
+            <th>
+                Fecha
             </th>
             <th>
                 Fecha Prometida
@@ -32,6 +50,9 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.ClienteId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.FechaPrometida)
@@ -60,10 +81,13 @@
                 </div>
                 </td>
                 <td>
+                    @if (ViewBag.Filtro == "Fecha")
+                    {
                     <form asp-action="AnularPedido">
                         <input type="hidden" value="@item.Id" name="idPedido" />
                         <input type="submit" value="Anular" class="btn btn-sm btn-danger" />
                     </form>
+                    }
                 </td>
             </tr>
         }

@@ -94,7 +94,9 @@
                         {
                             @foreach (ArticuloDTO articulo in ViewBag.Articulos)
                             {
-                                <option value="@articulo.Id">@articulo.Nombre : @articulo.Precio$</option>
+                                if(articulo.Stock > 0){
+                                    <option value="@articulo.Id">@articulo.Nombre : @articulo.Precio$</option>
+                                }
                             }
                         }
                     </select>

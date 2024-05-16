@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Pedido
 {
     public interface IEncontrarPrecioPedido
     {
-        public double EncontrarPrecioPedido(PedidoDTO pedido, Boolean esExpress);
+        double EncontrarPrecioPedido(PedidoDTO pedido, Boolean esExpress);
     }
 }

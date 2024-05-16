@@ -10,7 +10,7 @@ namespace Papeleria.Web.Controllers
         {
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
             {
-                return RedirectToAction("Login", "Login", new { mensaje = "No tienes acceso" });
+                return RedirectToAction("Index", "Login", new { mensaje = "No tienes acceso" });
             }
             else
             {

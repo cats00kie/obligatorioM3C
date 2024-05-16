@@ -1,4 +1,5 @@
-﻿using LogicaNegocio.InterfacesRepositorio;
+﻿using LogicaNegocio.Entidades;
+using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
 using Papeleria.LogicaAplicacion.Mappers;
@@ -18,7 +19,16 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Articulos
         }
         public void CrearArticulo(ArticuloDTO aCrear)
         {
-            _repositorioArticulo.Add(ArticuloDTOMapper.FromDto(aCrear));
+            try
+            {
+                Articulo articulo = ArticuloDTOMapper.FromDto(aCrear);
+                articulo.IsValid();
+                _repositorioArticulo.Add(articulo);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

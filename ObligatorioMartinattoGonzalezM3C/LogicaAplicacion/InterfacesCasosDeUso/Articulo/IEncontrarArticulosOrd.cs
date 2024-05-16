@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo
 {
     public interface IEncontrarArticulosOrd
     {
-        public IEnumerable<ArticuloDTO> GetArticulosOrd();
+        IEnumerable<ArticuloDTO> GetArticulosOrd();
     }
 }

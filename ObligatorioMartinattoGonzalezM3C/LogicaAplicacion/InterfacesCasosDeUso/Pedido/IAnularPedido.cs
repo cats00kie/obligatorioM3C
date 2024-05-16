@@ -8,6 +8,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Pedido
 {
     public interface IAnularPedido
     {
-        public void AnularPedido(int id);
+        void AnularPedido(int id);
     }
 }

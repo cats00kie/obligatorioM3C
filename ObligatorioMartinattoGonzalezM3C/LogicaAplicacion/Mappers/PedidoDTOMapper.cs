@@ -17,6 +17,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
             {
                 Id = pedido.Id,
                 ClienteId = pedido.ClienteId,
+                Fecha = pedido.Fecha,
                 FechaPrometida = pedido.FechaPrometida,
                 Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.toDTO(linea)).ToList(),
                 Anulado = pedido.Anulado,
@@ -29,6 +30,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
             {
                 Id = pedido.Id,
                 ClienteId = pedido.ClienteId,
+                Fecha = pedido.Fecha,
                 FechaPrometida = pedido.FechaPrometida,
                 Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.toDTO(linea)).ToList(),
                 Anulado = pedido.Anulado,
@@ -42,6 +44,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
                 {
                     Id = pedido.Id,
                     ClienteId = pedido.ClienteId,
+                    Fecha = pedido.Fecha,
                     FechaPrometida = pedido.FechaPrometida,
                     Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.FromDTO(linea)).ToList(),
                     Anulado = pedido.Anulado,
@@ -57,6 +60,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
                 {
                     Id = pedido.Id,
                     ClienteId = pedido.ClienteId,
+                    Fecha = pedido.Fecha,
                     FechaPrometida = pedido.FechaPrometida,
                     Lineas = pedido.Lineas.Select(linea => LineaDTOMapper.FromDTO(linea)).ToList(),
                     Anulado = pedido.Anulado,

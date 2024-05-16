@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;
 
@@ -52,6 +51,10 @@ namespace Papeleria.Web.Controllers
         [HttpPost]
         public ActionResult FiltrarPorNombre (string nombreCliente)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             if (nombreCliente == null)
             {
                 return RedirectToAction("Index");
@@ -63,6 +66,10 @@ namespace Papeleria.Web.Controllers
         [HttpPost]
         public ActionResult FiltrarPorMonto (double monto)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             if (monto <= 0)
             {
                 return RedirectToAction("Index", new { mensaje = "Monto invalido." });

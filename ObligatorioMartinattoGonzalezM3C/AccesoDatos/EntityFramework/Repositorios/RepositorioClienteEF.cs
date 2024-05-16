@@ -38,11 +38,19 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
             int iva = this._context.Configuraciones
                                 .Where(config => config.Nombre == "IVA")
                                 .FirstOrDefault().Valor;
-
+            int modRecargoCom = this._context.Configuraciones
+                                .Where(config => config.Nombre == "ModRecComun")
+                                .FirstOrDefault().Valor;
+            int modRecargoExp = this._context.Configuraciones
+                                .Where(config => config.Nombre == "ModRecExpress")
+                                .FirstOrDefault().Valor;
+            int modMismoDia = this._context.Configuraciones
+                                .Where(config => config.Nombre == "ModMismoDia")
+                                .FirstOrDefault().Valor;
             IEnumerable<Pedido> pedidos = _context.Pedidos
                                  .Include(pedido => pedido.Lineas)
                                  .AsEnumerable()
-                                 .Where(pedido => pedido.CalcularPrecio(iva) >= monto)
+                                 .Where(pedido => pedido.CalcularPrecio(iva, modRecargoCom, modRecargoExp, modMismoDia) >= monto)
                                  .ToList();
 
             foreach (Pedido pedido in pedidos)

@@ -26,7 +26,9 @@ namespace ApiRest.Controllers
         {
             try
             {
-                return Ok(_encontrarArticulosOrd.GetArticulosOrd());
+                IEnumerable<ArticuloDTO> articulos =  _encontrarArticulosOrd.GetArticulosOrd();
+                if (articulos == null) return NoContent();
+                return Ok(articulos);
             }
             catch (Exception ex)
             {

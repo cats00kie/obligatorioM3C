@@ -34,8 +34,8 @@ namespace LogicaNegocio.Entidades
 
         public void IsValid()
         {
-            if (CantUnidades > ArticuloObj.Stock) throw new LineaNoValidaException("Cantidad de unidades supera el stock.");
             if (ArticuloObj == null) throw new LineaNoValidaException("Articulo no es valido.");
+            if (CantUnidades > ArticuloObj.Stock) throw new LineaNoValidaException("Cantidad de unidades supera el stock.");
         }
     }
 }

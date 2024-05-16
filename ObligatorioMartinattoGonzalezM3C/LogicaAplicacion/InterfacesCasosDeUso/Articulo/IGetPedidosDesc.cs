@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo
 {
     public interface IGetPedidosDesc
     {
-        public IEnumerable<PedidoDTO> GetPedidosDesc();
+        IEnumerable<PedidoDTO> GetPedidosDesc();
     }
 }

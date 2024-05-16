@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo
 {
     public interface ICrearArticulo
     {
-        public void CrearArticulo(ArticuloDTO aCrear);
+        void CrearArticulo(ArticuloDTO aCrear);
     }
 }

@@ -8,6 +8,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador
 {
     public interface ILogin
     {
-        public bool Login(string email, string password);
+        bool Login(string email, string password);
     }
 }

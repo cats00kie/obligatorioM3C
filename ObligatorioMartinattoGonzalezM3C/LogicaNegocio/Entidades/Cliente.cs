@@ -1,4 +1,6 @@
 ﻿using LogicaNegocio.ValueObjects;
+using Papeleria.LogicaNegocio.Excepciones;
+using Papeleria.LogicaNegocio.InterfacesEntidades;
 using Papeleria.LogicaNegocio.ValueObjects;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LogicaNegocio.Entidades
 {
-    public class Cliente
+    public class Cliente : IValid
     {
         public int Id { get; set; }
         public static int UltimoId { get; set; }
@@ -32,6 +34,14 @@ namespace LogicaNegocio.Entidades
             Rut = rut;
             NombreCliente = new NombreCliente(nombre, apellido);
             Direccion = new Direccion(nombreCalle, numeroPuerta, ciudad, distanciaKm);
+        }
+
+        public void IsValid()
+        {
+            if (RazonSocial == null) throw new ClienteNoValidoException("Razon Social no valida");
+            if (Rut.Length != 12 || !int.TryParse(Rut, out int x)) throw new ClienteNoValidoException("RUT no valido. Asegurese de que sea de 12 digitos y no tenga letras.");
+            NombreCliente.IsValid();
+            Direccion.IsValid();
         }
     }
 }

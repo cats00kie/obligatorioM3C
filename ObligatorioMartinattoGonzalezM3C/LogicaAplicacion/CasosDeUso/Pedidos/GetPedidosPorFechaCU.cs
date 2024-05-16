@@ -1,7 +1,7 @@
 ﻿using LogicaNegocio.Entidades;
 using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.LogicaAplicacion.DTOs;
-using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
+using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Pedido;
 using Papeleria.LogicaAplicacion.Mappers;
 using System;
 using System.Collections.Generic;
@@ -9,19 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Papeleria.LogicaAplicacion.CasosDeUso.Clientes
+namespace Papeleria.LogicaAplicacion.CasosDeUso.Pedidos
 {
-    public class GetPedidosDescCU : IGetPedidosDesc
+    public class GetPedidosPorFechaCU : IGetPedidosPorFecha
     {
         private IRepositorioPedido _repositorioPedido;
-        public GetPedidosDescCU(IRepositorioPedido repositorioPedido)
+        public GetPedidosPorFechaCU(IRepositorioPedido repositorioPedido)
         {
-            _repositorioPedido = repositorioPedido;
+            this._repositorioPedido = repositorioPedido;
         }
 
-        public IEnumerable<PedidoDTO> GetPedidosDesc()
+        public IEnumerable<PedidoDTO> GetPedidosPorFecha(DateTime fecha)
         {
-            IEnumerable<Pedido> pedidos = this._repositorioPedido.FindAll().OrderByDescending(pedido => pedido.FechaPrometida);
+            IEnumerable<Pedido> pedidos = _repositorioPedido.FindAll().Where(pedido => pedido.FechaPrometida.Date == fecha.Date);
             List<PedidoDTO> pedidosDto = new List<PedidoDTO>();
             foreach (Pedido pedido in pedidos)
             {

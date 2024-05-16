@@ -13,6 +13,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public static int UltimoId { get; set; }
         public int Id { get; set; }
         public int ClienteId { get; set; }
+        public DateTime Fecha { get; set; }
         public DateTime FechaPrometida { get; set; }
         public List<LineaDTO> Lineas { get; set; }
         public Boolean Anulado { get; set; }

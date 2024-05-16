@@ -3,7 +3,6 @@ using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.AccesoDatos;
 using Papeleria.AccesoDatos.EntityFramework.Repositorios;
 using Papeleria.LogicaAplicacion.CasosDeUso.Articulos;
-using Papeleria.LogicaAplicacion.CasosDeUso.Clientes;
 using Papeleria.LogicaAplicacion.CasosDeUso.Pedidos;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Cliente;

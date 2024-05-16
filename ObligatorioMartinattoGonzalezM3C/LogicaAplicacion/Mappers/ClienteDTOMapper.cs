@@ -1,5 +1,6 @@
 ﻿using LogicaNegocio.Entidades;
 using Papeleria.LogicaAplicacion.DTOs;
+using Papeleria.LogicaNegocio.Excepciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
         {
             if (clienteDTO == null)
             {
-                throw new NotImplementedException();
+                throw new ClienteNoValidoException("Cliente invalido.");
             }
             return new Cliente(clienteDTO.Id, clienteDTO.RazonSocial, clienteDTO.Rut, clienteDTO.Nombre, clienteDTO.Apellido, 
                 clienteDTO.nombreCalle, clienteDTO.numeroPuerta, clienteDTO.ciudad, clienteDTO.distanciaKm);

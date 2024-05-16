@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Papeleria.LogicaNegocio.Excepciones;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,22 +29,25 @@ namespace LogicaNegocio.Entidades
             Anulado = false;
 
         }
-        public override double CalcularPrecio(double impuesto)
+        public override double CalcularPrecio(double impuesto, int modificadorRecargo, int modificadorRecargoExp, int modificadorMismoDia)
         {
             {
-                ModificadorRecargo = 10;
-                ModificadorMismoDia = 15;
                 double suma = 0;
                 foreach (Linea linea in Lineas)
                 {
                     suma += linea.Precio;
                 }
-                if (FechaPrometida.Day == DateTime.Today.Day) suma += suma * ModificadorMismoDia / 100;
-                else suma += suma * ModificadorRecargo / 100;
+                if (FechaPrometida.Day == DateTime.Today.Day) suma += suma * modificadorMismoDia / 100;
+                else suma += suma * modificadorRecargoExp / 100;
                 suma += suma * impuesto / 100;
                 return suma;
             }
         }
-
+        public override void IsValid(int fechaPrometida)
+        {
+            if (this.FechaPrometida.Day - DateTime.Today.Day > fechaPrometida) throw new PedidoNoValidoException("Fecha no valida.");
+            if (this.FechaPrometida < DateTime.Today) throw new PedidoNoValidoException("Fecha no valida.");
+            if (Lineas.Count == 0) throw new PedidoNoValidoException("Debe tener al menos una linea.");
+        }
     }
 }

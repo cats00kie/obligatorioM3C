@@ -1,4 +1,5 @@
-﻿using LogicaNegocio.InterfacesRepositorio;
+﻿using LogicaNegocio.Entidades;
+using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Pedido;
 using Papeleria.LogicaAplicacion.Mappers;
@@ -27,24 +28,30 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Pedidos
         {
             if (esExpress)
             {
-                if (pedido.FechaPrometida.Day - DateTime.Today.Day < this._repositorioConfig.FindByNombre("PlazoEstipulado").Valor)
+                try
                 {
-                    this._repositorioPedido.Add(PedidoDTOMapper.FromDtoExpress(pedido));
+                    Pedido elPedido = PedidoDTOMapper.FromDtoExpress(pedido);
+                    elPedido.Fecha = DateTime.Today;
+                    elPedido.IsValid(this._repositorioConfig.FindByNombre("PlazoEstipulado").Valor);
+                    this._repositorioPedido.Add(elPedido);
                 }
-                else
+                catch (Exception ex)
                 {
-                    throw new PedidoNoValidoException("La fecha prometida no es válida.");
+                    throw ex;
                 }
             }
             else
             {
-                if (DateTime.Today.Day - pedido.FechaPrometida.Day > this._repositorioConfig.FindByNombre("PlazoEstipuladoCom").Valor)
+                try
                 {
-                    this._repositorioPedido.Add(PedidoDTOMapper.FromDtoComun(pedido));
+                    Pedido elPedido = PedidoDTOMapper.FromDtoComun(pedido);
+                    elPedido.Fecha = DateTime.Today;
+                    elPedido.IsValid(this._repositorioConfig.FindByNombre("PlazoEstipuladoCom").Valor);
+                    this._repositorioPedido.Add(elPedido);
                 }
-                else
+                catch (Exception ex) 
                 {
-                    throw new PedidoNoValidoException("La fecha prometida no es válida.");
+                    throw ex;
                 }
             }
         }

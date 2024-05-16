@@ -49,6 +49,7 @@ namespace Papeleria.Web
             builder.Services.AddScoped<IEncontrarPrecioPedido, EncontrarPrecioPedidoCU>();
             builder.Services.AddScoped<IEncontrarXIdArticulo, FindArticuloByIdCU>();
             builder.Services.AddScoped<IAnularPedido, AnularPedidoCU>();
+            builder.Services.AddScoped<IGetPedidosPorFecha, GetPedidosPorFechaCU>();
 
 
             builder.Services.AddSession(option =>

@@ -23,7 +23,9 @@ namespace ApiRest.Controllers
         {
             try
             {
-                return Ok(_getPedidosDesc.GetPedidosDesc());
+                IEnumerable<PedidoDTO> pedidos = _getPedidosDesc.GetPedidosDesc();
+                if (pedidos == null) return NoContent();
+                return Ok(pedidos);
             }
             catch (Exception ex)
             {

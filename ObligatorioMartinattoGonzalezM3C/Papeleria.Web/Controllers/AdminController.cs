@@ -1,8 +1,4 @@
-﻿using LogicaNegocio.Entidades;
-using LogicaNegocio.InterfacesRepositorio;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+﻿using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 
@@ -27,12 +23,20 @@ namespace Papeleria.Web.Controllers
         // GET: AdminController
         public ActionResult Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             return View(_encontrarAdmins.FindAllAdmins());
         }
 
         // GET: AdminController/Create
         public ActionResult Create(string mensaje)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             ViewBag.mensaje = mensaje;
             return View();
         }
@@ -56,6 +60,10 @@ namespace Papeleria.Web.Controllers
         // GET: AdminController/Edit/5
         public ActionResult Edit(int id)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             AdministradorDTO admin = this._findAdminById.FindAdminById(id);
             return View(admin);
         }
@@ -72,6 +80,10 @@ namespace Papeleria.Web.Controllers
         // GET: AdminController/Delete/5
         public ActionResult Delete(int id)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("usuario")))
+            {
+                return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
+            }
             AdministradorDTO admin = this._findAdminById.FindAdminById(id);
             return View(admin);
         }
