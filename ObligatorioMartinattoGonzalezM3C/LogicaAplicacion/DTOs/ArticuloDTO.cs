@@ -26,7 +26,6 @@ namespace Papeleria.LogicaAplicacion.DTOs
                 Precio = articulo.Precio;
                 Codigo = articulo.Codigo;
                 Nombre = articulo.Nombre;
-                Stock = articulo.Stock;
             }
         }
     }

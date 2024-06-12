@@ -1,4 +1,5 @@
-﻿using LogicaNegocio.InterfacesRepositorio;
+﻿using LogicaNegocio.Entidades;
+using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador;
 using Papeleria.LogicaAplicacion.Mappers;
@@ -12,14 +13,14 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
 {
     public class FindAdminByIdCU : IFindAdminById
     {
-        private IRepositorioAdministrador _repositorioAdmin;
-        public FindAdminByIdCU(IRepositorioAdministrador repositorioAdmin)
+        private IRepositorioUsuario _repositorioAdmin;
+        public FindAdminByIdCU(IRepositorioUsuario repositorioAdmin)
         {
             _repositorioAdmin = repositorioAdmin;
         }
-        public AdministradorDTO FindAdminById(int id)
+        public UsuarioDTO FindAdminById(int id)
         {
-            return AdministradorDTOMapper.ToDto(this._repositorioAdmin.FindByID(id));
+            return UsuarioDTOMapper.FromAdmin((Administrador)this._repositorioAdmin.FindByID(id));
         }
     }
 }

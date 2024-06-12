@@ -13,14 +13,14 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
 {
     public class CrearAdminCU : ICrearAdmin
     {
-        private IRepositorioAdministrador _repositorioAdmin;
-        public CrearAdminCU(IRepositorioAdministrador repositorioAdmin) 
+        private IRepositorioUsuario _repositorioAdmin;
+        public CrearAdminCU(IRepositorioUsuario repositorioAdmin) 
         {
             _repositorioAdmin = repositorioAdmin;
         }
-        public void CrearAdmin(AdministradorDTO adminDto)
+        public void CrearAdmin(UsuarioDTO adminDto)
         {
-            Administrador admin = AdministradorDTOMapper.FromDto(adminDto);
+            Administrador admin = UsuarioDTOMapper.FromDtoAdmin(adminDto);
             Hash hash = new Hash();
             try
             {

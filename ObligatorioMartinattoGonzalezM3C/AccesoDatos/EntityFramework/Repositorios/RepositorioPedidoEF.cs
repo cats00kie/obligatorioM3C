@@ -25,7 +25,6 @@ namespace AccesoDatos.EntityFramework.Repositorios
                 foreach(Linea linea in aAgregar.Lineas)
                 {
                     elArticulo = this._context.Articulos.Where(articulo => articulo.Id == linea.ArticuloId).FirstOrDefault();
-                    elArticulo.Stock = elArticulo.Stock - linea.CantUnidades;
                 }
                 this._context.Pedidos.Add(aAgregar);
                 this._context.SaveChanges();

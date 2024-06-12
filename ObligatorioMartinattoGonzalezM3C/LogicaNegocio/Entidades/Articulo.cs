@@ -19,24 +19,21 @@ namespace LogicaNegocio.Entidades
         public string Codigo {  get; set; }
         public string Descripcion { get; set;}
         public double Precio { get; set; }
-        public int Stock { get; set; }
         public Articulo() { }
-        public Articulo(int id, string nombre, string codigo, string descripcion, double precio, int stock)
+        public Articulo(int id, string nombre, string codigo, string descripcion, double precio)
         {
             Id = id;
             Nombre = nombre;
             Codigo = codigo;
             Descripcion = descripcion;
             Precio = precio;
-            Stock = stock;
         }
-        public Articulo( string nombre, string codigo, string descripcion, double precio, int stock)
+        public Articulo( string nombre, string codigo, string descripcion, double precio)
         {
             Nombre = nombre;
             Codigo = codigo;
             Descripcion = descripcion;
             Precio = precio;
-            Stock = stock;
         }
         public void IsValid()
         {
@@ -44,7 +41,6 @@ namespace LogicaNegocio.Entidades
             if (Codigo == "") throw new ArticuloNoValidoException("Codigo invalido.");
             if (Descripcion == "" && Descripcion.Length < 5) throw new ArticuloNoValidoException("Descripcion no valida");
             if (Precio <= 0) throw new ArticuloNoValidoException("Precio no valido");
-            if (Stock <= 0) throw new ArticuloNoValidoException("Stock no valido.");
         }
     }
 }

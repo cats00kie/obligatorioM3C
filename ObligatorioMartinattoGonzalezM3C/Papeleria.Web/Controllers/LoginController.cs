@@ -6,9 +6,9 @@ namespace Papeleria.Web.Controllers
 {
     public class LoginController : Controller
     {
-        private IRepositorioAdministrador _repositorioAdmins;
+        private IRepositorioUsuario _repositorioAdmins;
         private ILogin _loginCU;
-        public LoginController(IRepositorioAdministrador repositorioAdmins,
+        public LoginController(IRepositorioUsuario repositorioAdmins,
             ILogin login)
         {
             this._repositorioAdmins = repositorioAdmins;

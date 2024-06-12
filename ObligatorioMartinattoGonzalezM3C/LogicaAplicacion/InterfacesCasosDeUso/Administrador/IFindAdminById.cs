@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador
 {
     public interface IFindAdminById
     {
-        AdministradorDTO FindAdminById(int id);
+           UsuarioDTO FindAdminById(int id);
     }
 }

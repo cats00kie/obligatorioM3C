@@ -13,8 +13,8 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
 {
     public class BorrarAdminCU : IBorrarAdmin
     {
-        private IRepositorioAdministrador _repositorioAdministrador;
-        public BorrarAdminCU(IRepositorioAdministrador repositorioAdministrador)
+        private IRepositorioUsuario _repositorioAdministrador;
+        public BorrarAdminCU(IRepositorioUsuario repositorioAdministrador)
         {
             this._repositorioAdministrador = repositorioAdministrador;
         }

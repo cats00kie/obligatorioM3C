@@ -13,18 +13,18 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
 {
     public class EncontrarAdminsCU : IEncontrarAdmins
     {
-        private IRepositorioAdministrador _repositorioAdministrador;
-        public EncontrarAdminsCU(IRepositorioAdministrador repositorioAdministrador)
+        private IRepositorioUsuario _repositorioAdministrador;
+        public EncontrarAdminsCU(IRepositorioUsuario repositorioAdministrador)
         {
             this._repositorioAdministrador = repositorioAdministrador;
         }
-        public IEnumerable<AdministradorDTO> FindAllAdmins()
+        public IEnumerable<UsuarioDTO> FindAllAdmins()
         {
-            IEnumerable<Administrador> administradores = this._repositorioAdministrador.FindAll();
-            List<AdministradorDTO> administradoresDTO = new List<AdministradorDTO>();
+            IEnumerable<Usuario> administradores = this._repositorioAdministrador.FindAll();
+            List<UsuarioDTO> administradoresDTO = new List<UsuarioDTO>();
             foreach(Administrador admin in administradores)
             {
-                administradoresDTO.Add(AdministradorDTOMapper.ToDto(admin));
+                administradoresDTO.Add(UsuarioDTOMapper.FromAdmin(admin));
             }
             return administradoresDTO;
         }

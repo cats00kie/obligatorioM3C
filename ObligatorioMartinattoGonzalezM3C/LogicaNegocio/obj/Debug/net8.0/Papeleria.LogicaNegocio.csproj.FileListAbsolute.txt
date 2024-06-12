@@ -11,16 +11,3 @@ C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGon
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\refint\Papeleria.LogicaNegocio.dll
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.pdb
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\ref\Papeleria.LogicaNegocio.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\bin\Debug\net8.0\Papeleria.LogicaNegocio.deps.json
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\bin\Debug\net8.0\Papeleria.LogicaNegocio.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\bin\Debug\net8.0\Papeleria.LogicaNegocio.pdb
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.csproj.AssemblyReference.cache
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.AssemblyInfoInputs.cache
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.AssemblyInfo.cs
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.csproj.CoreCompileInputs.cache
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.sourcelink.json
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\refint\Papeleria.LogicaNegocio.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\Papeleria.LogicaNegocio.pdb
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaNegocio\obj\Debug\net8.0\ref\Papeleria.LogicaNegocio.dll

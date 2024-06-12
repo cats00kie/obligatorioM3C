@@ -44,7 +44,7 @@ namespace Papeleria.Web.Controllers
         // POST: AdminController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(AdministradorDTO adminDto)
+        public ActionResult Create(UsuarioDTO adminDto)
         {
             try
             {
@@ -64,14 +64,14 @@ namespace Papeleria.Web.Controllers
             {
                 return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
             }
-            AdministradorDTO admin = this._findAdminById.FindAdminById(id);
+            UsuarioDTO admin = this._findAdminById.FindAdminById(id);
             return View(admin);
         }
 
         // POST: AdminController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(AdministradorDTO adminDto)
+        public ActionResult Edit(UsuarioDTO adminDto)
         {
             this._editarAdmin.EditarAdmin(adminDto);
             return View(adminDto);
@@ -84,14 +84,14 @@ namespace Papeleria.Web.Controllers
             {
                 return RedirectToAction("Index", "Login", new { mensaje = "Por favor inicie sesion" });
             }
-            AdministradorDTO admin = this._findAdminById.FindAdminById(id);
+            UsuarioDTO admin = this._findAdminById.FindAdminById(id);
             return View(admin);
         }
 
         // POST: AdminController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(AdministradorDTO admin, int id)
+        public ActionResult Delete(UsuarioDTO admin, int id)
         {
             this._borrarAdmin.BorrarAdmin(id);
             return RedirectToAction("Index");

@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador
 {
     public interface IEditarAdmin
     {
-        bool EditarAdmin(AdministradorDTO aModificar);
+        bool EditarAdmin(UsuarioDTO aModificar);
     }
 }

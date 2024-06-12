@@ -15,15 +15,15 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Administradores
 {
     public class LoginCU : ILogin
     {
-        private IRepositorioAdministrador _repositorioAdmin;
-        public LoginCU(IRepositorioAdministrador repositorioAdmin)
+        private IRepositorioUsuario _repositorioAdmin;
+        public LoginCU(IRepositorioUsuario repositorioAdmin)
         {
             _repositorioAdmin = repositorioAdmin;
         }
         public bool Login(string email, string password)
         {
            
-            Administrador admin = this._repositorioAdmin.FindByEmail(email);
+            Usuario admin = this._repositorioAdmin.FindByEmail(email);
             
             if (admin != null)
             {

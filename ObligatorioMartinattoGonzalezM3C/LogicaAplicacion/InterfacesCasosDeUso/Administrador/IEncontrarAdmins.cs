@@ -10,6 +10,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador
 {
     public interface IEncontrarAdmins
     {
-        IEnumerable<AdministradorDTO> FindAllAdmins();
+        IEnumerable<UsuarioDTO> FindAllAdmins();
     }
 }

@@ -9,6 +9,6 @@ namespace Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Administrador
 {
     public interface ICrearAdmin
     {
-        void CrearAdmin(AdministradorDTO aCrear);
+        void CrearAdmin(UsuarioDTO aCrear);
     }
 }
