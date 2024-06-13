@@ -11,15 +11,15 @@ namespace Papeleria.ApiRest.Controllers
 
         private IGetAllTMov _getAllTMov;
         private ICrearTMov _crearTMov;
-        //private IFindTMovById _getTMovById;
+        private IFindTMovById _getTMovById;
         //private IDeleteTMov _deleteTMov;
         //private IUpdateTMov _updateTMov;
 
-        public TipoMovimientoController(IGetAllTMov getAllTMov, ICrearTMov crearTMov/*, IFindTMovById getTMovById, IDeleteTMov deleteTMov, IUpdateTMov updateTMov*/)
+        public TipoMovimientoController(IGetAllTMov getAllTMov, ICrearTMov crearTMov, IFindTMovById getTMovById/*, IDeleteTMov deleteTMov, IUpdateTMov updateTMov*/)
         {
             _getAllTMov = getAllTMov;
             _crearTMov = crearTMov;
-            //_getTMovById = getTMovById;
+            _getTMovById = getTMovById;
             //_deleteTMov = deleteTMov;
             //_updateTMov = updateTMov;
         }
@@ -28,6 +28,12 @@ namespace Papeleria.ApiRest.Controllers
         public ActionResult<IEnumerable<TipoMovimientoDTO>> Get()
         {
             return Ok(this._getAllTMov.GetAllTMov());
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<TipoMovimientoDTO> GetById(int id)
+        {
+            return Ok(this._getTMovById.FindById(id));
         }
 
         [HttpPost("")]
@@ -45,6 +51,8 @@ namespace Papeleria.ApiRest.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
 
         //[HttpDelete("{teamId}")]
         //[ProducesResponseType(StatusCodes.Status200OK)]

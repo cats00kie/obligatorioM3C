@@ -1,6 +1,7 @@
 ﻿using AccesoDatos.EntityFramework;
 using LogicaNegocio.Entidades;
 using Papeleria.LogicaNegocio.Entidades;
+using Papeleria.LogicaNegocio.Excepciones;
 using Papeleria.LogicaNegocio.InterfacesRepositorio;
 using System;
 using System.Collections.Generic;
@@ -22,10 +23,14 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
         {
             try
             {
-                // TODO : Crear ISVALID();
+                aAgregar.IsValid();
                 this._context.TipoMovimientos.Add(aAgregar);
                 this._context.SaveChanges();
                 return true;
+            }
+            catch (TMovException ex)
+            {
+                throw ex;
             }
             catch (Exception ex)
             {

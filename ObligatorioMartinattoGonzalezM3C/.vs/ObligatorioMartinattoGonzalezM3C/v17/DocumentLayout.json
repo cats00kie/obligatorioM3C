@@ -1,37 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\",
+  "WorkspaceRootPath": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\tipomovimientodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\tipomovimientodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\dtos\\tipomovimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\dtos\\tipomovimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\tmov\\creartmovcu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\tmov\\creartmovcu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\interfacescasosdeuso\\tmov\\icreartmov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\interfacescasosdeuso\\tmov\\icreartmov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositoriotipomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositoriotipomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositoriotipomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\tmov\\getalltmovcu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\mappers\\tipomovimientodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\mappers\\tipomovimientodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\dtos\\tipomovimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\dtos\\tipomovimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\interfacescasosdeuso\\tmov\\icreartmov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\interfacescasosdeuso\\tmov\\icreartmov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|c:\\users\\sprin\\desktop\\obligatoriodeltuki\\obligatoriomartinattogonzalezm3c\\logicaaplicacion\\casosdeuso\\tmov\\getalltmovcu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{647FE189-05BD-461D-9902-5A3E6F93FA15}|LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj|solutionrelative:logicaaplicacion\\casosdeuso\\tmov\\getalltmovcu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,119 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 310,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllTMovCU.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
+              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:31:06.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TipoMovimientoDTOMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
-              "RelativeToolTip": "LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAOAAAA",
+              "DocumentIndex": 0,
+              "Title": "RepositorioTipoMovimientoEF.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
+              "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T01:02:05.387Z",
+              "WhenOpened": "2024-06-12T00:19:06.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TipoMovimientoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
-              "RelativeToolTip": "LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:59:07.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICrearTMov.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
-              "RelativeToolTip": "LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:49:52.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CrearTMovCU.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\TMov\\CrearTMovCU.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\TMov\\CrearTMovCU.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\TMov\\CrearTMovCU.cs",
-              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\TMov\\CrearTMovCU.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:48:13.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Program.cs",
               "RelativeDocumentMoniker": "ApiRest\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Program.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Program.cs",
               "RelativeToolTip": "ApiRest\\Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwB4AAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T00:45:04.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetAllTMovCU.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
-              "RelativeDocumentMoniker": "LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
-              "RelativeToolTip": "LogicaAplicacion\\CasosDeUso\\TMov\\GetAllTMovCU.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "DocumentIndex": 5,
+              "Title": "ICrearTMov.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
+              "RelativeToolTip": "LogicaAplicacion\\InterfacesCasosDeUso\\TMov\\ICrearTMov.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:31:06.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:49:52.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TipoMovimientoController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\TipoMovimientoController.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\TipoMovimientoController.cs",
               "RelativeDocumentMoniker": "ApiRest\\Controllers\\TipoMovimientoController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\TipoMovimientoController.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\TipoMovimientoController.cs",
               "RelativeToolTip": "ApiRest\\Controllers\\TipoMovimientoController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBcAAAAnAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T00:21:54.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RepositorioTipoMovimientoEF.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
-              "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAsAAAA",
+              "DocumentIndex": 4,
+              "Title": "TipoMovimientoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
+              "RelativeToolTip": "LogicaAplicacion\\DTOs\\TipoMovimientoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:19:06.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:59:07.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TipoMovimientoDTOMapper.cs",
+              "DocumentMoniker": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
+              "RelativeDocumentMoniker": "LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
+              "ToolTip": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
+              "RelativeToolTip": "LogicaAplicacion\\Mappers\\TipoMovimientoDTOMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T01:02:05.387Z"
             }
           ]
         },
@@ -164,7 +135,7 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

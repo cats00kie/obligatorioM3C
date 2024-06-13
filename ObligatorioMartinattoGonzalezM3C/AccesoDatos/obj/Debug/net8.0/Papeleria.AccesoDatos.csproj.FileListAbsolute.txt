@@ -14,3 +14,19 @@ C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGon
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\refint\Papeleria.AccesoDatos.dll
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.pdb
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\ref\Papeleria.AccesoDatos.dll
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\bin\Debug\net8.0\Papeleria.AccesoDatos.deps.json
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\bin\Debug\net8.0\Papeleria.AccesoDatos.dll
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\bin\Debug\net8.0\Papeleria.AccesoDatos.pdb
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\bin\Debug\net8.0\Papeleria.LogicaNegocio.dll
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\bin\Debug\net8.0\Papeleria.LogicaNegocio.pdb
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.AssemblyInfo.cs
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.sourcelink.json
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleri.2C0B9302.Up2Date
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.dll
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\refint\Papeleria.AccesoDatos.dll
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\Papeleria.AccesoDatos.pdb
+C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\AccesoDatos\obj\Debug\net8.0\ref\Papeleria.AccesoDatos.dll

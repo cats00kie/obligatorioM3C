@@ -29,6 +29,7 @@ builder.Services.AddScoped<IEncontrarArticulosOrd, EncontrarArticulosOrdCU>();
 builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
 builder.Services.AddScoped<IGetAllTMov, GetAllTMovCU>();
 builder.Services.AddScoped<ICrearTMov, CrearTMovCU>();
+builder.Services.AddScoped<IFindTMovById, FindTMovByIdCU>();
 
 var app = builder.Build();
 
