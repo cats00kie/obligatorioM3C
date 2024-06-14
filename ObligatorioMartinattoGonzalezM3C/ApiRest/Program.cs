@@ -30,6 +30,8 @@ builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
 builder.Services.AddScoped<IGetAllTMov, GetAllTMovCU>();
 builder.Services.AddScoped<ICrearTMov, CrearTMovCU>();
 builder.Services.AddScoped<IFindTMovById, FindTMovByIdCU>();
+builder.Services.AddScoped<IDeleteTMov, DeleteTMovCU>();
+builder.Services.AddScoped<IUpdateTMov, UpdateTMovCU>();    
 
 var app = builder.Build();
 

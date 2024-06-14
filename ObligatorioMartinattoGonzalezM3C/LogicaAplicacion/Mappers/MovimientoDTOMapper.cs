@@ -18,7 +18,7 @@ namespace Papeleria.LogicaAplicacion.Mappers
                 FechaMovimiento = movimientoDTO.FechaMovimiento,
                 ArticuloId = movimientoDTO.ArticuloId,
                 TipoMovimientoId = movimientoDTO.TipoMovimientoId,
-                Usuario = UsuarioDTOMapper.FromDtoEnc(movimientoDTO.Usuario),
+                EmailUsuario = movimientoDTO.EmailUsuario,
                 CantUnidades = movimientoDTO.CantUnidades
             };
         }

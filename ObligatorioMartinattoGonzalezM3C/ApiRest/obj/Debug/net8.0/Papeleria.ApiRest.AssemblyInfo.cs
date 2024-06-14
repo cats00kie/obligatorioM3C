@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Papeleria.ApiRest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2419ea99356a875555f540af954b463a1d17b28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cd58e3ac2bd351bf8108aee180eeb0bf5198076")]
 [assembly: System.Reflection.AssemblyProductAttribute("Papeleria.ApiRest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Papeleria.ApiRest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

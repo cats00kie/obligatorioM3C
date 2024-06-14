@@ -52,10 +52,16 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
         {
             try
             {
+                
                 TipoMovimiento aBorrar = FindByID(id);
-                this._context.TipoMovimientos.Remove(aBorrar);
-                this._context.SaveChanges();
-                return true;
+                IEnumerable<Movimiento> movimientos = this._context.Movimientos.Where(m => m.TipoMovimiento.Id == aBorrar.Id).ToList();
+                if (movimientos.Count() == 0)
+                {
+                    this._context.TipoMovimientos.Remove(aBorrar);
+                    this._context.SaveChanges();
+                    return true;
+                }
+                else return false;
             }
             catch (Exception ex)
             {
@@ -67,9 +73,14 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
         {
             try
             {
-                this._context.TipoMovimientos.Update(aModificar);
-                this._context.SaveChanges();
-                return true;
+                IEnumerable<Movimiento> movimientos = this._context.Movimientos.Where(m => m.TipoMovimiento.Id == aModificar.Id).ToList();
+                if (movimientos.Count() == 0)
+                {
+                    this._context.TipoMovimientos.Update(aModificar);
+                    this._context.SaveChanges();
+                    return true;
+                }
+                else return false;
             }
             catch (Exception ex)
             {

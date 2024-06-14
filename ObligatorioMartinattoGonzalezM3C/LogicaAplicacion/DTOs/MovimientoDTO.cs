@@ -16,7 +16,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public DateTime FechaMovimiento { get; set; }
         public int ArticuloId { get; set; }
         public int TipoMovimientoId { get; set; }
-        public UsuarioDTO Usuario { get; set; }
+        public string EmailUsuario { get; set; }
         public int CantUnidades { get; set; }
 
         public MovimientoDTO(Movimiento m)
@@ -25,7 +25,7 @@ namespace Papeleria.LogicaAplicacion.DTOs
             FechaMovimiento = m.FechaMovimiento;
             ArticuloId = m.ArticuloId;
             TipoMovimientoId = m.TipoMovimientoId;
-            Usuario = UsuarioDTOMapper.FromEncargado((Encargado)m.Usuario);
+            EmailUsuario = m.EmailUsuario;
             CantUnidades = m.CantUnidades;
         }
     }

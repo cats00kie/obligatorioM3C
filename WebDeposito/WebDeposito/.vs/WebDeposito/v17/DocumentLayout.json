@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\controllers\\movimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\controllers\\movimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\views\\movimiento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\views\\movimiento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\models\\movimientomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\models\\movimientomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\models\\tipomovimientomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\models\\tipomovimientomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\models\\articulomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\models\\articulomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 310,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +43,88 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Program.cs",
+              "RelativeDocumentMoniker": "WebDeposito\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Program.cs",
+              "RelativeToolTip": "WebDeposito\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T00:45:38.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Views\\Movimiento\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebDeposito\\Views\\Movimiento\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Views\\Movimiento\\Create.cshtml",
+              "RelativeToolTip": "WebDeposito\\Views\\Movimiento\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T00:51:48.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovimientoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\MovimientoController.cs",
+              "RelativeDocumentMoniker": "WebDeposito\\Controllers\\MovimientoController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\MovimientoController.cs",
+              "RelativeToolTip": "WebDeposito\\Controllers\\MovimientoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T00:45:55.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TipoMovimientoModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Models\\TipoMovimientoModel.cs",
+              "RelativeDocumentMoniker": "WebDeposito\\Models\\TipoMovimientoModel.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Models\\TipoMovimientoModel.cs",
+              "RelativeToolTip": "WebDeposito\\Models\\TipoMovimientoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T00:40:11.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticuloModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Models\\ArticuloModel.cs",
+              "RelativeDocumentMoniker": "WebDeposito\\Models\\ArticuloModel.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Models\\ArticuloModel.cs",
+              "RelativeToolTip": "WebDeposito\\Models\\ArticuloModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T00:39:58.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovimientoModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Models\\MovimientoModel.cs",
+              "RelativeDocumentMoniker": "WebDeposito\\Models\\MovimientoModel.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Models\\MovimientoModel.cs",
+              "RelativeToolTip": "WebDeposito\\Models\\MovimientoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T00:34:47.481Z",
+              "EditorCaption": ""
             }
           ]
         },
