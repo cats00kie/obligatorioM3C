@@ -9,5 +9,6 @@ namespace LogicaNegocio.InterfacesRepositorio
 {
     public interface IRepositorioArticulo : IRepositorio<Articulo>
     {
+        IEnumerable<Articulo> GetMovidosByFecha(DateTime startdate, DateTime enddate, int pag, int size);
     }
 }

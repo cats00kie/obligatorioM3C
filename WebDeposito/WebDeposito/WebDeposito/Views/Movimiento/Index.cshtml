@@ -44,10 +44,10 @@
                 @Html.DisplayFor(modelItem => item.FechaMovimiento)
             </td>
             <td>
-                        @Html.DisplayFor(modelItem => item.NombreArticulo)
+                @Html.DisplayFor(modelItem => item.Articulo.Nombre)
             </td>
             <td>
-                        @Html.DisplayFor(modelItem => item.NombreTMov)
+                @Html.DisplayFor(modelItem => item.TipoMov.Nombre)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.EmailUsuario)

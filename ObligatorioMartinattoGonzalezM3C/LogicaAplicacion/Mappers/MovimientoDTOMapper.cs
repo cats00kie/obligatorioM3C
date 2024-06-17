@@ -30,9 +30,9 @@ namespace Papeleria.LogicaAplicacion.Mappers
                 Id = m.Id,
                 FechaMovimiento = m.FechaMovimiento,
                 ArticuloId = m.ArticuloId,
-                NombreArticulo = m.Articulo.Nombre,
                 TipoMovimientoId = m.TipoMovimientoId,
-                NombreTMov = m.TipoMovimiento.Nombre,
+                Articulo = ArticuloDTOMapper.ToDto(m.Articulo),
+                TipoMov = TipoMovimientoDTOMapper.ToDto(m.TipoMovimiento),
                 EmailUsuario = m.EmailUsuario,
                 CantUnidades = m.CantUnidades
             };

@@ -11,5 +11,6 @@ namespace Papeleria.LogicaNegocio.InterfacesRepositorio
     public interface IRepositorioMovimiento : IRepositorio<Movimiento>
     {
         IEnumerable<Movimiento> GetMovs(int pag, int size);
+        IEnumerable<Movimiento> GetByArtyTipo(int articuloId, int tipoMovId, int pag, int size);
     }
 }

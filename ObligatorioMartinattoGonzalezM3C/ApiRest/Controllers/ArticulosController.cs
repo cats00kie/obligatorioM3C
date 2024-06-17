@@ -1,4 +1,5 @@
-﻿using LogicaNegocio.InterfacesRepositorio;
+﻿using LogicaNegocio.Entidades;
+using LogicaNegocio.InterfacesRepositorio;
 using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
@@ -13,11 +14,13 @@ namespace ApiRest.Controllers
     public class ArticulosController : ControllerBase
     {
         private IEncontrarArticulosOrd _encontrarArticulosOrd;
+        private IGetArticulosByFecha _getArticulosByFecha;
 
 
-        public ArticulosController(IEncontrarArticulosOrd encontrarArticulosOrd, IGetPedidosDesc getPedidosDesc)
+        public ArticulosController(IEncontrarArticulosOrd encontrarArticulosOrd, IGetArticulosByFecha getArticulosByFecha)
         {
             _encontrarArticulosOrd = encontrarArticulosOrd;
+            _getArticulosByFecha = getArticulosByFecha;
         }
 
         // GET api/<ArticulosController>
@@ -34,6 +37,15 @@ namespace ApiRest.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet("GetByFechas/Page/{pageNumber}")]
+        public ActionResult<IEnumerable<ArticuloDTO>> GetByFechas(DateTime startdate, DateTime enddate, int pageNumber) 
+        {
+            if (pageNumber < 1) { return BadRequest("Pagina invalida."); }
+            IEnumerable<ArticuloDTO> arts = this._getArticulosByFecha.GetArticulosByFecha(startdate, enddate, pageNumber);
+            if (arts.Count() == 0) { return NoContent(); }
+            return Ok(arts);
         }
     }
 }

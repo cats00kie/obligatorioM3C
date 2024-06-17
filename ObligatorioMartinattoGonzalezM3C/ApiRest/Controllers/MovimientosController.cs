@@ -14,11 +14,15 @@ namespace Papeleria.ApiRest.Controllers
       
         private ICrearMovimiento _crearMov;
         private IGetAllMovs _getMovs;
+        private IGetByArtyTipo _getByArtyTipo;
+        private IGetMovsXFecha _getMovsXFecha;
         
-        public MovimientosController(ICrearMovimiento crearMov, IGetAllMovs getAllMovs)
+        public MovimientosController(ICrearMovimiento crearMov, IGetAllMovs getAllMovs, IGetByArtyTipo getByArtyTipo, IGetMovsXFecha getMovsXFecha)
         {
             this._crearMov = crearMov;
             this._getMovs = getAllMovs;
+            this._getByArtyTipo = getByArtyTipo;
+            this._getMovsXFecha = getMovsXFecha;
         }
 
         [HttpGet("Page/{pageNumber}")]
@@ -30,6 +34,29 @@ namespace Papeleria.ApiRest.Controllers
             if(pageNumber < 1) { return BadRequest("Pagina invalida."); }
             IEnumerable<MovimientoDTO> movs = this._getMovs.GetAllMovs(pageNumber);
             if(movs.Count() == 0) { return NoContent(); }
+            return Ok(movs);
+        }
+
+        [HttpGet("GetByArtyTipo/Page/{pageNumber}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<IEnumerable<MovimientoDTO>> GetByArtyTipo(int articuloId, int tipoId, int pageNumber)
+        {
+            if (pageNumber < 1) { return BadRequest("Pagina invalida."); }
+            IEnumerable<MovimientoDTO> movs = this._getByArtyTipo.GetByArtyTipo(articuloId, tipoId, pageNumber);
+            if (movs.Count() == 0) { return NoContent(); }
+            return Ok(movs);
+        }
+
+        [HttpGet("GetMovsXFecha")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<IEnumerable<FechaDTO>> GetMovsXFecha()
+        {
+            IEnumerable<FechaDTO> movs = this._getMovsXFecha.GetMovsXFecha();
+            if (movs.Count() == 0) { return NoContent(); }
             return Ok(movs);
         }
 
