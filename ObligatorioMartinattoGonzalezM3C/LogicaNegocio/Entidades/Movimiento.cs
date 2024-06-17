@@ -24,6 +24,7 @@ namespace Papeleria.LogicaNegocio.Entidades
         public void IsValid()
         {
             if (CantUnidades < 1) throw new MovimientoException("Cantidad invalida");
+
             //TODO : AGREGAR CONFIG DEL TOPE PARA LOS MOVIMIENTOS
         }
     }

@@ -12,14 +12,39 @@ namespace WebDeposito.Controllers
         public MovimientoController()
         {
             _client = new HttpClient();
-            _baseUrl = "http://localhost:5261/api/Movimientos/";
+            _baseUrl = "http://localhost:5091/api/Movimientos/";
         }
         // GET: TeamController/Create
         public ActionResult Create(string mensaje)
         {
+            HttpRequestMessage solicitud =
+                new HttpRequestMessage(HttpMethod.Get, new Uri("http://localhost:5091/api/Articulos"));
+            Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
+            respuesta.Wait();
 
+            if (respuesta.Result.IsSuccessStatusCode)
+            {
+                var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
+                IEnumerable<ArticuloModel> articulos = JsonConvert.DeserializeObject<IEnumerable<ArticuloModel>>(objetoComoTexto);
+                ViewBag.Articulos = articulos;
+            }
+
+            HttpRequestMessage solicitudM =
+                new HttpRequestMessage(HttpMethod.Get, new Uri("http://localhost:5091/api/TipoMovimientos"));
+            Task<HttpResponseMessage> respuestaM = _client.SendAsync(solicitudM);
+            respuestaM.Wait();
+
+            if (respuestaM.Result.IsSuccessStatusCode)
+            {
+                var objetoComoTexto = respuestaM.Result.Content.ReadAsStringAsync().Result;
+                IEnumerable<TipoMovimientoModel> tipos = JsonConvert.DeserializeObject<IEnumerable<TipoMovimientoModel>>(objetoComoTexto);
+                ViewBag.TipoMovs = tipos;
+            }
+            //TODO: HACER AUTH CON EL EMAIL
+            ViewBag.Email = "eltuki@email.com";
             ViewBag.message = mensaje;
             return View();
+
         }
 
         // POST: TeamController/Create
@@ -38,7 +63,7 @@ namespace WebDeposito.Controllers
 
                 if (respuesta.Result.IsSuccessStatusCode)
                 {
-                    return RedirectToAction(nameof(Index));
+                    return View();
                 }
 
                 return View();

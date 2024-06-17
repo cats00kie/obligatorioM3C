@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebDeposito")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cd58e3ac2bd351bf8108aee180eeb0bf5198076")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6fdd947f3c11549eba2301d01d305bf432d4244")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebDeposito")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebDeposito")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

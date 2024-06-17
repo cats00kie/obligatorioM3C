@@ -39,7 +39,7 @@ namespace Papeleria.ApiRest.Controllers
         [HttpPost("")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<TipoMovimientoDTO> CreateTeam([FromBody] TipoMovimientoDTO tMovDTO)
+        public ActionResult<TipoMovimientoDTO> CreateMovimiento([FromBody] TipoMovimientoDTO tMovDTO)
         {
             try
             {

@@ -22,36 +22,6 @@ namespace Papeleria.AccesoDatos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("LogicaNegocio.Entidades.Administrador", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("PasswordSinEncript")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Email")
-                        .IsUnique();
-
-                    b.ToTable("Admins");
-                });
-
             modelBuilder.Entity("LogicaNegocio.Entidades.Articulo", b =>
                 {
                     b.Property<int>("Id")
@@ -189,13 +159,18 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.UseTphMappingStrategy();
                 });
 
-            modelBuilder.Entity("Papeleria.LogicaNegocio.Entidades.Encargado", b =>
+            modelBuilder.Entity("LogicaNegocio.Entidades.Usuario", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("nvarchar(13)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -216,7 +191,11 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Encargados");
+                    b.ToTable("Usuarios");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Usuario");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Papeleria.LogicaNegocio.Entidades.Movimiento", b =>
@@ -291,29 +270,16 @@ namespace Papeleria.AccesoDatos.Migrations
 
             modelBuilder.Entity("LogicaNegocio.Entidades.Administrador", b =>
                 {
-                    b.OwnsOne("LogicaNegocio.ValueObjects.NombreCompleto", "NombreCompleto", b1 =>
-                        {
-                            b1.Property<int>("AdministradorId")
-                                .HasColumnType("int");
+                    b.HasBaseType("LogicaNegocio.Entidades.Usuario");
 
-                            b1.Property<string>("Apellido")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                    b.HasDiscriminator().HasValue("Administrador");
+                });
 
-                            b1.Property<string>("Nombre")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+            modelBuilder.Entity("Papeleria.LogicaNegocio.Entidades.Encargado", b =>
+                {
+                    b.HasBaseType("LogicaNegocio.Entidades.Usuario");
 
-                            b1.HasKey("AdministradorId");
-
-                            b1.ToTable("Admins");
-
-                            b1.WithOwner()
-                                .HasForeignKey("AdministradorId");
-                        });
-
-                    b.Navigation("NombreCompleto")
-                        .IsRequired();
+                    b.HasDiscriminator().HasValue("Encargado");
                 });
 
             modelBuilder.Entity("LogicaNegocio.Entidades.Cliente", b =>
@@ -400,11 +366,11 @@ namespace Papeleria.AccesoDatos.Migrations
                     b.Navigation("ClienteObj");
                 });
 
-            modelBuilder.Entity("Papeleria.LogicaNegocio.Entidades.Encargado", b =>
+            modelBuilder.Entity("LogicaNegocio.Entidades.Usuario", b =>
                 {
                     b.OwnsOne("LogicaNegocio.ValueObjects.NombreCompleto", "NombreCompleto", b1 =>
                         {
-                            b1.Property<int>("EncargadoId")
+                            b1.Property<int>("UsuarioId")
                                 .HasColumnType("int");
 
                             b1.Property<string>("Apellido")
@@ -415,12 +381,12 @@ namespace Papeleria.AccesoDatos.Migrations
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)");
 
-                            b1.HasKey("EncargadoId");
+                            b1.HasKey("UsuarioId");
 
-                            b1.ToTable("Encargados");
+                            b1.ToTable("Usuarios");
 
                             b1.WithOwner()
-                                .HasForeignKey("EncargadoId");
+                                .HasForeignKey("UsuarioId");
                         });
 
                     b.Navigation("NombreCompleto")

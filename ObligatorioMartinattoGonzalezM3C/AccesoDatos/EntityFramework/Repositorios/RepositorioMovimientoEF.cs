@@ -30,7 +30,7 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
                 this._context.SaveChanges();
                 return true;
             }
-            catch (TMovException ex)
+            catch (MovException ex)
             {
                 throw ex;
             }

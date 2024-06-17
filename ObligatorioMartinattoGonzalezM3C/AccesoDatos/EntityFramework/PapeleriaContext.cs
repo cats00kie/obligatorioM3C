@@ -15,7 +15,7 @@ namespace AccesoDatos.EntityFramework
 {
     public class PapeleriaContext : DbContext
     {
-        public DbSet<Usuario> Usuarios;
+        public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Administrador> Admins { get; set; }
         public DbSet<Encargado> Encargados { get; set; }

@@ -19,14 +19,5 @@ namespace Papeleria.LogicaAplicacion.DTOs
         public string EmailUsuario { get; set; }
         public int CantUnidades { get; set; }
 
-        public MovimientoDTO(Movimiento m)
-        {
-            Id = m.Id;
-            FechaMovimiento = m.FechaMovimiento;
-            ArticuloId = m.ArticuloId;
-            TipoMovimientoId = m.TipoMovimientoId;
-            EmailUsuario = m.EmailUsuario;
-            CantUnidades = m.CantUnidades;
-        }
     }
 }

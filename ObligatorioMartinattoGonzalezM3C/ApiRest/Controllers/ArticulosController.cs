@@ -21,7 +21,7 @@ namespace ApiRest.Controllers
         }
 
         // GET api/<ArticulosController>
-        [HttpGet(Name = "GetAllArticulos")]
+        [HttpGet("")]
         public ActionResult<IEnumerable<ArticuloDTO>> Get()
         {
             try

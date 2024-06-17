@@ -23,9 +23,17 @@ namespace Papeleria.LogicaAplicacion.Mappers
             };
         }
 
-        public static MovimientoDTO ToDto(Movimiento movimiento)
+        public static MovimientoDTO ToDto(Movimiento m)
         {
-            return new MovimientoDTO(movimiento);
+            return new MovimientoDTO 
+            {
+                Id = m.Id,
+                FechaMovimiento = m.FechaMovimiento,
+                ArticuloId = m.ArticuloId,
+                TipoMovimientoId = m.TipoMovimientoId,
+                EmailUsuario = m.EmailUsuario,
+                CantUnidades = m.CantUnidades
+            };
         }
     }
 }
