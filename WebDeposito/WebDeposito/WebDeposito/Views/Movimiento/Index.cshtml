@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebDeposito.Models.MovimientoModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Articulo
+            </th>
+            <th>
+                Tipo de Movimiento
+            </th>
+            <th>
+                Encargado
+            </th>
+            <th>
+                Unidades
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null){
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaMovimiento)
+            </td>
+            <td>
+                        @Html.DisplayFor(modelItem => item.NombreArticulo)
+            </td>
+            <td>
+                        @Html.DisplayFor(modelItem => item.NombreTMov)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantUnidades)
+            </td>
+        </tr>
+}
+}
+    </tbody>
+</table>

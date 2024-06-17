@@ -25,12 +25,14 @@ namespace Papeleria.LogicaAplicacion.Mappers
 
         public static MovimientoDTO ToDto(Movimiento m)
         {
-            return new MovimientoDTO 
+            return new MovimientoDTO
             {
                 Id = m.Id,
                 FechaMovimiento = m.FechaMovimiento,
                 ArticuloId = m.ArticuloId,
+                NombreArticulo = m.Articulo.Nombre,
                 TipoMovimientoId = m.TipoMovimientoId,
+                NombreTMov = m.TipoMovimiento.Nombre,
                 EmailUsuario = m.EmailUsuario,
                 CantUnidades = m.CantUnidades
             };

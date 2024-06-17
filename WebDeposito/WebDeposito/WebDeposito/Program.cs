@@ -22,6 +22,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Movimiento}/{action=Create}/{id?}");
+    pattern: "{controller=Movimiento}/{action=Index}/{id?}");
 
 app.Run();

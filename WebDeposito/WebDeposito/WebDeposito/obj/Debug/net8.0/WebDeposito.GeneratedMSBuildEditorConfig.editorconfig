@@ -17,35 +17,39 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebDeposito
 build_property.RootNamespace = WebDeposito
-build_property.ProjectDir = C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\WebDeposito\WebDeposito\WebDeposito\
+build_property.ProjectDir = C:\Users\sprin\Desktop\obligatorioDelTuki\WebDeposito\WebDeposito\WebDeposito\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\WebDeposito\WebDeposito\WebDeposito
+build_property.MSBuildProjectDirectory = C:\Users\sprin\Desktop\obligatorioDelTuki\WebDeposito\WebDeposito\WebDeposito
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Movimiento/Create.cshtml]
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/Movimiento/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Shared/Error.cshtml]
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/Movimiento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/_ViewImports.cshtml]
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/_ViewStart.cshtml]
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Shared/_Layout.cshtml]
+[C:/Users/sprin/Desktop/obligatorioDelTuki/WebDeposito/WebDeposito/WebDeposito/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-71bt0nhylz

@@ -10,5 +10,6 @@ namespace Papeleria.LogicaNegocio.InterfacesRepositorio
 {
     public interface IRepositorioMovimiento : IRepositorio<Movimiento>
     {
+        IEnumerable<Movimiento> GetMovs(int pag, int size);
     }
 }

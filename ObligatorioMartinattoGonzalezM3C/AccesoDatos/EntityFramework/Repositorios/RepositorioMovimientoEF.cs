@@ -1,5 +1,6 @@
 ﻿using AccesoDatos.EntityFramework;
 using LogicaNegocio.Entidades;
+using Microsoft.EntityFrameworkCore;
 using Papeleria.LogicaNegocio.Entidades;
 using Papeleria.LogicaNegocio.Excepciones;
 using Papeleria.LogicaNegocio.InterfacesRepositorio;
@@ -25,7 +26,7 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
                 Articulo elArticulo = this._context.Articulos.Where(a => a.Id == aAgregar.ArticuloId).FirstOrDefault();
                 TipoMovimiento elTipo = this._context.TipoMovimientos.Where(t => t.Id == aAgregar.TipoMovimientoId).FirstOrDefault();
                 Usuario elUsuario = this._context.Usuarios.Where(u => u.Email == aAgregar.EmailUsuario).FirstOrDefault();
-                aAgregar.IsValid();
+                aAgregar.IsValid(this._context.Configuraciones.Where(c => c.Nombre == "Tope").FirstOrDefault().Valor);
                 this._context.Movimientos.Add(aAgregar);
                 this._context.SaveChanges();
                 return true;
@@ -48,6 +49,11 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
         public Movimiento FindByID(int id)
         {
             return this._context.Movimientos.Where(t => t.Id == id).FirstOrDefault();
+        }
+
+        public IEnumerable<Movimiento> GetMovs(int pag, int size)
+        {
+            return this._context.Movimientos.Include(m => m.Articulo).Include(m=>m.TipoMovimiento).Skip((pag - 1) * size).Take(size).ToList();
         }
 
         public bool Remove(int id)

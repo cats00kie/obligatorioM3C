@@ -13,10 +13,24 @@ namespace Papeleria.ApiRest.Controllers
     {
       
         private ICrearMovimiento _crearMov;
+        private IGetAllMovs _getMovs;
         
-        public MovimientosController(ICrearMovimiento crearMov)
+        public MovimientosController(ICrearMovimiento crearMov, IGetAllMovs getAllMovs)
         {
             this._crearMov = crearMov;
+            this._getMovs = getAllMovs;
+        }
+
+        [HttpGet("Page/{pageNumber}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<IEnumerable<MovimientoDTO>> GetMovs(int pageNumber)
+        {
+            if(pageNumber < 1) { return BadRequest("Pagina invalida."); }
+            IEnumerable<MovimientoDTO> movs = this._getMovs.GetAllMovs(pageNumber);
+            if(movs.Count() == 0) { return NoContent(); }
+            return Ok(movs);
         }
 
         [HttpPost("")]

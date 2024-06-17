@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Papeleria.LogicaNegocio.Entidades
 {
-    public class Movimiento : IValid
+    public class Movimiento 
     {
         public int Id { get; set; }
         public DateTime FechaMovimiento { get; set; }  
@@ -21,11 +21,10 @@ namespace Papeleria.LogicaNegocio.Entidades
         public string EmailUsuario {  get; set; }
         public int CantUnidades { get; set; }
 
-        public void IsValid()
+        public void IsValid(int tope)
         {
             if (CantUnidades < 1) throw new MovimientoException("Cantidad invalida");
-
-            //TODO : AGREGAR CONFIG DEL TOPE PARA LOS MOVIMIENTOS
+            if (CantUnidades > tope) throw new MovimientoException("Cantidad supera tope");
         }
     }
 }

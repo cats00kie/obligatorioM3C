@@ -25,8 +25,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IRepositorioArticulo, RepositorioArticuloEF>();
 builder.Services.AddScoped<IRepositorioPedido, RepositorioPedidoEF>();
 builder.Services.AddScoped<IRepositorioTipoMovimiento, RepositorioTipoMovimientoEF>();
+builder.Services.AddScoped<IRepositorioConfig, RepositorioConfiguracionEF>();
 builder.Services.AddScoped<IRepositorioMovimiento, RepositorioMovimientoEF>();
-
 
 builder.Services.AddScoped<IEncontrarArticulosOrd, EncontrarArticulosOrdCU>();
 builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
@@ -36,6 +36,7 @@ builder.Services.AddScoped<IFindTMovById, FindTMovByIdCU>();
 builder.Services.AddScoped<IDeleteTMov, DeleteTMovCU>();
 builder.Services.AddScoped<IUpdateTMov, UpdateTMovCU>();
 builder.Services.AddScoped<ICrearMovimiento, CrearMovimientoCU>();
+builder.Services.AddScoped<IGetAllMovs, GetAllMovsCU>();
 
 var app = builder.Build();
 
