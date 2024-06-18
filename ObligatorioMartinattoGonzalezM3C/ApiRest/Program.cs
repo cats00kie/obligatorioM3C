@@ -37,6 +37,9 @@ builder.Services.AddScoped<IDeleteTMov, DeleteTMovCU>();
 builder.Services.AddScoped<IUpdateTMov, UpdateTMovCU>();
 builder.Services.AddScoped<ICrearMovimiento, CrearMovimientoCU>();
 builder.Services.AddScoped<IGetAllMovs, GetAllMovsCU>();
+builder.Services.AddScoped<IGetByArtyTipo, GetByArtyTipoCU>();
+builder.Services.AddScoped<IGetArticulosByFecha, GetArticulosByFechaCU>();
+builder.Services.AddScoped<IGetMovsXFecha, GetMovsXFechaCU>();
 
 var app = builder.Build();
 

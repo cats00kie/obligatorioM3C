@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebDeposito.Models.FechaModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                Cantidades
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            @foreach (TMovsModel tmov in item.Movs)
+                            {
+                                <li class="list-group-item">
+                                    Tipo de Movimiento: @tmov.Nombre  Cantidad: @tmov.Total
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

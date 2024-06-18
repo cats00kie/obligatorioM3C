@@ -1,0 +1,38 @@
+﻿@model WebDeposito.Models.ArticuloModel
+
+@{
+    ViewData["Title"] = "GetFechas";
+}
+
+<h1>GetFechas</h1>
+
+<h4>ArticuloModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="GetFechas">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <label for="fechaPedido">Fecha de Inicio:</label>
+            <div class="form-group">
+                <label for="fechainicio" class="control-label"></label>
+                <input type="date" name="start" id="fechainicio" />
+                <span validation-for="fechainicio" class="text-danger"></span>
+            </div>
+            <br />
+            <label for="fechaPedido">Fecha de Fin:</label>
+            <div class="form-group">
+                <label for="fechafin" class="control-label"></label>
+                <input type="date" name="end" id="fechafin" />
+                <span validation-for="fechafin" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="GetFechas" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

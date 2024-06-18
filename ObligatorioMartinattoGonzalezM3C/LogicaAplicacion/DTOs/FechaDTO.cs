@@ -8,8 +8,8 @@ namespace Papeleria.LogicaAplicacion.DTOs
 {
     public class FechaDTO
     {
-        public DateTime Fecha { get; set; }
+        public int Fecha { get; set; }
         public List<TMovsDTO> Movs { get; set; }
-        public int Total { get; set; }
+        public int Total { get; set; }  
     }
 }

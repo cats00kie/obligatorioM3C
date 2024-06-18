@@ -21,7 +21,7 @@ namespace Papeleria.LogicaAplicacion.CasosDeUso.Movimientos
         public IEnumerable<FechaDTO> GetMovsXFecha()
         {
             IEnumerable<MovimientoDTO> movs = this._repositorioMovimiento.FindAll().Select(m => MovimientoDTOMapper.ToDto(m));
-            return movs.GroupBy(m => m.FechaMovimiento).Select(movsPorFecha => new FechaDTO
+            return movs.GroupBy(m => m.FechaMovimiento.Year).Select(movsPorFecha => new FechaDTO
             {
                 Fecha = movsPorFecha.Key,
                 Total = movsPorFecha.Sum(m => m.CantUnidades),

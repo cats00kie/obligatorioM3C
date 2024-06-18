@@ -44,7 +44,7 @@ namespace AccesoDatos.EntityFramework.Repositorios
 
         public IEnumerable<Articulo> GetMovidosByFecha(DateTime startdate, DateTime enddate, int pag, int size)
         {
-            return this._context.Movimientos.Where(m => m.FechaMovimiento >= startdate && m.FechaMovimiento <= enddate).Select(m => m.Articulo)
+            return this._context.Movimientos.Where(m => m.FechaMovimiento >= startdate && m.FechaMovimiento <= enddate).Select(m => m.Articulo).Distinct()
                 .Skip((pag - 1) * size).Take(size).ToList();
         }
 

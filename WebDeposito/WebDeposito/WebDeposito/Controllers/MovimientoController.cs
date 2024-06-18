@@ -18,28 +18,52 @@ namespace WebDeposito.Controllers
         }
            
 
-        public ActionResult Index(string message)
+        public ActionResult Index(string mensaje, string filtro)
         {
-            try
+            if (actualPage < 1) { actualPage = 1; }
+            if (string.IsNullOrEmpty(filtro))
             {
-                if (actualPage < 1) { actualPage = 1; }
                 HttpRequestMessage solicitud =
                 new HttpRequestMessage(HttpMethod.Get, new Uri(_baseUrl + "page/" + actualPage));
                 Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
                 respuesta.Wait();
-
                 if (respuesta.Result.IsSuccessStatusCode)
                 {
                     var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
                     var movs = JsonConvert.DeserializeObject<IEnumerable<MovimientoModel>>(objetoComoTexto);
                     return View(movs);
                 }
-                return View();
             }
-            catch (Exception ex)
+            if(filtro == "PorArtyTipo")
             {
-                return RedirectToAction("Search", "Home", new { searchValue = "404notFound" });
+                int idArticulo;
+                int.TryParse(TempData["idArticulo"].ToString(), out idArticulo);
+                int idTipo;
+                int.TryParse(TempData["idTipo"].ToString(), out idTipo);
+                HttpRequestMessage solicitud =
+                new HttpRequestMessage(HttpMethod.Get, new Uri(_baseUrl + "GetByArtyTipo" + "/Page/" + actualPage + "/Articulo="+idArticulo+"/Tipo="+idTipo));
+                Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
+                respuesta.Wait();
+                if (respuesta.Result.IsSuccessStatusCode)
+                {
+                    var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
+                    var movs = JsonConvert.DeserializeObject<IEnumerable<MovimientoModel>>(objetoComoTexto);
+                    return View(movs);
+                }
             }
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult FiltrarPorArtyTipo(int idArticulo, int idTipo)
+        {
+            if(idArticulo == null || idTipo == null || idArticulo == 0 || idTipo == 0)
+            {
+                return RedirectToAction("Index");
+            }
+            TempData["idArticulo"] = idArticulo;
+            TempData["idTipo"] = idTipo;
+            return RedirectToAction("Index", new {filtro = "PorArtyTipo" });
         }
 
     [HttpPost]

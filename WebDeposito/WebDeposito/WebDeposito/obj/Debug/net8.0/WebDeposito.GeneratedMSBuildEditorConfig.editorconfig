@@ -26,12 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\WebDeposito\WebDeposito\WebDeposito
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Articulo/GetFechas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9cR2V0RmVjaGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Articulo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Movimiento/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Movimiento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Reporte/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/ORT & Other shi/obligatorioM3C/WebDeposito/WebDeposito/WebDeposito/Views/Shared/Error.cshtml]

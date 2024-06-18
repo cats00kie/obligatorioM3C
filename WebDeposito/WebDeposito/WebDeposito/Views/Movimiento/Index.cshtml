@@ -5,7 +5,14 @@
 }
 
 <h1>Index</h1>
-
+<h2>Filtro</h2>
+<form method="post" action="Movimiento/FiltrarPorArtyTipo">
+    <label for="idart">ID Articulo</label>
+    <input type="number" name="idArticulo" value="" placeholder="ID del Articulo..." id="idart" />
+    <label for="idtipo">ID Tipo</label>
+    <input type="number" name="idTipo" value="" placeholder="ID del Tipo de Movimiento..." id="idtipo" />
+    <input type="submit" />
+</form>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -60,3 +67,10 @@
 }
     </tbody>
 </table>
+
+<form method="post" action="~/Movimiento/Next">
+    <input type="submit" value="Next">
+</form>
+<form method="post" action="~/Movimiento/Previous">
+    <input type="submit" value="Previous">
+</form>

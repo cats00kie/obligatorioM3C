@@ -39,7 +39,7 @@ namespace ApiRest.Controllers
             }
         }
 
-        [HttpGet("GetByFechas/Page/{pageNumber}")]
+        [HttpGet("GetByFechas/Page/{pageNumber}/startdate={startdate}/enddate={enddate}")]
         public ActionResult<IEnumerable<ArticuloDTO>> GetByFechas(DateTime startdate, DateTime enddate, int pageNumber) 
         {
             if (pageNumber < 1) { return BadRequest("Pagina invalida."); }

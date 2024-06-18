@@ -37,7 +37,7 @@ namespace Papeleria.ApiRest.Controllers
             return Ok(movs);
         }
 
-        [HttpGet("GetByArtyTipo/Page/{pageNumber}")]
+        [HttpGet("GetByArtyTipo/Page/{pageNumber}/Articulo={articuloId}/Tipo={tipoId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

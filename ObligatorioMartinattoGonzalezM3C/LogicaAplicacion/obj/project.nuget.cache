@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kfgWe4dEa3vrBUC1aPis8AdoJvbBN8+qNkjOixDJbos9wA1A3/kOdOJeYZNOfhaGSoqa93nrw7hhTtOcuC9y5g==",
+  "dgSpecHash": "ToCIeJRaIZFQChab5Gf315cuCjjDlfscRxmaeHw33Qb9tDg7MhgPXW1DEmnqvXxSoexr4YMhaV28TxoY/mbdVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\LogicaAplicacion\\Papeleria.LogicaAplicacion.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.1\\microsoft.identitymodel.abstractions.7.6.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.1\\microsoft.identitymodel.jsonwebtokens.7.6.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.1\\microsoft.identitymodel.logging.7.6.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.1\\microsoft.identitymodel.tokens.7.6.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.1\\system.identitymodel.tokens.jwt.7.6.1.nupkg.sha512"
   ],
   "logs": []
 }
