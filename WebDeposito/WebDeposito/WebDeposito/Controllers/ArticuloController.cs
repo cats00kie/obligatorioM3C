@@ -18,8 +18,8 @@ namespace WebDeposito.Controllers
         {
             if(actualPage < 1) { actualPage = 1; }
             HttpRequestMessage solicitud =
-            new HttpRequestMessage(HttpMethod.Get, new Uri(_baseUrl +"GetByFechas/"+ "Page/" + actualPage + "/startdate="+startdate.Year+"-"+startdate.Month+"-"+startdate.Day
-            +"/enddate=" + enddate.Year + "-" + enddate.Month + "-" + enddate.Day));
+            new HttpRequestMessage(HttpMethod.Get, new Uri(_baseUrl +"GetByFechas/"+ "Page/" + actualPage
+            +"/startdate="+startdate.ToString("yyyy-MM-dd")+"/enddate=" + enddate.ToString("yyyy-MM-dd")));
             Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
             respuesta.Wait();
             if (respuesta.Result.IsSuccessStatusCode)

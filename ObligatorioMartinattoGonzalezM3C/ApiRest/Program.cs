@@ -1,8 +1,10 @@
+using AccesoDatos.EntityFramework;
 using AccesoDatos.EntityFramework.Repositorios;
 using ApplicationLogic.UseCases.TeamsUCs;
 using LogicaNegocio.InterfacesRepositorio;
 using Papeleria.AccesoDatos;
 using Papeleria.AccesoDatos.EntityFramework.Repositorios;
+using Papeleria.LogicaAplicacion.CasosDeUso.Administradores;
 using Papeleria.LogicaAplicacion.CasosDeUso.Articulos;
 using Papeleria.LogicaAplicacion.CasosDeUso.Movimientos;
 using Papeleria.LogicaAplicacion.CasosDeUso.Pedidos;
@@ -27,6 +29,7 @@ builder.Services.AddScoped<IRepositorioPedido, RepositorioPedidoEF>();
 builder.Services.AddScoped<IRepositorioTipoMovimiento, RepositorioTipoMovimientoEF>();
 builder.Services.AddScoped<IRepositorioConfig, RepositorioConfiguracionEF>();
 builder.Services.AddScoped<IRepositorioMovimiento, RepositorioMovimientoEF>();
+builder.Services.AddScoped<IRepositorioUsuario, RepositorioUsuarioEF>();
 
 builder.Services.AddScoped<IEncontrarArticulosOrd, EncontrarArticulosOrdCU>();
 builder.Services.AddScoped<IGetPedidosDesc, GetPedidosDescCU>();
@@ -40,6 +43,7 @@ builder.Services.AddScoped<IGetAllMovs, GetAllMovsCU>();
 builder.Services.AddScoped<IGetByArtyTipo, GetByArtyTipoCU>();
 builder.Services.AddScoped<IGetArticulosByFecha, GetArticulosByFechaCU>();
 builder.Services.AddScoped<IGetMovsXFecha, GetMovsXFechaCU>();
+builder.Services.AddScoped<IFindUserByEmail, FindUserByEmailCU>();
 
 var app = builder.Build();
 

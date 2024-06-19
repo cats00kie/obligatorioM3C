@@ -9,14 +9,14 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso;
 using Papeleria.LogicaAplicacion.DTOs;
-using ApplicationLogic.InterfacesUseCase;
+using Papeleria.LogicaAplicacion.CasosDeUso.Administradores;
 
-namespace ApplicationLogic.UseCases
+namespace Papeleria.LogicaAplicacion
 {
     public class ManejadorJwt
     {
-        private IGetUserByUsername _getUser;
-        public ManejadorJwt(IGetUserByUsername getUser) { _getUser = getUser; }
+        private IFindUserByEmail _getUser;
+        public ManejadorJwt(IFindUserByEmail getUser) { _getUser = getUser; }
 
         public static string GenerarToken(UsuarioDTO usuarioDto)
         {
@@ -49,7 +49,7 @@ namespace ApplicationLogic.UseCases
         public UsuarioDTO ObtenerUsuario(string username)
         {
             {
-                var usuario = this._getUser.FindUserByUsername(username);
+                var usuario = this._getUser.FindUserByEmail(username);
                 return usuario;
 
             }

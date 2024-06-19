@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj": {}
+    "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj": {
+    "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj",
+        "projectUniqueName": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj",
         "projectName": "WebDeposito",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\ORT & Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\obj\\",
+        "projectPath": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\WebDeposito\\WebDeposito\\WebDeposito\\WebDeposito.csproj",
+        "packagesPath": "C:\\Users\\sprin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sprin\\Desktop\\obligatorioDelTuki\\WebDeposito\\WebDeposito\\WebDeposito\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sprin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
