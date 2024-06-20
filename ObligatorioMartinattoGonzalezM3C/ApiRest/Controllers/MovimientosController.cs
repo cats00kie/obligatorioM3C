@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Movimiento;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.TMov;
@@ -9,6 +10,7 @@ namespace Papeleria.ApiRest.Controllers
 {
     [Route("api/Movimientos")]
     [ApiController]
+    [Authorize]
     public class MovimientosController : ControllerBase
     {
       
@@ -24,6 +26,11 @@ namespace Papeleria.ApiRest.Controllers
             this._getByArtyTipo = getByArtyTipo;
             this._getMovsXFecha = getMovsXFecha;
         }
+        /// <summary>
+        /// Metodo para traer todos los movimientos.
+        /// </summary>
+        /// <param name="pageNumber">Parametro para el numero de pagina.</param>
+        /// <returns>Todos los movimientos, su articulo y su tipo de movimiento.</returns>
 
         [HttpGet("Page/{pageNumber}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -36,7 +43,13 @@ namespace Papeleria.ApiRest.Controllers
             if(movs.Count() == 0) { return NoContent(); }
             return Ok(movs);
         }
-
+        /// <summary>
+        /// Metodo para filtrar los movimientos por un articulo y un tipo de movimiento
+        /// </summary>
+        /// <param name="articuloId">ID del articulo</param>
+        /// <param name="tipoId">ID del tipo de movimiento</param>
+        /// <param name="pageNumber">numero de pagina</param>
+        /// <returns>Todos los movimientos del mismo tipo y mismo articulo.</returns>
         [HttpGet("GetByArtyTipo/Page/{pageNumber}/Articulo={articuloId}/Tipo={tipoId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -48,7 +61,10 @@ namespace Papeleria.ApiRest.Controllers
             if (movs.Count() == 0) { return NoContent(); }
             return Ok(movs);
         }
-
+        /// <summary>
+        /// Metodo para traer las cantidades movidas agrupadas por año, y dentro de año por tipo de movimiento.
+        /// </summary>
+        /// <returns>Cantidades movidas agrupadas por año, y dentro de año por tipo de movimiento.</returns>
         [HttpGet("GetMovsXFecha")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -59,7 +75,11 @@ namespace Papeleria.ApiRest.Controllers
             if (movs.Count() == 0) { return NoContent(); }
             return Ok(movs);
         }
-
+        /// <summary>
+        /// Metodo para registrar un movimiento en la base de datos.
+        /// </summary>
+        /// <param name="MovDTO">El articulo que se mueve, el tipo de movimiento, y la cantidad de unidades movidas.</param>
+        /// <returns></returns>
         [HttpPost("")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -72,7 +92,7 @@ namespace Papeleria.ApiRest.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { mensaje = ex.Message });
             }
         }
     }

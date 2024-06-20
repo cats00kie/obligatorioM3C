@@ -23,25 +23,21 @@ namespace Papeleria.ApiRest.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("login")]
-        public ActionResult<UsuarioDTO> Login([FromBody] LoginDTO usuario)
+        public ActionResult<UsuarioDTO> Login([FromBody] UsuarioDTO usuario)
         {
             try
             {
                 ManejadorJwt handler = new ManejadorJwt(_getUser);
                 var usr = handler.ObtenerUsuario(usuario.Email);
-                if (usr == null || usr.PasswordSinEncript != usuario.Password)
+                if (usr == null || usr.PasswordSinEncript != usuario.PasswordSinEncript)
                     return Unauthorized("Credenciales inválidas. Reintente");
-
-                //Le pedimos al manejador de tokens que nos genere un token jwt con
-                //la información del usuario para usar como claims (el email y el nombre de rol)
-                //En caso de que se autentique, retorna el token y el usuario
                 var token = ManejadorJwt.GenerarToken(usr);
                 string rol = "Admin";
-                if (usr.IsEncargado) rol = "Encargado";
+                if (usr.IsEncargado == true) rol = "Encargado";
                 return Ok(new
                 {
                     Token = token,
-                    Email = usr.Email,
+                    Usuario = usr,
                     Rol = rol
 
                 });

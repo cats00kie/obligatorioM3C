@@ -22,7 +22,7 @@ namespace WebDeposito.Controllers
             new HttpRequestMessage(HttpMethod.Post, new Uri("http://localhost:5091/api/Login/login"));
             UserModel model = new UserModel();
             model.Email = email;
-            model.Password = password;
+            model.PasswordSinEncript = password;
             var json = JsonConvert.SerializeObject(model);
             HttpContent contenido = new StringContent(json, Encoding.UTF8, "application/json");
             solicitud.Content = contenido;
@@ -33,7 +33,7 @@ namespace WebDeposito.Controllers
             {
                 var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
                 var user = JsonConvert.DeserializeObject<TokenModel>(objetoComoTexto);
-                HttpContext.Session.SetString("email", user.Email);
+                HttpContext.Session.SetString("email", user.Usuario.Email);
                 HttpContext.Session.SetString("token", user.Token);
                 HttpContext.Session.SetString("rol", user.Rol);
                 return RedirectToAction("Index", "Movimiento");

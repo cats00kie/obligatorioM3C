@@ -5,7 +5,12 @@
 }
 
 <h1>Index</h1>
-
+@if (!string.IsNullOrEmpty(ViewBag.mensaje))
+{
+    <div class="alert alert-danger">
+        @ViewBag.mensaje
+    </div>
+}
 <table class="table">
     <thead>
         <tr>
@@ -28,7 +33,11 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @if(Model != null)
+        {
+            
+        
+        @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
@@ -47,5 +56,15 @@
             </td>
         </tr>
 }
+}
     </tbody>
 </table>
+@if (Model != null)
+{
+    <form method="post" action="~/Articulo/Next">
+        <input type="submit" value="Next">
+    </form>
+    <form method="post" action="~/Articulo/Previous">
+        <input type="submit" value="Previous">
+    </form>
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Papeleria.ApiRest</name>
+    </assembly>
+    <members>
+        <member name="M:ApiRest.Controllers.ArticulosController.Get">
+            <summary>
+            Metodo para traer todos los articulos.
+            </summary>
+            <returns>Articulos ordenados por nombre ascendentemente</returns>
+        </member>
+        <member name="M:ApiRest.Controllers.ArticulosController.GetByFechas(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Metodo para filtrar articulos que fueron usados en al menos un movimiento entre dos fechas.
+            </summary>
+            <param name="startdate">Fecha de inicio</param>
+            <param name="enddate">Fecha de fin</param>
+            <param name="pageNumber">Numero de paginado</param>
+            <returns>Articulos que fueron movidos entre las dos fechas.</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.LoginController.Login(Papeleria.LogicaAplicacion.DTOs.UsuarioDTO)">
+            <summary>
+            Metodo para permitir inicio de sesion y obtener un jwt para uso de la api
+            </summary>
+            <param name="usuario">nombre de usuario y contraseña</param>
+            <returns>Token y datos del usuario</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.MovimientosController.GetMovs(System.Int32)">
+            <summary>
+            Metodo para traer todos los movimientos.
+            </summary>
+            <param name="pageNumber">Parametro para el numero de pagina.</param>
+            <returns>Todos los movimientos, su articulo y su tipo de movimiento.</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.MovimientosController.GetByArtyTipo(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Metodo para filtrar los movimientos por un articulo y un tipo de movimiento
+            </summary>
+            <param name="articuloId">ID del articulo</param>
+            <param name="tipoId">ID del tipo de movimiento</param>
+            <param name="pageNumber">numero de pagina</param>
+            <returns>Todos los movimientos del mismo tipo y mismo articulo.</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.MovimientosController.GetMovsXFecha">
+            <summary>
+            Metodo para traer las cantidades movidas agrupadas por año, y dentro de año por tipo de movimiento.
+            </summary>
+            <returns>Cantidades movidas agrupadas por año, y dentro de año por tipo de movimiento.</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.MovimientosController.CreateMovimiento(Papeleria.LogicaAplicacion.DTOs.MovimientoDTO)">
+            <summary>
+            Metodo para registrar un movimiento en la base de datos.
+            </summary>
+            <param name="MovDTO">El articulo que se mueve, el tipo de movimiento, y la cantidad de unidades movidas.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.TipoMovimientoController.Get">
+            <summary>
+            Metodo para traer todos los tipos de movimiento
+            </summary>
+            <returns>Lista con tipos de movimiento</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.TipoMovimientoController.GetById(System.Int32)">
+            <summary>
+            Metodo para traer un tipo de movimiento dado un id
+            </summary>
+            <param name="id">id de tipo de movimiento</param>
+            <returns>Nombre y Valor del tipo de movimiento</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.TipoMovimientoController.CreateMovimiento(Papeleria.LogicaAplicacion.DTOs.TipoMovimientoDTO)">
+            <summary>
+            Metodo para crear un tipo de movimiento
+            </summary>
+            <param name="tMovDTO">El tipo de movimiento, incluye nombre, y si es un ingreso o egreso</param>
+            <returns>Codigo 201 Created si el tipo fue creado.</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.TipoMovimientoController.DeleteTipo(System.Int32)">
+            <summary>
+            Metodo para Borrar un tipo de movimiento del sistema
+            </summary>
+            <param name="id">id de un tipo de movimiento</param>
+            <returns>200 OK si fue borrado</returns>
+        </member>
+        <member name="M:Papeleria.ApiRest.Controllers.TipoMovimientoController.UpdateTipo(Papeleria.LogicaAplicacion.DTOs.TipoMovimientoDTO)">
+            <summary>
+            Metodo para editar un tipo de movimiento ya existente
+            </summary>
+            <param name="tMovDTO">Un tipo de movimiento, con los datos que se haya enviado para editar.</param>
+            <returns>200 OK si fue editado</returns>
+        </member>
+    </members>
+</doc>

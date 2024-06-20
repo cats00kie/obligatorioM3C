@@ -14,11 +14,11 @@ namespace Papeleria.LogicaAplicacion.DTOs
     public class UsuarioDTO
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string? Nombre { get; set; }
+        public string? Apellido { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
+        public string? Password { get; set; }
         public string PasswordSinEncript {  get; set; }
-        public bool IsEncargado { get; set; }
+        public bool? IsEncargado { get; set; }
     }
 }

@@ -20,6 +20,16 @@ namespace WebDeposito.Controllers
 
         public ActionResult Index(string mensaje, string filtro)
         {
+
+            string token = HttpContext.Session.GetString("token");
+            if (string.IsNullOrEmpty(token) || HttpContext.Session.GetString("rol") != "Encargado")
+            {
+                return RedirectToAction("Login", "Login", new { mensaje = "No Autorizado." });
+            }
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                "Bearer",
+                token
+            );
             if (actualPage < 1) { actualPage = 1; }
             if (string.IsNullOrEmpty(filtro))
             {
@@ -29,10 +39,17 @@ namespace WebDeposito.Controllers
                 respuesta.Wait();
                 if (respuesta.Result.IsSuccessStatusCode)
                 {
+                    if (respuesta.Result.StatusCode == System.Net.HttpStatusCode.NoContent)
+                    {
+                        ViewBag.mensaje = "No hay resultados.";
+                        actualPage = 1;
+                        return View();
+                    }
                     var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
                     var movs = JsonConvert.DeserializeObject<IEnumerable<MovimientoModel>>(objetoComoTexto);
                     return View(movs);
                 }
+
             }
             if(filtro == "PorArtyTipo")
             {
@@ -46,98 +63,120 @@ namespace WebDeposito.Controllers
                 respuesta.Wait();
                 if (respuesta.Result.IsSuccessStatusCode)
                 {
+                    if (respuesta.Result.StatusCode == System.Net.HttpStatusCode.NoContent)
+                    {
+                        ViewBag.mensaje = "No hay resultados.";
+                        actualPage = 1;
+                        return View();
+                    }
                     var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
                     var movs = JsonConvert.DeserializeObject<IEnumerable<MovimientoModel>>(objetoComoTexto);
                     return View(movs);
                 }
+
             }
             return View();
+            
         }
 
         [HttpPost]
         public ActionResult FiltrarPorArtyTipo(int idArticulo, int idTipo)
         {
-            if(idArticulo == null || idTipo == null || idArticulo == 0 || idTipo == 0)
+            if (idArticulo == null || idTipo == null || idArticulo == 0 || idTipo == 0)
             {
                 return RedirectToAction("Index");
             }
             TempData["idArticulo"] = idArticulo;
             TempData["idTipo"] = idTipo;
             return RedirectToAction("Index", new {filtro = "PorArtyTipo" });
+            
         }
 
     [HttpPost]
     public ActionResult Next()
     {
-        try
-        {
-            string message = "";
-            actualPage++;
-            if (actualPage < 1)
+
+            try
             {
-                actualPage = 1;
-                message = "Only postive numbers allowed";
+                string mensaje = "";
+                actualPage++;
+                if (actualPage < 1)
+                {
+                    actualPage = 1;
+                    mensaje = "Solo números positivos.";
+                }
+
+                return RedirectToAction("Index", new { message = mensaje });
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "Movimineto", new { mensaje = "Hubo un error" });
             }
 
-            return RedirectToAction("Index", new { message = message });
-        }
-        catch (Exception ex)
-        {
-            return RedirectToAction("Search", "Home", new { searchValue = "404notFound" });
-        }
     }
 
     [HttpPost]
     public ActionResult Previous()
     {
-        try
-        {
-            string message = "";
-            actualPage--;
-            if (actualPage < 1)
-            {
-                actualPage = 1;
-                message = "Only postive numbers allowed";
-            }
 
-            return RedirectToAction("Index", new { message = message });
-        }
-        catch (Exception ex)
-        {
-            return RedirectToAction("Search", "Home", new { searchValue = "404notFound" });
-        }
+
+            try
+            {
+                string message = "";
+                actualPage--;
+                if (actualPage < 1)
+                {
+                    actualPage = 1;
+                    message = "Only postive numbers allowed";
+                }
+
+                return RedirectToAction("Index", new { message = message });
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "Movimineto", new { mensaje = "Hubo un error" });
+            }
     }
 
     // GET: TeamController/Create
         public ActionResult Create(string mensaje)
         {
-            HttpRequestMessage solicitud =
+            string token = HttpContext.Session.GetString("token");
+            if (string.IsNullOrEmpty(token) || HttpContext.Session.GetString("rol") != "Encargado")
+            {
+                return RedirectToAction("Login", "Login", new { mensaje = "No Autorizado." });
+            }
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                "Bearer",
+                token
+            );
+
+                HttpRequestMessage solicitud =
                 new HttpRequestMessage(HttpMethod.Get, new Uri("http://localhost:5091/api/Articulos"));
-            Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
-            respuesta.Wait();
+                Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
+                respuesta.Wait();
 
-            if (respuesta.Result.IsSuccessStatusCode)
-            {
-                var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
-                IEnumerable<ArticuloModel> articulos = JsonConvert.DeserializeObject<IEnumerable<ArticuloModel>>(objetoComoTexto);
-                ViewBag.Articulos = articulos;
-            }
+                if (respuesta.Result.IsSuccessStatusCode)
+                {
+                    var objetoComoTexto = respuesta.Result.Content.ReadAsStringAsync().Result;
+                    IEnumerable<ArticuloModel> articulos = JsonConvert.DeserializeObject<IEnumerable<ArticuloModel>>(objetoComoTexto);
+                    ViewBag.Articulos = articulos;
+                }
 
-            HttpRequestMessage solicitudM =
-                new HttpRequestMessage(HttpMethod.Get, new Uri("http://localhost:5091/api/TipoMovimientos"));
-            Task<HttpResponseMessage> respuestaM = _client.SendAsync(solicitudM);
-            respuestaM.Wait();
+                HttpRequestMessage solicitudM =
+                    new HttpRequestMessage(HttpMethod.Get, new Uri("http://localhost:5091/api/TipoMovimientos"));
+                Task<HttpResponseMessage> respuestaM = _client.SendAsync(solicitudM);
+                respuestaM.Wait();
 
-            if (respuestaM.Result.IsSuccessStatusCode)
-            {
-                var objetoComoTexto = respuestaM.Result.Content.ReadAsStringAsync().Result;
-                IEnumerable<TipoMovimientoModel> tipos = JsonConvert.DeserializeObject<IEnumerable<TipoMovimientoModel>>(objetoComoTexto);
-                ViewBag.TipoMovs = tipos;
-            }
-            //TODO: HACER AUTH CON EL EMAIL
-            ViewBag.Email = "eltuki@email.com";
-            ViewBag.message = mensaje;
-            return View();
+                if (respuestaM.Result.IsSuccessStatusCode)
+                {
+                    var objetoComoTexto = respuestaM.Result.Content.ReadAsStringAsync().Result;
+                    IEnumerable<TipoMovimientoModel> tipos = JsonConvert.DeserializeObject<IEnumerable<TipoMovimientoModel>>(objetoComoTexto);
+                    ViewBag.TipoMovs = tipos;
+                }
+                ViewBag.Email = HttpContext.Session.GetString("email");
+                ViewBag.mensaje = mensaje;
+                return View();
 
         }
 
@@ -146,27 +185,40 @@ namespace WebDeposito.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(MovimientoModel mov)
         {
-            try
+            string token = HttpContext.Session.GetString("token");
+            if (string.IsNullOrEmpty(token) || HttpContext.Session.GetString("rol") != "Encargado")
             {
-                HttpRequestMessage solicitud = new HttpRequestMessage(HttpMethod.Post, new Uri(_baseUrl));
-                string json = JsonConvert.SerializeObject(mov);
-                HttpContent contenido = new StringContent(json, Encoding.UTF8, "application/json");
-                solicitud.Content = contenido;
-                Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
-                respuesta.Wait();
+                return RedirectToAction("Login", "Login", new { mensaje = "No Autorizado." });
+            }
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
+                "Bearer",
+                token
+            );
 
-                if (respuesta.Result.IsSuccessStatusCode)
+                try
                 {
-                    return View();
-                }
+                    HttpRequestMessage solicitud = new HttpRequestMessage(HttpMethod.Post, new Uri(_baseUrl));
+                    string json = JsonConvert.SerializeObject(mov);
+                    HttpContent contenido = new StringContent(json, Encoding.UTF8, "application/json");
+                    solicitud.Content = contenido;
+                    Task<HttpResponseMessage> respuesta = _client.SendAsync(solicitud);
+                    respuesta.Wait();
 
-                return View();
+                    if (respuesta.Result.IsSuccessStatusCode)
+                    {
+                        return View();
+                    }
+                    else 
+                    {
+                        string mensaje = "Datos invalidos. Revise la cantidad de unidades e intente nuevamente.";
+                        return RedirectToAction("Create", new { mensaje = mensaje });
+                    }
+                }
+                catch (Exception e)
+                {
+                    return RedirectToAction("Create", new { mensaje = "Hubo un error." });
+                }
             }
-            catch (Exception e)
-            {
-                return RedirectToAction("Create", new { message = "Hubo un error." });
-            }
-        }
     }
 }
 

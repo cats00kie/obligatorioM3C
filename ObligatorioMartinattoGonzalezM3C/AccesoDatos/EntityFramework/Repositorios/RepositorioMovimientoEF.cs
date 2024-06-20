@@ -68,36 +68,12 @@ namespace Papeleria.AccesoDatos.EntityFramework.Repositorios
 
         public bool Remove(int id)
         {
-            try
-            {
-
-                Movimiento aBorrar = FindByID(id);
-
-                    this._context.Movimientos.Remove(aBorrar);
-                    this._context.SaveChanges();
-                    return true;
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            throw new NotImplementedException();
         }
 
         public bool Update(Movimiento aModificar)
         {
-            try
-            {
-                
-                    this._context.Movimientos.Update(aModificar);
-                    this._context.SaveChanges();
-                   return true;
-                
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            throw new NotImplementedException();
         }
     }
 }

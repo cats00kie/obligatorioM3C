@@ -5,8 +5,14 @@
 }
 
 <h1>Index</h1>
+@if (!string.IsNullOrEmpty(ViewBag.mensaje))
+{
+    <div class="alert alert-danger">
+        @ViewBag.mensaje
+    </div>
+}
 <h2>Filtro</h2>
-<form method="post" action="Movimiento/FiltrarPorArtyTipo">
+<form method="post" action="FiltrarPorArtyTipo">
     <label for="idart">ID Articulo</label>
     <input type="number" name="idArticulo" value="" placeholder="ID del Articulo..." id="idart" />
     <label for="idtipo">ID Tipo</label>
@@ -67,10 +73,12 @@
 }
     </tbody>
 </table>
-
-<form method="post" action="~/Movimiento/Next">
-    <input type="submit" value="Next">
-</form>
-<form method="post" action="~/Movimiento/Previous">
-    <input type="submit" value="Previous">
-</form>
+@if (Model != null)
+{
+    <form method="post" action="~/Movimiento/Next">
+        <input type="submit" value="Next">
+    </form>
+    <form method="post" action="~/Movimiento/Previous">
+        <input type="submit" value="Previous">
+    </form>
+}

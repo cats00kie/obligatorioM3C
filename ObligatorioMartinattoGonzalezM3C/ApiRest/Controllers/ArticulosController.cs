@@ -1,5 +1,6 @@
 ﻿using LogicaNegocio.Entidades;
 using LogicaNegocio.InterfacesRepositorio;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Papeleria.LogicaAplicacion.DTOs;
 using Papeleria.LogicaAplicacion.InterfacesCasosDeUso.Articulo;
@@ -11,6 +12,7 @@ namespace ApiRest.Controllers
 {
     [Route("api/Articulos")]
     [ApiController]
+    [Authorize]
     public class ArticulosController : ControllerBase
     {
         private IEncontrarArticulosOrd _encontrarArticulosOrd;
@@ -22,7 +24,10 @@ namespace ApiRest.Controllers
             _encontrarArticulosOrd = encontrarArticulosOrd;
             _getArticulosByFecha = getArticulosByFecha;
         }
-
+        /// <summary>
+        /// Metodo para traer todos los articulos.
+        /// </summary>
+        /// <returns>Articulos ordenados por nombre ascendentemente</returns>
         // GET api/<ArticulosController>
         [HttpGet("")]
         public ActionResult<IEnumerable<ArticuloDTO>> Get()
@@ -38,7 +43,13 @@ namespace ApiRest.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        /// <summary>
+        /// Metodo para filtrar articulos que fueron usados en al menos un movimiento entre dos fechas.
+        /// </summary>
+        /// <param name="startdate">Fecha de inicio</param>
+        /// <param name="enddate">Fecha de fin</param>
+        /// <param name="pageNumber">Numero de paginado</param>
+        /// <returns>Articulos que fueron movidos entre las dos fechas.</returns>
         [HttpGet("GetByFechas/Page/{pageNumber}/startdate={startdate}/enddate={enddate}")]
         public ActionResult<IEnumerable<ArticuloDTO>> GetByFechas(DateTime startdate, DateTime enddate, int pageNumber) 
         {

@@ -284,3 +284,9 @@ C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\ApiRe
 C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\ApiRest\obj\Debug\net8.0\Papeleria.ApiRest.pdb
 C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\ApiRest\obj\Debug\net8.0\Papeleria.ApiRest.genruntimeconfig.cache
 C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\ApiRest\obj\Debug\net8.0\ref\Papeleria.ApiRest.dll
+C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\ApiRest\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\ApiRest\bin\Debug\net8.0\Scrutor.dll
+C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\ApiRest\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\ApiRest\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\ApiRest\bin\Debug\net8.0\Papeleria.ApiRest.xml
+C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\ApiRest\obj\Debug\net8.0\Papeleria.ApiRest.xml

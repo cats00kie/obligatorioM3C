@@ -5,7 +5,12 @@
 }
 
 <h1>Index</h1>
-
+@if (!string.IsNullOrEmpty(ViewBag.mensaje))
+{
+    <div class="alert alert-danger">
+        @ViewBag.mensaje
+    </div>
+}
 <table class="table">
     <thead>
         <tr>
@@ -21,27 +26,29 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Total)
-            </td>
-                <td>
-                    <div class="card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush">
-                            @foreach (TMovsModel tmov in item.Movs)
-                            {
-                                <li class="list-group-item">
-                                    Tipo de Movimiento: @tmov.Nombre  Cantidad: @tmov.Total
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                </td>
-        </tr>
+    @if(Model != null){
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fecha)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Total)
+                    </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <ul class="list-group list-group-flush">
+                                    @foreach (TMovsModel tmov in item.Movs)
+                                    {
+                                        <li class="list-group-item">
+                                            Tipo de Movimiento: @tmov.Nombre  Cantidad: @tmov.Total
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </td>
+                </tr>
+        }
 }
     </tbody>
 </table>

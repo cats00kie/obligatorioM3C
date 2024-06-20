@@ -6,7 +6,12 @@
 }
 
 <h1>Create</h1>
-
+@if (!string.IsNullOrEmpty(ViewBag.mensaje))
+{
+    <div class="alert alert-danger">
+        @ViewBag.mensaje
+    </div>
+}
 <h4>MovimientoModel</h4>
 <hr />
 <div class="row">
