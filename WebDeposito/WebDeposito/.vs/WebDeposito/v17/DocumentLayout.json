@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\controllers\\movimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\controllers\\movimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\views\\reporte\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\webdeposito\\webdeposito\\webdeposito\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1A9A7FE7-999E-4100-A9D2-6B62333C1D09}|WebDeposito\\WebDeposito.csproj|solutionrelative:webdeposito\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 310,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Views\\Articulo\\Index.cshtml",
               "RelativeDocumentMoniker": "WebDeposito\\Views\\Articulo\\Index.cshtml",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ReporteController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\ReporteController.cs",
               "RelativeDocumentMoniker": "WebDeposito\\Controllers\\ReporteController.cs",
@@ -94,8 +94,7 @@
               "RelativeToolTip": "WebDeposito\\Controllers\\ReporteController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T22:28:58.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T22:28:58.34Z"
             },
             {
               "$type": "Document",
@@ -111,15 +110,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "WebDeposito\\Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\LoginController.cs",
               "RelativeToolTip": "WebDeposito\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAMAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwB0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T21:11:37.719Z"
+              "WhenOpened": "2024-06-19T21:11:37.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,20 +135,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MovimientoController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\MovimientoController.cs",
               "RelativeDocumentMoniker": "WebDeposito\\Controllers\\MovimientoController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\MovimientoController.cs",
               "RelativeToolTip": "WebDeposito\\Controllers\\MovimientoController.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAAAMkAAABUAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAAAMwAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T20:32:47.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T20:32:47.187Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ArticuloController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Controllers\\ArticuloController.cs",
               "RelativeDocumentMoniker": "WebDeposito\\Controllers\\ArticuloController.cs",
@@ -156,12 +155,11 @@
               "RelativeToolTip": "WebDeposito\\Controllers\\ArticuloController.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwCcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T22:31:27.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T22:31:27.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Views\\Movimiento\\Create.cshtml",
               "RelativeDocumentMoniker": "WebDeposito\\Views\\Movimiento\\Create.cshtml",
@@ -169,12 +167,11 @@
               "RelativeToolTip": "WebDeposito\\Views\\Movimiento\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T20:32:09.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T20:32:09.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Views\\Movimiento\\Index.cshtml",
               "RelativeDocumentMoniker": "WebDeposito\\Views\\Movimiento\\Index.cshtml",
@@ -186,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\WebDeposito\\WebDeposito\\WebDeposito\\Views\\Reporte\\Index.cshtml",
               "RelativeDocumentMoniker": "WebDeposito\\Views\\Reporte\\Index.cshtml",

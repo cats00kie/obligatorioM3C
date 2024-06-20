@@ -3,26 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\apirest\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositoriomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositoriomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Movimientos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Usuarios.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositoriotipomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositoriotipomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\controllers\\tipomovimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\apirest\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88300382-8164-4438-8203-FCB97DED3339}|ApiRest\\Papeleria.ApiRest.csproj|solutionrelative:apirest\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Movimientos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|c:\\users\\usuario\\desktop\\ort \u0026 other shi\\obligatoriom3c\\obligatoriomartinattogonzalezm3c\\accesodatos\\entityframework\\repositorios\\repositoriomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59DDFAAF-485C-4704-926B-C4DE225D9A16}|AccesoDatos\\Papeleria.AccesoDatos.csproj|solutionrelative:accesodatos\\entityframework\\repositorios\\repositoriomovimientoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 310,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,73 +45,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MovimientosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\MovimientosController.cs",
               "RelativeDocumentMoniker": "ApiRest\\Controllers\\MovimientosController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\MovimientosController.cs",
               "RelativeToolTip": "ApiRest\\Controllers\\MovimientosController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAwwFMAAAA8AAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwF4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T23:30:57.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "dbo.Movimientos [Datos]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Movimientos.sql",
               "ToolTip": "dbo.Movimientos [Datos]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-19T23:22:46.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T23:22:46.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.Usuarios [Datos]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PapeleriaObligatorio/True/SqlTable/dbo.Usuarios.sql",
-              "ToolTip": "dbo.Usuarios [Datos]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-19T23:15:25.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "RepositorioTipoMovimientoEF.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
               "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioTipoMovimientoEF.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswFYAAAAZAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswFEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T22:24:09.535Z"
+              "WhenOpened": "2024-06-19T22:24:09.535Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RepositorioMovimientoEF.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioMovimientoEF.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioMovimientoEF.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\AccesoDatos\\EntityFramework\\Repositorios\\RepositorioMovimientoEF.cs",
               "RelativeToolTip": "AccesoDatos\\EntityFramework\\Repositorios\\RepositorioMovimientoEF.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAIAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAEBVwBIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T22:21:42.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T22:21:42.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "TipoMovimientoController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\TipoMovimientoController.cs",
               "RelativeDocumentMoniker": "ApiRest\\Controllers\\TipoMovimientoController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\ORT \u0026 Other shi\\obligatorioM3C\\ObligatorioMartinattoGonzalezM3C\\ApiRest\\Controllers\\TipoMovimientoController.cs",
               "RelativeToolTip": "ApiRest\\Controllers\\TipoMovimientoController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwGQAAAAgAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwEUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T22:11:59.468Z"
+              "WhenOpened": "2024-06-19T22:11:59.468Z",
+              "EditorCaption": ""
             }
           ]
         },

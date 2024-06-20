@@ -88,7 +88,7 @@ namespace Papeleria.ApiRest.Controllers
         /// </summary>
         /// <param name="tMovDTO">Un tipo de movimiento, con los datos que se haya enviado para editar.</param>
         /// <returns>200 OK si fue editado</returns>
-        [HttpPut("{id}")]
+        [HttpPut("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<TipoMovimientoDTO> UpdateTipo([FromBody] TipoMovimientoDTO tMovDTO)
