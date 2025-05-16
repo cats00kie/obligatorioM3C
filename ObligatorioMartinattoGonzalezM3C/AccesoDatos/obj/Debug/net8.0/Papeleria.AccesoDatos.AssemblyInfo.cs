@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Papeleria.AccesoDatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d70b4dd48c049d4f3ba3b7a575c3e880ae3b8b47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0e2faa6ffea5d80b61e8df191b8d8151487f089")]
 [assembly: System.Reflection.AssemblyProductAttribute("Papeleria.AccesoDatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Papeleria.AccesoDatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

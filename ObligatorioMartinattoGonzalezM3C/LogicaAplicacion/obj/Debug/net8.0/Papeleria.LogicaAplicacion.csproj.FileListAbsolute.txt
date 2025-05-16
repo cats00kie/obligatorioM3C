@@ -14,19 +14,3 @@ C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGon
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\refint\Papeleria.LogicaAplicacion.dll
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.pdb
 C:\Users\Usuario\Desktop\ORT & Other shi\obligatorioM3C\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\ref\Papeleria.LogicaAplicacion.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\bin\Debug\net8.0\Papeleria.LogicaAplicacion.deps.json
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\bin\Debug\net8.0\Papeleria.LogicaAplicacion.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\bin\Debug\net8.0\Papeleria.LogicaAplicacion.pdb
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\bin\Debug\net8.0\Papeleria.LogicaNegocio.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\bin\Debug\net8.0\Papeleria.LogicaNegocio.pdb
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.csproj.AssemblyReference.cache
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.AssemblyInfoInputs.cache
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.AssemblyInfo.cs
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.csproj.CoreCompileInputs.cache
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.sourcelink.json
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleri.24843A5C.Up2Date
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\refint\Papeleria.LogicaAplicacion.dll
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\Papeleria.LogicaAplicacion.pdb
-C:\Users\sprin\Desktop\obligatorioDelTuki\ObligatorioMartinattoGonzalezM3C\LogicaAplicacion\obj\Debug\net8.0\ref\Papeleria.LogicaAplicacion.dll
